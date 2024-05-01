@@ -7,219 +7,480 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="./nile/css/style.css" rel="stylesheet">
-	<script src="./nile/js/jquery-3.4.1.min.js"></script>
-	<script src="./nile/js/dynamicListener.min.js"></script>
-	<script src="./nile/js/swiper.min.js"></script>
-	<script src="./nile/js/ui.js"></script>
-	<script src="./nile/js/main.js"></script>
-	<title>나일소프트</title>
+	<link href="./assets/css/style.css" rel="stylesheet">
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/swiper.min.js"></script>
+	<script src="./assets/js/ui.js"></script>
+	<script src="./assets/js/main.js"></script>
+	<title></title>
 </head>
 
 <body class="front_body">
 	<div class="page_wrap">
-		<div class="sub_visual_wrap" style="background-image:url(./nile/images/bg_sv_info.jpg)">
-			<header class="header_wrap">
-				<!-- <div class="bg_depth"></div> -->
-				<div class="header_inner">
-					<h1 class="toplogo">
-						<a href="#" class="toplogo_link"><span class="hdtext">NileSOFT</span></a>
-					</h1>
-					<nav class="nav_list_wrap">
-						<ul class="header_nav_list">
-							<li>
-								<a href="#" class="header_nav_menu">제품소개</a>
-								<div class="header_two_list_wrap type2">
-									<div class="header_two_inner">
-										<div class="header_two_menu_cols">
-											<p class="nav_depth_category">로그/개인정보</p>
-											<ul class="header_two_list">
-												<li name="data_log_menu01"><a href="data_logcops.html" class="header_two">LogCops</a></li>
-												<li name="data_log_menu02"><a href="data_privacycops.html" class="header_two">PrivacyCops</a></li>
-												<li name="data_log_menu03"><a href="data_it.html" class="header_two">IT내부통제</a></li>
-												<li name="data_log_menu04"><a href="data_difactory.html" class="header_two">diFactory</a></li>
-											</ul>
-										</div>
-										<div class="header_two_menu_cols">
-											<p class="nav_depth_category">보안취약점</p>
-											<ul class="header_two_list">
-												<li name="data_secuguard_menu01"><a href="secuguard_sse.html" class="header_two">Secuguard SSE</a></li>
-												<li name="data_secuguard_menu02"><a href="secuguard_wse.html" class="header_two">Secuguard WSE</a></li>
-												<li name="data_secuguard_menu03"><a href="secuguard_nse.html" class="header_two">Secuguard NSE</a></li>
-												<li name="data_secuguard_menu04"><a href="secuguard_uvm.html" class="header_two">Secuguard UVM</a></li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a href="#" class="header_nav_menu">고객지원</a>
-								<div class="header_two_list_wrap">
-									<div class="header_two_inner">
-										<ul class="header_two_list">
-											<li name="customer_menu01"><a href="customer_dataroom.html" class="header_two">자료실</a></li>
-											<li name="customer_menu02"><a href="customer_faq.html" class="header_two">FAQ</a></li>
-											<li name="customer_menu03"><a href="customer_inquiry.html" class="header_two">제품문의</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a href="#" class="header_nav_menu">IR/PR</a>
-								<div class="header_two_list_wrap">
-									<div class="header_two_inner">
-										<ul class="header_two_list">
-											<li name="irpr_menu01"><a href="ir_notice_list.html" class="header_two">공지사항</a></li>
-											<li name="irpr_menu02"><a href="ir_award.html" class="header_two">수상 및 인증</a></li>
-											<li name="irpr_menu03"><a href="ir_finance.html" class="header_two">재무정보</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-							<li>
-								<a href="#" class="header_nav_menu">회사소개</a>
-								<div class="header_two_list_wrap">
-									<div class="header_two_inner">
-										<ul class="header_two_list">
-											<li name="company_menu01"><a href="info_company.html" class="header_two">회사개요</a></li>
-											<li name="company_menu02"><a href="info_greet.html" class="header_two">CEO인사말</a></li>
-											<li name="company_menu03"><a href="info_history.html" class="header_two">연혁</a></li>
-											<li name="company_menu04"><a href="info_partner.html" class="header_two">주요 고객사</a></li>
-											<li name="company_menu05"><a href="info_map.html" class="header_two">오시는길</a></li>
-										</ul>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</nav>
-					<div class="util_list_wrap">
-						<ul class="util_list">
-							<li><a href="#" class="util_menu"><i class="ico earth"></i><span class="util_menu_text">KOR</span></a></li>
-						</ul>
-					</div>
-				</div>
-				<a href="javascript:;" class="btn_panel_menu"><i class="btn_panel_menu_ico"></i><span class="hdtext">메인메뉴 열기</span></a>
-				<!-- mobile -->
-				<div class="mobile_mainmenu_zone" id="mobile_gnb">
-					<div class="mainmenu_dim"></div>
-					<div class="mobile_mainmenu_wrap">
-						<div class="mbutil_row">
-							<ul class="util_list">
-								<li><a href="#" class="util_menu"><i class="ico earth"></i><span class="util_menu_text">KOR</span></a></li>
+		<header class="header_wrap">
+			<!-- pc -->
+			<div class="header_pc_group">
+				<div class="hgroup_main_row">
+					<div class="hgroup_inner">
+						<h1 class="hgroup_toplogo"><a href="#" class="toplogo_link"><span class="hdtext">GOOD DAY TO TRAVEL 여행하기 좋은 날!</span></a></h1>
+						<fieldset class="hgroup_search_field">
+							<legend>검색</legend>
+							<div class="search_field_long_cols"><input type="text" placeholder="검색어를 입력하세요" class="search_field_input"></div>
+							<div class="search_field_short_cols"><a href="#" class="btn_search_field_item"><span class="hdtext">검색</span></a></div>
+						</fieldset>
+						<div class="hgroup_util_list_wrap">
+							<ul class="hgroup_util_list">
+								<li>
+									<a href="#" class="hgroup_util">
+										<i class="ico_hgutil ico_login"></i>
+										<span class="hgroup_util_text">로그인</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="hgroup_util">
+										<i class="ico_hgutil ico_join"></i>
+										<span class="hgroup_util_text">회원가입</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="hgroup_util">
+										<i class="ico_hgutil ico_customer"></i>
+										<span class="hgroup_util_text">고객센터</span>
+									</a>
+								</li>
 							</ul>
 						</div>
-						<div class="mbmenu_row">
-							<div class="mbmenu_inwrap">
-								<ul class="mbmenu_nav_list">
-									<li name="gnb_product_info">
-										<a href="#" class="mbmenu_nav_menu">제품소개</a>
-										<div class="mbmenu_two_list_wrap">
-											<div class="mbmenu_two_menu_row">
-												<p class="mbmenu_depth_category">로그/개인정보</p>
-												<ul class="mbmenu_two_list">
-													<li name="data_log_menu01"><a href="data_logcops.html" class="mbmenu_two">LogCops</a></li>
-													<li name="data_log_menu02"><a href="data_privacycops.html" class="mbmenu_two">PrivacyCops</a></li>
-													<li name="data_log_menu03"><a href="data_it.html" class="mbmenu_two">IT내부통제</a></li>
-													<li name="data_log_menu04"><a href="data_difactory.html" class="mbmenu_two">di Factory</a></li>
-												</ul>
-											</div>
-											<div class="mbmenu_two_menu_row">
-												<p class="mbmenu_depth_category">보안취약점</p>
-												<ul class="mbmenu_two_list">
-													<li name="data_secuguard_menu01"><a href="secuguard_sse.html" class="mbmenu_two">Secuguard SSE</a></li>
-													<li name="data_secuguard_menu02"><a href="secuguard_wse.html" class="mbmenu_two">Secuguard WSE</a></li>
-													<li name="data_secuguard_menu03"><a href="secuguard_nse.html" class="mbmenu_two">Secuguard NSE</a></li>
-													<li name="data_secuguard_menu04"><a href="secuguard_uvm.html" class="mbmenu_two">Secuguard UVM</a></li>
-												</ul>
-											</div>
-										</div>
-									</li>
-									<li name="gnb_customer">
-										<a href="#" class="mbmenu_nav_menu">고객지원</a>
-										<div class="mbmenu_two_list_wrap">
-											<ul class="mbmenu_two_list type2">
-												<li name="customer_menu01"><a href="customer_dataroom.html" class="mbmenu_two">자료실</a></li>
-												<li name="customer_menu02"><a href="customer_faq.html" class="mbmenu_two">FAQ</a></li>
-												<li name="customer_menu03"><a href="customer_inquiry.html" class="mbmenu_two">제품문의</a></li>
+					</div>
+				</div>
+				<div class="hgroup_gnb_row">
+					<div class="hgroup_inner">
+						<div class="hgroup_side hg_side_left">
+							<a href="#" class="hgroup_side_totalmenu" name="pcmenu"><i class="totalmenu_line"></i><span class="side_totalmenu_text">전체메뉴</span></a>
+						</div>
+						<nav class="hgroup_nav_wrap hg_side_main">
+							<ul class="hgroup_nav_list">
+								<li><a href="#gnb_two01" class="hgroup_nav_menu">호텔 리조트</a></li>
+								<li><a href="#gnb_two02" class="hgroup_nav_menu">투어 티켓</a></li>
+								<li><a href="#gnb_two03" class="hgroup_nav_menu">항공권</a></li>
+								<li><a href="#gnb_two04" class="hgroup_nav_menu">에어텔</a></li>
+								<li><a href="#gnb_two05" class="hgroup_nav_menu">골프</a></li>
+							</ul>
+						</nav>
+						<div class="hgroup_gnb_else_wrap hg_side_right">
+							<ul class="hgroup_else_nav_list">
+								<li><a href="#" class="hgroup_else_nav_menu">마이페이지</a></li>
+								<li><a href="#" class="hgroup_else_nav_menu">예약내역</a></li>
+							</ul>
+						</div>
+					</div>
+					<!-- global_menu_layer -->
+					<div class="global_menu_layer">
+						<div class="gmenu_item active">
+							<div class="gmenu_toggle_target_row"><a href="#" class="gmenu_toggle"><i class="gmenu_toggle_ico"></i><span class="gmenu_toggle_text">해외</span></a></div>
+							<div class="gmenu_toggle_cont_row">
+								<ul class="gmenu_list">
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">태국태국태국태국태국태국태국</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">방콕</a></li>
+												<li><a href="#" class="gmenu_two">치앙마이</a></li>
 											</ul>
 										</div>
 									</li>
-									<li name="gnb_irpr">
-										<a href="#" class="mbmenu_nav_menu">IR/PR</a>
-										<div class="mbmenu_two_list_wrap">
-											<ul class="mbmenu_two_list type2">
-												<li name="irpr_menu01"><a href="ir_notice_list.html" class="mbmenu_two">공지사항</a></li>
-												<li name="irpr_menu02"><a href="ir_award.html" class="mbmenu_two">수상 및 인증</a></li>
-												<li name="irpr_menu03"><a href="ir_finance.html" class="mbmenu_two">재무정보</a></li>
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">베트남</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">하노이</a></li>
+												<li><a href="#" class="gmenu_two">다낭</a></li>
+												<li><a href="#" class="gmenu_two">나트랑</a></li>
+												<li><a href="#" class="gmenu_two">깜라인</a></li>
 											</ul>
 										</div>
 									</li>
-									<li name="gnb_company_info">
-										<a href="#" class="mbmenu_nav_menu">회사소개</a>
-										<div class="mbmenu_two_list_wrap">
-											<ul class="mbmenu_two_list type2">
-												<li name="company_menu01"><a href="info_company.html" class="mbmenu_two">회사개요</a></li>
-												<li name="company_menu02"><a href="info_greet.html" class="mbmenu_two">CEO인사말</a></li>
-												<li name="company_menu03"><a href="info_history.html" class="mbmenu_two">연혁</a></li>
-												<li name="company_menu04"><a href="info_partner.html" class="mbmenu_two">주요 고객사</a></li>
-												<li name="company_menu05"><a href="info_map.html" class="mbmenu_two">오시는길</a></li>
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">남태평양</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">방콕</a></li>
+												<li><a href="#" class="gmenu_two">치앙마이</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">말레이시아</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">방콕</a></li>
+												<li><a href="#" class="gmenu_two">치앙마이</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">남태평양</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">방콕</a></li>
+												<li><a href="#" class="gmenu_two">치앙마이</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">일본</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">방콕</a></li>
+												<li><a href="#" class="gmenu_two">치앙마이</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">필리핀</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">방콕</a></li>
+												<li><a href="#" class="gmenu_two">치앙마이</a></li>
 											</ul>
 										</div>
 									</li>
 								</ul>
 							</div>
 						</div>
-						<a href="#" class="btn_mbmenuclose"><span class="hdtext">메인메뉴 닫기</span></a>
+						<div class="gmenu_item">
+							<div class="gmenu_toggle_target_row"><a href="#" class="gmenu_toggle"><i class="gmenu_toggle_ico"></i><span class="gmenu_toggle_text">자유여행</span></a></div>
+							<div class="gmenu_toggle_cont_row">
+								<ul class="gmenu_list">
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">자유여행 01</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">서브메뉴 01</a></li>
+												<li><a href="#" class="gmenu_two">서브메뉴 02</a></li>
+												<li><a href="#" class="gmenu_two">서브메뉴 03</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">자유여행 02</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">서브메뉴 01</a></li>
+												<li><a href="#" class="gmenu_two">서브메뉴 02</a></li>
+												<li><a href="#" class="gmenu_two">서브메뉴 03</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="gmenu_item">
+							<div class="gmenu_toggle_target_row"><a href="#" class="gmenu_toggle"><i class="gmenu_toggle_ico"></i><span class="gmenu_toggle_text">제주/국내여행</span></a></div>
+							<div class="gmenu_toggle_cont_row">
+								<ul class="gmenu_list">
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">제주</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">항공+숙박+렌터카</a></li>
+												<li><a href="#" class="gmenu_two">숙박+렌터카</a></li>
+												<li><a href="#" class="gmenu_two">숙박</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">버스여행</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">당일여행</a></li>
+												<li><a href="#" class="gmenu_two">1박2일</a></li>
+												<li><a href="#" class="gmenu_two">2박3일</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">기차여행</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">당일여행</a></li>
+												<li><a href="#" class="gmenu_two">1박2일</a></li>
+												<li><a href="#" class="gmenu_two">2박3일</a></li>
+											</ul>
+										</div>
+									</li>
+									<li>
+										<div class="gmenu_one_row"><a href="#" class="gmenu_one">성여행</a></div>
+										<div class="gmenu_two_row">
+											<ul class="gmenu_two_list">
+												<li><a href="#" class="gmenu_two">울릉도</a></li>
+												<li><a href="#" class="gmenu_two">홍도/흑산도</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
-				</div>
-				<!-- // mobile -->
-			</header>
-			<div class="sv_inner">
-				<div class="sv_copy_wrap">
-					<div class="sv_copy_group">
-						<p class="sv_copy_sub">CEO MASSAGE</p>
-						<h2 class="sv_copy_main">CEO인사말</h2>
+					<!-- // global_menu_layer -->
+					<!-- gnb_twodepth_layer -->
+					<div class="gnb_twodepth_layer">
+						<!-- 20230824 변경 -->
+						<div class="gnb_two_cont" id="gnb_two01">
+							<ul class="gmenu_list">
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">호텔 리조트</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">호텔 리조트 2</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">하노이</a></li>
+											<li><a href="#" class="gmenu_two">다낭</a></li>
+											<li><a href="#" class="gmenu_two">나트랑</a></li>
+											<li><a href="#" class="gmenu_two">깜라인</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="gnb_two_cont" id="gnb_two02">
+							<ul class="gmenu_list">
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">투어 티켓 1</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">투어 티켓 2</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">하노이</a></li>
+											<li><a href="#" class="gmenu_two">다낭</a></li>
+											<li><a href="#" class="gmenu_two">나트랑</a></li>
+											<li><a href="#" class="gmenu_two">깜라인</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">투어 티켓 3</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="gnb_two_cont" id="gnb_two03">
+							<ul class="gmenu_list">
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">항공권 1</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="gnb_two_cont" id="gnb_two04">
+							<ul class="gmenu_list">
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">에어텔 1</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">에어텔 2</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">하노이</a></li>
+											<li><a href="#" class="gmenu_two">다낭</a></li>
+											<li><a href="#" class="gmenu_two">나트랑</a></li>
+											<li><a href="#" class="gmenu_two">깜라인</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">에어텔 3</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">에어텔 4</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">에어텔 5</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">에어텔 6</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">에어텔 7</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="gnb_two_cont" id="gnb_two05">
+							<ul class="gmenu_list">
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">골프 1</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">골프 2</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">하노이</a></li>
+											<li><a href="#" class="gmenu_two">다낭</a></li>
+											<li><a href="#" class="gmenu_two">나트랑</a></li>
+											<li><a href="#" class="gmenu_two">깜라인</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">골프 3</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+								<li>
+									<div class="gmenu_one_row"><a href="#" class="gmenu_one">골프 4</a></div>
+									<div class="gmenu_two_row">
+										<ul class="gmenu_two_list">
+											<li><a href="#" class="gmenu_two">방콕</a></li>
+											<li><a href="#" class="gmenu_two">치앙마이</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
 					</div>
+					<!-- // gnb_twodepth_layer -->
 				</div>
-				<div class="breadcrumb_list_wrap">
-					<ul class="breadcrumb_list">
-						<li><a href="#" class="breadcrumb_ico_link"><span class="hdtext">홈</span></a></li>
-						<li><a href="#" class="breadcrumb_link">회사소개</a></li>
-						<li><a href="#" class="breadcrumb_link">CEO인사말</a></li>
+			</div>
+			<!-- // pc -->
+			<!-- mobile -->
+			<!-- <div class="header_mobile_group">
+        <div class="header_mobile_row">
+            <div class="mobile_top_layer left">
+                <ul class="mobile_util_list">
+                    <li><a href="#" class="mobile_util_menu ico_total" name="totalmenu"><span class="hdtext">전체메뉴</span><i class="ico_mb_total_line"></i></a></li>
+                </ul>
+            </div>
+            <h1 class="mobile_toplogo"><a href="#" class="mobile_toplogo_link"><img src="./assets/images/toplogo_m.png" alt="GOOD DAY TO TRAVEL 여행하기 좋은 날!"></a></h1>
+            <div class="mobile_top_layer right">
+                <ul class="mobile_util_list">
+                    <li><a href="#" class="mobile_util_menu ico_search"><span class="hdtext">검색</span></a></li>
+                    <li><a href="#" class="mobile_util_menu ico_my"><span class="hdtext">마이페이지</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+
+			<!-- // mobile -->
+		</header>
+		<main class="middle_wrap detail_wrap">
+			내용이 들어갑니다.
+			<!-- top gallery -->
+
+			<!-- // top gallery -->
+		</main>
+		<footer class="footer_wrap">
+			<div class="footer_else_low">
+				<div class="footer_else_pixin">
+					<p class="footer_else_label">SNS 공식 채널</p>
+					<ul class="footer_sns_list">
+						<li><a href="#" class="footer_sns sns_kakao"><span class="hdtext">카카오</span></a></li>
+						<li><a href="#" class="footer_sns sns_blog2"><span class="hdtext">블로그</span></a></li>
 					</ul>
 				</div>
 			</div>
-		</div>
-		<main class="middle_wrap">
-			<div class="middle_sub_contents">
-				내용이 들어갑니다.
-			</div>
-		</main>
-		<footer class="footer_wrap">
-			<div class="footer_inner">
-				<div class="footer_logo_cols"><span class="footer_logo"><span class="hdtext">NileSOFT</span></span></div>
-				<div class="footer_info_cols">
-					<div class="footer_info_wrap">
-						<address class="footer_info_para">서울특별시 구로구 디지털로32길 30, 코오롱디지털타워빌란트1차 1004호</address>
-						<ul class="footer_info_para_list">
-							<li>
-								<p class="footer_info_para">대표자 : 송영호</p>
-							</li>
-							<li>
-								<p class="footer_info_para">사업자등록번호 : 116-81-47522</p>
-							</li>
-							<li>
-								<p class="footer_info_para">Tel : 02-783-0961</p>
-							</li>
-							<li>
-								<p class="footer_info_para">Fax : 02-783-0963</p>
-							</li>
+			<div class="footer_main_low">
+				<div class="footer_main_pixin">
+					<div class="footer_menu_list_wrap">
+						<ul class="footer_menu_list">
+							<li><a href="#" class="footer_menu">회사소개</a></li>
+							<li><a href="#" class="footer_menu">개인정보취급방침</a></li>
+							<li><a href="#" class="footer_menu">여행약관</a></li>
+							<li><a href="#" class="footer_menu">찾아오시는 길</a></li>
 						</ul>
-						<p class="footer_info_para">Email : webmaster@nilesoft.co.kr</p>
 					</div>
-					<p class="footer_copy_para">COPYRIGHT© NileSOFT Ltd. ALL RIGHTS RESERVED.</p>
-					<a href="#" class="btn_top_go"><span class="btn_top_go_text">TOP</span></a>
+					<div class="footer_main_logo_row">
+						<span class="footer_main_logo_text">(주)여행하기좋은날</span>
+					</div>
+					<div class="footer_copyitem_list_wrap">
+						<ul class="footer_copyitem_list">
+							<li><span class="footer_copyitem">주소: 서울시 광진구 군자동 464-2 리코브빌딩(구,광산빌딩) 3층</span></li>
+							<li><span class="footer_copyitem">대표: 안창현, 하승호 </span></li>
+						</ul>
+						<ul class="footer_copyitem_list">
+							<li><span class="footer_copyitem">대표번호: 02-2297-3137</span></li>
+							<li><span class="footer_copyitem">이메일: director@gdaytour.net</span></li>
+							<li><span class="footer_copyitem">팩스: 02-2246-3138</span></li>
+						</ul>
+						<ul class="footer_copyitem_list">
+							<li><span class="footer_copyitem">사업자등록번호: 626-87-01082</span></li>
+							<li><span class="footer_copyitem">통신판매업신고번호: 제 2022-서울광진-2514 호</span></li>
+							<li><span class="footer_copyitem">관광사업자 등록번호: 제 2022-000008 호</span></li>
+							<li><span class="footer_copyitem">영업보증보험: 제 100-000-2023 0068 5112 호</span></li>
+						</ul>
+					</div>
+					<p class="footer_copyright">copyright(c)(주)여행하기좋은날. All Right Reserved.</p>
 				</div>
+				<a href="#" class="btn_pagetop"><span class="hdtext">페이지 상단으로</span></a>
 			</div>
 		</footer>
 	</div>
