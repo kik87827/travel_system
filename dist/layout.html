@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./nile/css/style.css" rel="stylesheet">
+	<script src="./nile/js/jquery-3.4.1.min.js"></script>
+	<script src="./nile/js/dynamicListener.min.js"></script>
+	<script src="./nile/js/swiper.min.js"></script>
+	<script src="./nile/js/ui.js"></script>
+	<script src="./nile/js/main.js"></script>
+	<title>나일소프트</title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<div class="sub_visual_wrap" style="background-image:url(./nile/images/bg_sv_info.jpg)">
+			<header class="header_wrap">
+				<!-- <div class="bg_depth"></div> -->
+				<div class="header_inner">
+					<h1 class="toplogo">
+						<a href="#" class="toplogo_link"><span class="hdtext">NileSOFT</span></a>
+					</h1>
+					<nav class="nav_list_wrap">
+						<ul class="header_nav_list">
+							<li>
+								<a href="#" class="header_nav_menu">제품소개</a>
+								<div class="header_two_list_wrap type2">
+									<div class="header_two_inner">
+										<div class="header_two_menu_cols">
+											<p class="nav_depth_category">로그/개인정보</p>
+											<ul class="header_two_list">
+												<li name="data_log_menu01"><a href="data_logcops.html" class="header_two">LogCops</a></li>
+												<li name="data_log_menu02"><a href="data_privacycops.html" class="header_two">PrivacyCops</a></li>
+												<li name="data_log_menu03"><a href="data_it.html" class="header_two">IT내부통제</a></li>
+												<li name="data_log_menu04"><a href="data_difactory.html" class="header_two">diFactory</a></li>
+											</ul>
+										</div>
+										<div class="header_two_menu_cols">
+											<p class="nav_depth_category">보안취약점</p>
+											<ul class="header_two_list">
+												<li name="data_secuguard_menu01"><a href="secuguard_sse.html" class="header_two">Secuguard SSE</a></li>
+												<li name="data_secuguard_menu02"><a href="secuguard_wse.html" class="header_two">Secuguard WSE</a></li>
+												<li name="data_secuguard_menu03"><a href="secuguard_nse.html" class="header_two">Secuguard NSE</a></li>
+												<li name="data_secuguard_menu04"><a href="secuguard_uvm.html" class="header_two">Secuguard UVM</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="header_nav_menu">고객지원</a>
+								<div class="header_two_list_wrap">
+									<div class="header_two_inner">
+										<ul class="header_two_list">
+											<li name="customer_menu01"><a href="customer_dataroom.html" class="header_two">자료실</a></li>
+											<li name="customer_menu02"><a href="customer_faq.html" class="header_two">FAQ</a></li>
+											<li name="customer_menu03"><a href="customer_inquiry.html" class="header_two">제품문의</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="header_nav_menu">IR/PR</a>
+								<div class="header_two_list_wrap">
+									<div class="header_two_inner">
+										<ul class="header_two_list">
+											<li name="irpr_menu01"><a href="ir_notice_list.html" class="header_two">공지사항</a></li>
+											<li name="irpr_menu02"><a href="ir_award.html" class="header_two">수상 및 인증</a></li>
+											<li name="irpr_menu03"><a href="ir_finance.html" class="header_two">재무정보</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+							<li>
+								<a href="#" class="header_nav_menu">회사소개</a>
+								<div class="header_two_list_wrap">
+									<div class="header_two_inner">
+										<ul class="header_two_list">
+											<li name="company_menu01"><a href="info_company.html" class="header_two">회사개요</a></li>
+											<li name="company_menu02"><a href="info_greet.html" class="header_two">CEO인사말</a></li>
+											<li name="company_menu03"><a href="info_history.html" class="header_two">연혁</a></li>
+											<li name="company_menu04"><a href="info_partner.html" class="header_two">주요 고객사</a></li>
+											<li name="company_menu05"><a href="info_map.html" class="header_two">오시는길</a></li>
+										</ul>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</nav>
+					<div class="util_list_wrap">
+						<ul class="util_list">
+							<li><a href="#" class="util_menu"><i class="ico earth"></i><span class="util_menu_text">KOR</span></a></li>
+						</ul>
+					</div>
+				</div>
+				<a href="javascript:;" class="btn_panel_menu"><i class="btn_panel_menu_ico"></i><span class="hdtext">메인메뉴 열기</span></a>
+				<!-- mobile -->
+				<div class="mobile_mainmenu_zone" id="mobile_gnb">
+					<div class="mainmenu_dim"></div>
+					<div class="mobile_mainmenu_wrap">
+						<div class="mbutil_row">
+							<ul class="util_list">
+								<li><a href="#" class="util_menu"><i class="ico earth"></i><span class="util_menu_text">KOR</span></a></li>
+							</ul>
+						</div>
+						<div class="mbmenu_row">
+							<div class="mbmenu_inwrap">
+								<ul class="mbmenu_nav_list">
+									<li name="gnb_product_info">
+										<a href="#" class="mbmenu_nav_menu">제품소개</a>
+										<div class="mbmenu_two_list_wrap">
+											<div class="mbmenu_two_menu_row">
+												<p class="mbmenu_depth_category">로그/개인정보</p>
+												<ul class="mbmenu_two_list">
+													<li name="data_log_menu01"><a href="data_logcops.html" class="mbmenu_two">LogCops</a></li>
+													<li name="data_log_menu02"><a href="data_privacycops.html" class="mbmenu_two">PrivacyCops</a></li>
+													<li name="data_log_menu03"><a href="data_it.html" class="mbmenu_two">IT내부통제</a></li>
+													<li name="data_log_menu04"><a href="data_difactory.html" class="mbmenu_two">di Factory</a></li>
+												</ul>
+											</div>
+											<div class="mbmenu_two_menu_row">
+												<p class="mbmenu_depth_category">보안취약점</p>
+												<ul class="mbmenu_two_list">
+													<li name="data_secuguard_menu01"><a href="secuguard_sse.html" class="mbmenu_two">Secuguard SSE</a></li>
+													<li name="data_secuguard_menu02"><a href="secuguard_wse.html" class="mbmenu_two">Secuguard WSE</a></li>
+													<li name="data_secuguard_menu03"><a href="secuguard_nse.html" class="mbmenu_two">Secuguard NSE</a></li>
+													<li name="data_secuguard_menu04"><a href="secuguard_uvm.html" class="mbmenu_two">Secuguard UVM</a></li>
+												</ul>
+											</div>
+										</div>
+									</li>
+									<li name="gnb_customer">
+										<a href="#" class="mbmenu_nav_menu">고객지원</a>
+										<div class="mbmenu_two_list_wrap">
+											<ul class="mbmenu_two_list type2">
+												<li name="customer_menu01"><a href="customer_dataroom.html" class="mbmenu_two">자료실</a></li>
+												<li name="customer_menu02"><a href="customer_faq.html" class="mbmenu_two">FAQ</a></li>
+												<li name="customer_menu03"><a href="customer_inquiry.html" class="mbmenu_two">제품문의</a></li>
+											</ul>
+										</div>
+									</li>
+									<li name="gnb_irpr">
+										<a href="#" class="mbmenu_nav_menu">IR/PR</a>
+										<div class="mbmenu_two_list_wrap">
+											<ul class="mbmenu_two_list type2">
+												<li name="irpr_menu01"><a href="ir_notice_list.html" class="mbmenu_two">공지사항</a></li>
+												<li name="irpr_menu02"><a href="ir_award.html" class="mbmenu_two">수상 및 인증</a></li>
+												<li name="irpr_menu03"><a href="ir_finance.html" class="mbmenu_two">재무정보</a></li>
+											</ul>
+										</div>
+									</li>
+									<li name="gnb_company_info">
+										<a href="#" class="mbmenu_nav_menu">회사소개</a>
+										<div class="mbmenu_two_list_wrap">
+											<ul class="mbmenu_two_list type2">
+												<li name="company_menu01"><a href="info_company.html" class="mbmenu_two">회사개요</a></li>
+												<li name="company_menu02"><a href="info_greet.html" class="mbmenu_two">CEO인사말</a></li>
+												<li name="company_menu03"><a href="info_history.html" class="mbmenu_two">연혁</a></li>
+												<li name="company_menu04"><a href="info_partner.html" class="mbmenu_two">주요 고객사</a></li>
+												<li name="company_menu05"><a href="info_map.html" class="mbmenu_two">오시는길</a></li>
+											</ul>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<a href="#" class="btn_mbmenuclose"><span class="hdtext">메인메뉴 닫기</span></a>
+					</div>
+				</div>
+				<!-- // mobile -->
+			</header>
+			<div class="sv_inner">
+				<div class="sv_copy_wrap">
+					<div class="sv_copy_group">
+						<p class="sv_copy_sub">CEO MASSAGE</p>
+						<h2 class="sv_copy_main">CEO인사말</h2>
+					</div>
+				</div>
+				<div class="breadcrumb_list_wrap">
+					<ul class="breadcrumb_list">
+						<li><a href="#" class="breadcrumb_ico_link"><span class="hdtext">홈</span></a></li>
+						<li><a href="#" class="breadcrumb_link">회사소개</a></li>
+						<li><a href="#" class="breadcrumb_link">CEO인사말</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<main class="middle_wrap">
+			<div class="middle_sub_contents">
+				내용이 들어갑니다.
+			</div>
+		</main>
+		<footer class="footer_wrap">
+			<div class="footer_inner">
+				<div class="footer_logo_cols"><span class="footer_logo"><span class="hdtext">NileSOFT</span></span></div>
+				<div class="footer_info_cols">
+					<div class="footer_info_wrap">
+						<address class="footer_info_para">서울특별시 구로구 디지털로32길 30, 코오롱디지털타워빌란트1차 1004호</address>
+						<ul class="footer_info_para_list">
+							<li>
+								<p class="footer_info_para">대표자 : 송영호</p>
+							</li>
+							<li>
+								<p class="footer_info_para">사업자등록번호 : 116-81-47522</p>
+							</li>
+							<li>
+								<p class="footer_info_para">Tel : 02-783-0961</p>
+							</li>
+							<li>
+								<p class="footer_info_para">Fax : 02-783-0963</p>
+							</li>
+						</ul>
+						<p class="footer_info_para">Email : webmaster@nilesoft.co.kr</p>
+					</div>
+					<p class="footer_copy_para">COPYRIGHT© NileSOFT Ltd. ALL RIGHTS RESERVED.</p>
+					<a href="#" class="btn_top_go"><span class="btn_top_go_text">TOP</span></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
