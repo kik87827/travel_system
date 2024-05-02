@@ -7,11 +7,11 @@
 .d_mv_bottom_cols{margin:0 6px;}
 
 .d_mv_control_wrap{position:absolute;top:50%;left:0;height:0;z-index:10;width:100%;}
-.btn_d_mv_control{display:flex;width:60px;height:60px;align-items: center;justify-content: center;position:absolute;top:0;transform: translateY(-50%);}
-.btn_d_mv_control:after{display:block;content:'';width:18px;height:30px;background:url("../images/ico_allow_36.png") no-repeat 0 0/100% auto;}
+.btn_d_mv_control{display:flex;width:50px;height:50px;align-items: center;justify-content: center;position:absolute;top:0;transform: translateY(-50%);}
+.btn_d_mv_control:after{display:block;content:'';width:15px;height:15px; margin:-7px 0 0 -3px; position:absolute;top:50%;left:50%; transform: rotate(225deg); border-right:2px solid #fff; border-top:2px solid #fff;}
 .btn_d_mv_control.prev{}
 .btn_d_mv_control.next{right:0;}
-.btn_d_mv_control.next:after{transform: rotate(180deg);}
+.btn_d_mv_control.next:after{transform: rotate(45deg);margin-left:-12px;}
 
 .swiper-pagination.d_mv_paging{font-size:0;line-height:0;position:static}
 .swiper-pagination.d_mv_paging .swiper-pagination-bullet{opacity:1;width:10px;height:10px;margin:0 2px;border-radius:100%;background:#fff;}

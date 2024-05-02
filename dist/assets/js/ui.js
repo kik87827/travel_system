@@ -541,16 +541,6 @@ function detailVisualC() {
   let windowWidth = window.innerWidth;
 
   if (detail_mv_slide.length > 1) {
-    // detail_mv_obj = new Swiper(".detail_grid_main_swiper", {
-    // 	speed : 1000,
-    // 	loop : true,
-    // 	effect: "fade",
-    // 	autoplay: {
-    // 		delay: 2500,
-    // 		disableOnInteraction: false
-    // 	}
-    // });
-
     if (detail_mv_obj !== null) {
       detail_mv_obj.update();
     } else {
