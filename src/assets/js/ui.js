@@ -252,8 +252,8 @@ function headerMenu() {
 	window.addEventListener("resize",()=>{
 		if(windowWidth !== window.innerWidth){
 			if(window.innerWidth < 1024){
-				mobile_total_layer.classList.remove("active");
-				bodyDom.classList.remove("touchDis")
+				/* mobile_total_layer.classList.remove("active");
+				bodyDom.classList.remove("touchDis") */
 				gnbgmenuFunc();
 			}
 		}
@@ -509,3 +509,93 @@ function textWidthResize(target){
 		targetDom.css({"width" : Math.max.apply(null,arrayWidth)});
 	}
 }
+
+
+
+
+function detailVisualC(){
+	let detail_mv_obj = null;
+	const detail_multi_visual_wrap = document.querySelector(".detail_grid_visual_wrap");
+	const detail_mv_slide = detail_multi_visual_wrap.querySelectorAll(".swiper-slide");
+	const dgrid_thum_item = detail_multi_visual_wrap.querySelectorAll(".dgrid_thum_item");
+	let windowWidth = window.innerWidth;
+
+	if(detail_mv_slide.length>1){
+		// detail_mv_obj = new Swiper(".detail_grid_main_swiper", {
+		// 	speed : 1000,
+		// 	loop : true,
+		// 	effect: "fade",
+		// 	autoplay: {
+		// 		delay: 2500,
+		// 		disableOnInteraction: false
+		// 	}
+		// });
+
+		if(detail_mv_obj !== null){
+			detail_mv_obj.update();
+		}else{
+			if(window.innerWidth >= 1024){
+				pcFunc();
+			}else{
+				mbFunc();
+			}
+			//slideObj.update();
+
+			window.addEventListener("resize",()=>{
+				if(windowWidth !== window.innerWidth){
+					detail_mv_obj.destroy();
+					if(window.innerWidth >= 1024){
+						pcFunc();
+					}else{
+						mbFunc();
+					}
+				}
+				windowWidth = window.innerWidth;
+			});
+		}
+
+		function pcFunc(){
+			detail_mv_obj = new Swiper(".detail_grid_main_swiper", {
+				speed : 1000,
+				loop : true,
+				effect: "fade",
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false
+				}
+			});
+		}
+	
+		function mbFunc(){
+			detail_mv_obj = new Swiper(".detail_grid_main_swiper", {
+				speed : 1000, 
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false
+				},
+				pagination: {
+					clickable: true,
+					el: ".detail_grid_visual_wrap .swiper-pagination.d_mv_paging",
+				},
+				navigation: {
+					nextEl: '.detail_grid_visual_wrap .btn_d_mv_control.next',
+					prevEl: '.detail_grid_visual_wrap .btn_d_mv_control.prev',
+				}
+			});
+		}
+
+		dgrid_thum_item.forEach((item,index)=>{
+			item.addEventListener("click",(e)=>{
+				e.preventDefault();
+				if(index<3){
+					detail_mv_obj.slideToLoop(index);
+				}
+			});
+		});
+	}else{
+		detail_multi_visual_wrap.classList.add("nodata_type");
+	}
+}
+
+
+

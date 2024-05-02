@@ -16,18 +16,29 @@
     &.size2{
         max-width:636px;
     }
+    &.xsmall{max-width:300px;}
+    &.medium{max-width:1060px;}
+    &.xmedium{max-width:900px;}
+    &.xxmedium{max-width:655px;}
+    &.xxmedium2{max-width:650px;}
+    &.xxxmedium{max-width:440px;}
+    &.medium_large{max-width:600px;}
 }
 .bg_dim{display:block;width:100%;height:100%;position:fixed;top:0;left:0;z-index:0;background:#000;opacity:0;transition:.5s;
     &.no_transition{transition:0s;opacity:.6;transform:none;}
 }
-.popup_title_row{flex:0;padding:50px 120px 30px 70px; word-break: keep-all;
+
+.popup_title_row{flex:0;word-break: keep-all; text-align: center;
+    border-bottom:1px solid #c1c1c1;padding:22px 40px;margin:0 23px;text-align: center;
     & + .popup_contents_row{padding-top:0;}
 }
 .popup_title{font-size:32px;color:#333333;font-weight:700;letter-spacing: -0.05em;line-height:1.3; font-weight:600;}
-.popup_contents_row{position:relative;overflow:hidden;overflow-y:auto;flex:1;font-size:16px;color:#333333;padding:0 70px 70px;
+.popup_contents_row{position:relative;overflow:hidden;overflow-y:auto;overflow-y:overlay;flex:1;font-size:16px;color:#333333;padding:30px 23px 45px;
     &.scroll_mode{padding-right:60px;}
     & + .popup_btn_row{padding-top:0;}
 }
+
+
 
 .touchmode {
     .popup_contents_row{
@@ -60,7 +71,7 @@
     &.inline_type{flex:0;min-width:inherit;white-space: nowrap;border-radius:4px;}
     &.small{font-size:14px;line-height:1;padding:12px}
 }
-.btn_popup_close{display:inline-block;width:30px;height:30px;position:absolute;top:55px;right:70px;
+/* .btn_popup_close{display:inline-block;width:30px;height:30px;position:absolute;top:55px;right:70px;
     &:before,
     &:after{width:42px;height:2px;display:block;content:'';position:absolute;top:50%;left:50%;background:#221E1F; margin:-1px 0 0 -21px;
         transform: translateZ(0);-webkit-transform: translateZ(0);-ms-transform: translateZ(0);-moz-transform: translateZ(0);
@@ -68,6 +79,13 @@
     &:before{transform:rotate(45deg);-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);}
     &:after{transform:rotate(-45deg);-ms-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);}
     &.pos2{top:30px;right:30px;}
+}
+
+ */
+.btn_popup_close{display:block;width:30px;height:30px;background:url("../images/btn_popup_close.png") no-repeat 50% 50%/14px auto;position:absolute;top:20px;right:24px;
+
+    &.type2{top:18px;}
+    &.type3{right:15px;}
 }
 
 .popup_confirm_copy_wrap{

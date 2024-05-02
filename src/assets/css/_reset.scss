@@ -53,7 +53,9 @@ input:-webkit-autofill {
 }
 
 /* common */
-
+.pc_img{display:inline-block !important;}
+.mb_img{display:none !important;}
+.mb_item{display:none !important;}
 .touchDis{touch-action: none;overflow:hidden;position:relative;}
 .ellips{display:inline-block; white-space: nowrap; text-overflow: ellipsis;overflow:hidden;position:relative; max-width:99%;}
 legend,
@@ -64,3 +66,9 @@ i{display:flex;align-items: center;justify-content: center;font-size:0;line-heig
     img{vertical-align: middle;}
 }
 img.ico_img{max-width:100%;}
+
+@media(max-width:1023px){
+	.pc_img{display:none !important;}
+	.mb_img{display:inline-block !important;}
+    .mb_item{display:block !important;}
+}

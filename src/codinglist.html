@@ -5,8 +5,8 @@
 <meta name="format-detection" content="telephone=no" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=1400" />
-<link rel="stylesheet" href="./nile/css/style.css" />
-<script src="./nile/js/jquery-3.4.1.min.js"></script>
+<link rel="stylesheet" href="./assets/css/style.css" />
+<script src="./assets/js/jquery-3.4.1.min.js"></script>
 <title></title>
 <style type="text/css">
 *{margin:0;padding:0;font-size:14px;}
@@ -44,7 +44,7 @@ a:hover {text-decoration:underline;}
 .guidelist{padding:8px 0;}
 .guidelist li{padding:2px 10px;}
 .alignleft{text-align:left;padding-left:10px !important;}
-.depth td{background:#3246a3;color:#fff;text-align:left;font-size:20px;padding:10px 20px !important;}
+.depth td{background:#398bc4;color:#fff;text-align:left;font-size:20px;padding:10px 20px !important;}
 .depth2 td{background:#e2dbfb;color:#000;text-align:left;font-size:16px;padding:10px 20px !important;}
 .dev_notice{border-top:1px solid #000;border-bottom:1px solid #000;padding:10px;margin:30px 0;}
 </style>
@@ -66,16 +66,8 @@ a:hover {text-decoration:underline;}
 <!-- eniter wrap -->
 <div id="guide_wrap">
 	<div class="header">
-		<h1>나일소프트</h1> 
+		<h1>TRAVEL</h1> 
 		<p>End page : <span class="curr_n"></span>page / Total page : <span class="total_n"></span>page</p>
-		<br>
-		<p>진행율 : <span class="per"></span></p>
-		<br>
-		<p>깃주소 : <a href="https://github.com/kik87827/nilesoft" target="_blank">https://github.com/kik87827/nilesoft</a></p>
-		<br>
-		<p>깃주소 소스 다운로드 : <a href="https://github.com/kik87827/nilesoft/archive/refs/heads/main.zip" target="_blank">https://github.com/kik87827/nilesoft/archive/refs/heads/main.zip</a></p>
-		<br>
-		<p>소스내 src는 퍼블 컴파일 전 인크로드 환경이고 dist는 컴파일 후 전체 렌더된 환경이니 소스는 dist를 보시면 됩니다.</p>
 	</div>
    <div class="list_w">
 		<table class="codinglist">
@@ -103,210 +95,31 @@ a:hover {text-decoration:underline;}
 					<td class="no"></td>
 					<td class="link"><a href="layout.html" target="_blank">레이아웃 샘플</a></td>
 					<td class="td_url"></td>
-					<td class="work end"></td>
+					<td class="work ing"></td>
 					<td class="bgo"></td>
 				</tr>
 				<tr>
 					<td class="no"></td>
 					<td class="link"><a href="popup.html" target="_blank">팝업 샘플</a></td>
 					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<!-- <tr>
-					<td class="no"></td>
-					<td class="link"><a href="modal.html" target="_blank">모달 샘플</a></td>
-					<td class="td_url"></td>
-					<td class="work"></td>
-					<td class="bgo"></td>
-				</tr> -->
-				<tr class="depth">
-					<td colspan="5">메인</td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="main.html" target="_blank">메인</a></td>
-					<td class="td_url"></td>
-					<td class="work"></td>
+					<td class="work ing"></td>
 					<td class="bgo"></td>
 				</tr>
 				<tr class="depth">
-					<td colspan="5">제품소개</td>
-				</tr>
-				<tr class="depth2">
-					<td colspan="5">로그/개인정보</td>
+					<td colspan="5">상세</td>
 				</tr>
 				<tr>
 					<td class="no"></td>
-					<td class="link"><a href="data_logcops.html" target="_blank">LogCops</a></td>
+					<td class="link"><a href="detail.html" target="_blank">상세</a></td>
 					<td class="td_url"></td>
 					<td class="work"></td>
 					<td class="bgo"></td>
 				</tr>
 				<tr>
 					<td class="no"></td>
-					<td class="link"><a href="data_privacycops.html" target="_blank">PrivacyCops</a></td>
+					<td class="link"><a href="detail.html?visual_popup" target="_blank">상세 - 비쥬얼 팝업</a></td>
 					<td class="td_url"></td>
 					<td class="work"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="data_it.html" target="_blank">IT내부통제</a></td>
-					<td class="td_url"></td>
-					<td class="work"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="data_difactory.html" target="_blank">diFactory</a></td>
-					<td class="td_url"></td>
-					<td class="work"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr class="depth2">
-					<td colspan="5">보안취약점 관리</td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="secuguard_sse.html" target="_blank">Secuguard SSE</a></td>
-					<td class="td_url"></td>
-					<td class="work"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="secuguard_wse.html" target="_blank">Secuguard WSE</a></td>
-					<td class="td_url"></td>
-					<td class="work"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="secuguard_nse.html" target="_blank">Secuguard NSE</a></td>
-					<td class="td_url"></td>
-					<td class="work"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="secuguard_uvm.html" target="_blank">Secuguard UVM</a></td>
-					<td class="td_url"></td>
-					<td class="work"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr class="depth">
-					<td colspan="5">고객지원</td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="customer_dataroom.html" target="_blank">자료실</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="customer_faq.html" target="_blank">FAQ</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="customer_inquiry.html" target="_blank">제품문의</a></td>
-					<td class="td_url"></td>
-					<td class="work"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="customer_inquiry.html?popup" target="_blank">제품문의(레이어팝업)</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr class="depth">
-					<td colspan="5">IR/PR</td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="ir_notice_list.html" target="_blank">공지사항_리스트</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="ir_notice_view.html" target="_blank">공지사항_읽기</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="ir_award.html" target="_blank">수상 및 인증</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="ir_award.html" target="_blank">수상 및 인증(확대)</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo">클릭시 확인가능</td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="ir_finance_login.html" target="_blank">재무정보 - 주주로그인</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="ir_finance.html" target="_blank">재무정보 - 리스트</a></td>
-					<td class="td_url"></td>
-					<td class="work"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr class="depth">
-					<td colspan="5">회사소개</td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="info_company.html" target="_blank">회사개요</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="info_greet.html" target="_blank">CEO인사말</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="info_history.html" target="_blank">연혁</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="info_partner.html" target="_blank">주요 고객사</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="info_map.html" target="_blank">오시는 길</a></td>
-					<td class="td_url"></td>
-					<td class="work end"></td>
 					<td class="bgo"></td>
 				</tr>
 			</tbody>
