@@ -541,19 +541,19 @@
 								</li>
 								<li class="swiper-slide">
 									<a href="#" class="mb_total_quick_menu">
-										<i class="ico_mb_total_quick"><img src="./images/ico_mb_menu_quick_02.png" alt=""></i>
+										<i class="ico_mb_total_quick"><img src="./assets/images/ico_mb_menu_quick_02.png" alt=""></i>
 										<div class="mb_total_quick_menu_text">1:1 문의</div>
 									</a>
 								</li>
 								<li class="swiper-slide">
 									<a href="#" class="mb_total_quick_menu">
-										<i class="ico_mb_total_quick"><img src="./images/ico_mb_menu_quick_03.png" alt=""></i>
+										<i class="ico_mb_total_quick"><img src="./assets/images/ico_mb_menu_quick_03.png" alt=""></i>
 										<div class="mb_total_quick_menu_text">견적문의</div>
 									</a>
 								</li>
 								<li class="swiper-slide">
 									<a href="#" class="mb_total_quick_menu">
-										<i class="ico_mb_total_quick"><img src="./images/ico_mb_menu_quick_04.png" alt=""></i>
+										<i class="ico_mb_total_quick"><img src="./assets/images/ico_mb_menu_quick_04.png" alt=""></i>
 										<div class="mb_total_quick_menu_text">기획전/이벤트</div>
 									</a>
 								</li>
@@ -1250,18 +1250,23 @@
 											<div class="dcc_other_fxcols"><a href="#" class="btn_dcc_ico ico_like"><span class="hdtext">좋아요</span></a></div>
 											<div class="dcc_other_fxcols"><a href="#" class="btn_dcc_ico ico_share"><span class="hdtext">공유하기</span></a></div>
 										</div>
-										<div class="dcalcul_other_elseitem_g">
-											<ul class="dcc_other_elseitem_list">
-												<li><a href="#" class="dcc_other_elseitem"><span class="dcc_other_elseitem_text">카드/할인 혜택</span></a></li>
-											</ul>
-										</div>
 									</div>
 									<div class="dcalcul_banner_group">
 										<div class="dbanner_key_row">
 											<p class="dbanner_key">최대 7% 할인</p>
+											<div class="dbanner_key_else">
+												<a href="#" class="btn_behavior"><span class="btn_behavior_text">쿠폰받기</span><i class="ico down"></i></a>
+											</div>
 										</div>
-										<div class="dbanner_value_row">
-
+										<div class="dbanner_value_row swiper-small-card-wrap">
+											<div class="swiper-container swiper-small-card">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide"><a href="#" class="btn_small_card"><img src="./assets/images/img_card_01.jpg" alt=""></a></div>
+													<div class="swiper-slide"><a href="#" class="btn_small_card"><img src="./assets/images/img_card_02.jpg" alt=""></a></div>
+													<div class="swiper-slide"><a href="#" class="btn_small_card"><img src="./assets/images/img_card_03.jpg" alt=""></a></div>
+												</div>
+											</div>
+											<div class="swiper-pagination dot-skin2"></div>
 										</div>
 									</div>
 								</div>
@@ -1323,7 +1328,6 @@
 			});
 
 			// 상세 비쥬얼 슬라이더
-
 			let photo_mv_obj = null;
 
 			function photoSwiperFunc() {
@@ -1367,6 +1371,29 @@
 					});
 				});
 			}
+
+			// 우측 배너 스와이프
+			let smallCardObj = new Swiper(".swiper-small-card-wrap .swiper-small-card", {
+				speed: 1000,
+				loop: true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false
+				},
+				pagination: {
+					el: ".swiper-small-card-wrap .swiper-pagination",
+					clickable: true,
+				},
+			});
+
+			// 좋아요
+			const likeBtn = document.querySelectorAll(".ico_like");
+			likeBtn.forEach((item) => {
+				item.addEventListener("click", (e) => {
+					e.preventDefault();
+					e.currentTarget.classList.toggle("active");
+				});
+			})
 
 			// 퍼블확인용
 			let url = window.location.href.split('?')[1];

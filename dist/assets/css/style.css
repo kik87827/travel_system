@@ -4670,6 +4670,7 @@ button.swiper-pagination-bullet {
 .detail_calculation_zone {
   flex: 0 0 357px;
   position: relative;
+  width: 357px;
 }
 
 .detail_calculation_wrap.fixed {
@@ -4759,8 +4760,10 @@ button.swiper-pagination-bullet {
 .pro_keyword {
   display: inline-block;
   color: #2b8bf2;
+  font-weight: 500;
+  line-height: 1;
   border-radius: 4px;
-  padding: 5px 10px;
+  padding: 5px 6px;
   background: #eff5fc;
 }
 
@@ -4962,6 +4965,354 @@ button.swiper-pagination-bullet {
 .detail_gate_quick_text {
   font-size: 15px;
   color: #333333;
+}
+
+.dcalcul_box {
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+  margin: 0 0 10px 0;
+}
+.dcalcul_box.dprops_box {
+  padding: 15px 20px;
+}
+.dcalcul_box.dcard_box {
+  padding: 15px 20px;
+}
+
+.dcalcul_flex_row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0;
+  line-height: 0;
+}
+
+.btn_dcalcul_box {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333333;
+  gap: 8px;
+}
+.btn_dcalcul_box:before {
+  display: block;
+  content: "";
+  width: 26px;
+  height: 26px;
+  background: url("../images/ico_calendar.png") no-repeat 0 0/100% auto;
+}
+
+.dcalcul_value {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1;
+}
+
+.dcart_keyword_row {
+  margin-bottom: 2px;
+}
+.dcart_main_row {
+  display: flex;
+  align-items: center;
+}
+
+.dcart_main_liquid {
+  flex: 1;
+  min-width: 0;
+}
+
+.dcart_primary {
+  font-size: 17px;
+  font-weight: 500;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  color: #000000;
+}
+
+.dcart_secondary {
+  margin-top: 0;
+}
+
+.price_each_obj {
+  display: flex;
+  align-items: center;
+}
+
+.price_each_key {
+  font-size: 17px;
+  color: #1b1b1b;
+  font-weight: 500;
+}
+
+.price_each_unit {
+  font-size: 15px;
+  color: #1b1b1b;
+}
+
+.dcart_main_fixed {
+  flex: 0;
+  white-space: nowrap;
+}
+
+.btn_action_box {
+  display: inline-flex;
+  padding: 5px 15px 6px;
+  min-height: 30px;
+  align-items: center;
+  box-sizing: border-box;
+  line-height: 1;
+  border: 1px solid #e4e4e4;
+  border-radius: 100px;
+  font-size: 14px;
+  color: #2b8bf2;
+  line-height: 1;
+}
+.btn_action_box.primary {
+  background: #2b8bf2;
+  border-color: #2b8bf2;
+  color: #fff;
+}
+
+.dcart_sub_row {
+  margin-top: 20px;
+  background: #f7f9fb;
+  border-radius: 10px;
+  padding: 15px 20px;
+}
+
+.dcart_sub_copy {
+  font-size: 13px;
+  color: #6d6c6c;
+}
+
+.dcart_sub_btn_row {
+  margin-top: 7px;
+}
+
+.btn_ico_link {
+  display: inline-block;
+  white-space: nowrap;
+  color: #4e4e4e;
+  font-size: 13px;
+  position: relative;
+  padding-right: 12px;
+}
+.btn_ico_link:after {
+  display: inline-block;
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-right: 1px solid #4e4e4e;
+  border-bottom: 1px solid #4e4e4e;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: rotate(-45deg) translateY(-50%);
+  margin-top: -1px;
+}
+
+.dcalcul_other_group {
+  margin-top: 30px;
+}
+
+.dcalcul_other_label {
+  font-size: 14px;
+  color: #4e4e4e;
+  line-height: 1;
+  margin-bottom: 15px;
+  text-align: right;
+}
+
+.dcc_other_fxbox {
+  display: flex;
+  border: 1px solid #dcdcdc;
+}
+
+.dcc_other_fxcols {
+  border-right: 1px solid #dcdcdc;
+  flex: 0 0 57px;
+  width: 57px;
+}
+
+.dcc_other_fxcols:last-of-type {
+  border-right: 0;
+}
+
+.dcc_other_fxcols.dcc_long {
+  flex: 1;
+  min-width: 0;
+}
+
+.btn_dcc_obox {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dcc_obox_text {
+  font-size: 14px;
+  color: #5f5f5f;
+  line-height: 1;
+}
+
+.btn_dcc_obox:hover .dcc_obox_text {
+  color: #333;
+}
+
+.btn_dcc_ico {
+  height: 38px;
+  width: 57px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn_dcc_ico:after {
+  opacity: 0.5;
+  display: block;
+  content: "";
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 0 0;
+}
+
+.btn_dcc_ico.ico_print:after {
+  background-image: url("../images/ico_print.png");
+  width: 21px;
+  height: 21px;
+}
+
+.btn_dcc_ico.ico_like:after {
+  background-image: url("../images/ico_like_46x42.png");
+  width: 23px;
+  height: 21px;
+}
+
+.btn_dcc_ico.ico_share:after {
+  background-image: url("../images/ico_share_43x42.png");
+  width: 21.5px;
+  height: 21px;
+}
+
+.btn_dcc_ico.ico_like.active:after {
+  background-position: 0 100%;
+  opacity: 1;
+}
+
+.btn_dcc_ico:hover:after {
+  opacity: 0.7;
+}
+
+.dcalcul_other_elseitem_g {
+  margin-top: 15px;
+}
+
+.dcc_other_elseitem_list {
+  text-align: right;
+}
+
+.dcc_other_elseitem_list > li {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dcc_other_elseitem {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dcc_other_elseitem:before {
+  display: block;
+  content: "";
+  width: 22px;
+  height: 18px;
+  background: url("../images/ico_card_22_2.png") no-repeat 0 0/100% auto;
+}
+
+.dcc_other_elseitem_text {
+  font-size: 14px;
+  color: #4e4e4e;
+  line-height: 1;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+}
+
+.dcalcul_banner_group {
+  border: 1px solid #d7d7d7;
+  padding: 15px 25px;
+  border-radius: 8px;
+  margin: 30px 0 10px 0;
+}
+
+.dbanner_key_row {
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+}
+
+.dbanner_key {
+  font-size: 16px;
+  color: #000000;
+}
+
+.btn_behavior {
+  display: inline-flex;
+  background: #2b8bf2;
+  border-radius: 5px;
+  padding: 8px 10px;
+  gap: 5px;
+}
+.btn_behavior .ico {
+  display: inline-block;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+.btn_behavior .ico.down {
+  background-image: url("../images/ico_down_14.png");
+  width: 14px;
+  height: 13px;
+}
+
+.btn_behavior_text {
+  color: #fff;
+  font-size: 13px;
+  line-height: 1;
+  display: inline-block;
+}
+
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.btn_small_card img {
+  vertical-align: top;
+  width: 100%;
+}
+
+.swiper-pagination.dot-skin2 {
+  position: static;
+  text-align: center;
+  margin-top: 10px;
+}
+.swiper-pagination.dot-skin2 .swiper-pagination-bullet {
+  margin: 0 2px;
+  background: #ababab;
+  opacity: 1;
+}
+.swiper-pagination.dot-skin2 .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 30px;
+  border-radius: 100px;
+  background: #535353;
 }
 
 .guide_contents_item {
