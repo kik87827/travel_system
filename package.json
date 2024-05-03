@@ -26,5 +26,13 @@
     "jshint": "^2.13.5",
     "sass": "^1.54.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kik87827/travel_system.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kik87827/travel_system/issues"
+  },
+  "homepage": "https://github.com/kik87827/travel_system#readme",
   "description": ""
 }
