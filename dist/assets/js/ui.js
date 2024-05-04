@@ -923,3 +923,43 @@ function stickyPanel() {
 
   }
 }
+
+
+function mobileBottomLayer() {
+  const footer_wrap = document.querySelector(".footer_wrap");
+  const mb_bottom_layer = document.querySelector(".mb_bottom_layer");
+  const middle_wrap = document.querySelector(".middle_wrap");
+  const domHtml = document.querySelector("html");
+  let btn_mbb_toggle = null;
+  let mb_bottom_content = null;
+  if (!!mb_bottom_layer) {
+    btn_mbb_toggle = mb_bottom_layer.querySelector(".btn_mbb_toggle");
+    mb_bottom_content = mb_bottom_layer.querySelector(".mb_bottom_content");
+  }
+  let windowWid = window.innerWidth;
+
+  if (!mb_bottom_layer) {
+    return;
+  }
+  action();
+  window.addEventListener("resize", () => {
+    if (windowWid !== window.innerWidth) {
+      action();
+    }
+    windowWid = window.innerWidth;
+  });
+  btn_mbb_toggle.addEventListener("click", (e) => {
+    e.preventDefault();
+    btn_mbb_toggle.classList.toggle("active");
+    mb_bottom_content.classList.toggle("active");
+    domHtml.classList.toggle("touchDis");
+  });
+
+  function action() {
+    if (window.innerWidth < 1024) {
+      footer_wrap.style.paddingBottom = mb_bottom_layer.getBoundingClientRect().height + 40 + "px";
+    } else {
+      footer_wrap.style.paddingBottom = "0px";
+    }
+  }
+}
