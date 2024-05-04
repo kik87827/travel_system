@@ -411,13 +411,13 @@ function layoutCommon() {
   const htmlDom = document.querySelector("html");
   let scrollend = bodyDom.scrollHeight - window.innerHeight;
 
-  minHeightFunc();
+  //minHeightFunc();
   btnTop();
 
   let windowWidth = window.innerWidth;
   window.addEventListener("resize", () => {
     if (window.innerWidth !== windowWidth) {
-      minHeightFunc();
+      //minHeightFunc();
       footer_wrap_height = !!footer_wrap ? footer_wrap.getBoundingClientRect().height : 0;
     }
     windowWidth = window.innerWidth;
@@ -428,13 +428,13 @@ function layoutCommon() {
     scrollFloating();
   });
 
-  function minHeightFunc() {
-    if (!!middle_wrap) {
-      header_wrap_height = !!header_wrap ? header_wrap.getBoundingClientRect().height : 0;
-      footer_wrap_height = !!footer_wrap ? footer_wrap.getBoundingClientRect().height : 0;
-      middle_wrap.style.minHeight = 'calc(100vh - ' + (footer_wrap_height + header_wrap_height) + 'px)';
-    }
-  }
+  /* function minHeightFunc(){
+  	if(!!middle_wrap){
+  		header_wrap_height = !!header_wrap ? header_wrap.getBoundingClientRect().height : 0;
+  		footer_wrap_height = !!footer_wrap ? footer_wrap.getBoundingClientRect().height : 0;
+  		middle_wrap.style.minHeight = 'calc(100vh - '+(footer_wrap_height+header_wrap_height) +'px)';
+  	}
+  } */
 
   function btnTop() {
     let btn_gotop = document.querySelector(".btn_pagetop");
@@ -731,8 +731,6 @@ function stickyTab() {
         thisScrollGo = thisScrollMbPos;
       }
 
-
-      //activeTab(thisTarget);
       if (!!thisScrollPos) {
         window.scrollTo({
           top: thisScrollGo,
@@ -742,7 +740,6 @@ function stickyTab() {
       }
       btnClickIs = true;
       activeTab(thisTarget);
-      activeSlideTo();
     });
   });
 
@@ -813,17 +810,16 @@ function stickyTab() {
     stickyTab.forEach((item, index) => {
       if (getPosArrayValue[index] <= window.scrollY) {
         activeTab(item);
-        activeSlideTo();
       }
     });
   }
 
   function activeSlideTo() {
     stickyTab.forEach((item, index) => {
-      var activeIndex = 0;
       if (detail_anctab_obj !== null && window.innerWidth < 1024) {
-        detail_anctab_obj.slideTo(index);
-        activeIndex = index;
+        if (item.classList.contains("active")) {
+          detail_anctab_obj.slideTo(index);
+        }
       }
     });
   }
@@ -844,6 +840,7 @@ function stickyTab() {
       activeItem.classList.remove("active");
     }
     target.classList.add("active");
+    activeSlideTo();
     activeItem = target;
   }
 }
