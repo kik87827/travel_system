@@ -5785,6 +5785,102 @@ button.swiper-pagination-bullet {
   right: 30px;
 }
 
+.card_obj_group {
+  margin-top: 20px;
+}
+
+.card_obj_list > li {
+  margin-bottom: 20px;
+}
+.card_obj_list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.card_obj_item {
+  display: flex;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card_obj_liquid_cols {
+  flex: 1;
+  padding: 25px;
+  border-right: 1px solid #e6e6e6;
+  position: relative;
+}
+.card_obj_liquid_cols:after {
+  display: block;
+  content: "";
+  width: 23px;
+  height: 23px;
+  border-radius: 100%;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  top: 50%;
+  right: -11px;
+  transform: translateY(-50%);
+  background: #fff;
+  box-sizing: border-box;
+}
+.card_obj_liquid_cols .pro_keyword_list {
+  margin-bottom: 5px;
+}
+
+.card_obj_main {
+  font-size: 19px;
+  color: #000000;
+  font-weight: 500;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
+.card_obj_summary {
+  margin-top: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 17px 20px;
+}
+.card_obj_summary .summary_copy {
+  font-size: 13px;
+  color: #6d6c6c;
+}
+
+.card_obj_fixed_cols {
+  flex: 0 0 165px;
+  position: relative;
+  background: #fff;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.price_obj {
+  display: flex;
+  color: #1b1b1b;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.price_main {
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.price_unit {
+  font-size: 16px;
+}
+
 @media (max-width: 1023px) {
   /* 다른출발일 보기 */
   .system_calendar_zone {
@@ -5851,6 +5947,45 @@ button.swiper-pagination-bullet {
   }
   .btn_system_control.next {
     right: 0;
+  }
+  .card_obj_group {
+    margin-top: 15px;
+  }
+  .card_obj_list > li {
+    margin-bottom: 15px;
+  }
+  .card_obj_liquid_cols {
+    padding: 15px 20px 15px 15px;
+  }
+  .card_obj_liquid_cols:after {
+    width: 18px;
+    height: 18px;
+    right: -10px;
+  }
+  .card_obj_main {
+    font-size: 15px;
+  }
+  .card_obj_summary {
+    padding: 10px 10px;
+    display: block;
+  }
+  .card_obj_summary .summary_copy {
+    font-size: 13px;
+  }
+  .card_obj_summary .summary_copy + .btn_ico_link {
+    margin-top: 10px;
+  }
+  .card_obj_fixed_cols {
+    flex: 0 0 60px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 5px;
+  }
+  .price_main {
+    font-size: 16px;
+  }
+  .price_unit {
+    font-size: 13px;
   }
 }
 .guide_contents_item {
