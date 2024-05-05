@@ -959,6 +959,7 @@ function mobileBottomLayer() {
     if (window.innerWidth < 1024) {
       footer_wrap.style.paddingBottom = mb_bottom_layer.getBoundingClientRect().height + 40 + "px";
     } else {
+      domHtml.classList.remove("touchDis");
       footer_wrap.style.paddingBottom = "0px";
     }
   }
