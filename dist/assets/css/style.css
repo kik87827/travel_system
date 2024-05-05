@@ -4727,8 +4727,9 @@ button.swiper-pagination-bullet {
 }
 
 .tabc_item {
-  padding: 40px 10px;
+  padding: 40px 0;
   border-bottom: 1px solid #e7e7e7;
+  position: relative;
 }
 .tabc_item:last-of-type {
   border-bottom: 0;
@@ -4770,6 +4771,12 @@ button.swiper-pagination-bullet {
   }
   .detail_calculation_wrap.fixed .detail_calculation_inner_wrap {
     margin: 0 30px;
+  }
+  .tab_cont_title {
+    font-size: 18px;
+  }
+  .tab_cont_content_row {
+    padding-top: 20px;
   }
 }
 @media (max-width: 1023px) {
@@ -5652,6 +5659,198 @@ button.swiper-pagination-bullet {
   .btn_sns_share {
     width: 50px;
     height: 50px;
+  }
+}
+.system_calendar_zone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+  padding: 35px 30px 20px;
+  position: relative;
+}
+
+.system_calendar_group {
+  flex: 1;
+  min-width: 0;
+}
+
+.system_calendar_month_row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.system_calendar_month {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1;
+  display: inline-block;
+  letter-spacing: -0.25px;
+}
+
+.system_calendar_table_wrap {
+  margin-top: 20px;
+}
+
+.system_calendar_table {
+  width: 100%;
+}
+.system_calendar_table tbody td {
+  height: 60px;
+}
+.system_calendar_table .sun,
+.system_calendar_table .sun .system_calendar_day {
+  color: #f84242;
+}
+.system_calendar_table .sat,
+.system_calendar_table .sat .system_calendar_day {
+  color: #176bdd;
+}
+
+.system_calendar_tditem {
+  width: 100%;
+  max-width: 60px;
+  margin: 0 auto;
+  height: 60px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.system_calendar_tditem:disabled {
+  opacity: 0.4;
+}
+.system_calendar_tditem.active {
+  background: #333333;
+  border-radius: 8px;
+}
+.system_calendar_tditem.active * {
+  color: #fff;
+}
+
+.system_calendar_day {
+  font-size: 13px;
+  color: #333333;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.system_calendar_value {
+  font-size: 13px;
+  color: #5f5f5f;
+  margin-top: 0;
+}
+
+.system_calendar_value.type2 {
+  color: #176bdd;
+}
+
+.system_calendar_thtext {
+  font-size: 12px;
+  color: #333;
+}
+
+.btn_system_control {
+  display: block;
+  width: 51px;
+  height: 20px;
+  position: absolute;
+  top: 35px;
+}
+.btn_system_control:after {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid #1e1e1e;
+  border-bottom: 1px solid #1e1e1e;
+  position: absolute;
+  top: 4px;
+  left: 50%;
+  margin-left: -8px;
+  transform: rotate(-45deg);
+}
+.btn_system_control.prev {
+  left: 30px;
+}
+.btn_system_control.prev:after {
+  margin-left: -3px;
+  transform: rotate(-225deg);
+}
+.btn_system_control.next {
+  right: 30px;
+}
+
+@media (max-width: 1023px) {
+  /* 다른출발일 보기 */
+  .system_calendar_zone {
+    padding: 20px 15px;
+    display: block;
+  }
+  .system_calendar_group {
+    margin: 0 0 15px 0;
+  }
+  .system_calendar_group:last-of-type {
+    margin-bottom: 0;
+  }
+  .system_calendar_month {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .system_calendar_table_wrap {
+    margin-top: 10px;
+  }
+  .system_calendar_table {
+    width: 100%;
+  }
+  .system_calendar_table tbody td {
+    height: 40px;
+  }
+  .system_calendar_tditem {
+    max-width: 40px;
+    height: 40px;
+  }
+  .system_calendar_tditem.active {
+    border-radius: 5px;
+  }
+  .system_calendar_day {
+    font-size: 14px;
+  }
+  .system_calendar_value {
+    font-size: 11px;
+  }
+  .system_calendar_thtext {
+    font-size: 14px;
+  }
+  .btn_system_control {
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: -40px;
+  }
+  .btn_system_control:after {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-right: 1px solid #1e1e1e;
+    border-bottom: 1px solid #1e1e1e;
+    position: absolute;
+    top: 4px;
+    left: 50%;
+    margin-left: -8px;
+    transform: rotate(-45deg);
+  }
+  .btn_system_control.prev {
+    right: 30px;
+    left: auto;
+  }
+  .btn_system_control.next {
+    right: 0;
   }
 }
 .guide_contents_item {
