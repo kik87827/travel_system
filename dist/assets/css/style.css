@@ -5582,6 +5582,19 @@ button.swiper-pagination-bullet {
   content: "";
   height: 20px;
 }
+.mb_bottom_content .dcalcul_box_group {
+  padding: 0 20px;
+}
+.mb_bottom_content .btn_dcalcul_box {
+  font-size: 14px;
+}
+.mb_bottom_content .btn_dcalcul_box:before {
+  width: 20px;
+  height: 20px;
+}
+.mb_bottom_content .dcalcul_value {
+  font-size: 14px;
+}
 
 .btn_mbquad_group_wrap {
   height: 50px;
