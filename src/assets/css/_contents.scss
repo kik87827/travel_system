@@ -173,12 +173,12 @@
     .detail_contents_zone{padding:0 20px;}
     .sticky_tabs_inner_wrap{
         &.fixed{
-            top:55px;
+            top:60px;
             .sticky_tabs_inner{margin:0 0;}
             .sticky_tabs_swiper_wrap{margin:0;}
         }
         .sticky_tabs_inner{padding-top:0;}
-        .sticky_tab{padding:10px 10px 12px; white-space: nowrap; box-sizing: border-box;width:auto;}
+        .sticky_tab{padding:14px 10px 15px; white-space: nowrap; box-sizing: border-box;width:auto;height:auto;}
     }
     .sticky_tab_text{font-size:14px;}
 }
