@@ -1088,7 +1088,7 @@ input.search_field_input::input-placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 54px;
+  height: 60px;
 }
 .header_mobile_row .pos_left.mobile_util_menu {
   position: absolute;
@@ -4227,11 +4227,13 @@ button.swiper-pagination-bullet {
 /* swiper 공통 */
 .d_mv_bottom_control_zone {
   position: absolute;
-  bottom: 12px;
+  bottom: 15px;
   left: 0;
   width: 100%;
   z-index: 10;
-  text-align: center;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
 
 .d_mv_bottom_control_wrap {
@@ -4241,12 +4243,12 @@ button.swiper-pagination-bullet {
 }
 
 .d_mv_bottom_in_control {
-  display: inline-flex;
+  display: inline-block;
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.3);
   border-radius: 100px;
-  padding: 8px 25px;
+  padding: 5px 15px;
 }
 
 .d_mv_bottom_cols {
@@ -4297,23 +4299,9 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-pagination.d_mv_paging {
-  font-size: 0;
-  line-height: 0;
   position: static;
-}
-
-.swiper-pagination.d_mv_paging .swiper-pagination-bullet {
-  opacity: 1;
-  width: 10px;
-  height: 10px;
-  margin: 0 2px;
-  border-radius: 100%;
-  background: #fff;
-}
-
-.swiper-pagination.d_mv_paging .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  opacity: 1;
-  background: #000000;
+  color: #fff;
+  font-size: 11px;
 }
 
 .d_mv_swiper_auto_control_list {
@@ -4376,7 +4364,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1023px) {
   .d_mv_bottom_in_control {
-    padding: 5px 15px;
+    padding: 3px 15px;
   }
   .btn_d_mv_stop, .btn_d_mv_play {
     width: 20px;
@@ -4584,7 +4572,7 @@ button.swiper-pagination-bullet {
 /* detail- content */
 .detail_contents_global_zone {
   display: flex;
-  gap: 24px;
+  gap: 40px;
   margin-top: 36px;
 }
 
@@ -4766,7 +4754,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1260px) {
   .detail_contents_global_zone {
-    margin-top: 20px;
+    margin-top: 12px;
   }
   .sticky_tabs_container_zone {
     margin: 0 -20px;

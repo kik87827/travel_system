@@ -181,7 +181,7 @@ input.search_field_input::input-placeholder{color:#999999;font-family: 'Noto San
 
 .mb_total_top_center{position:absolute;top:0;left:50%;height:100%;transform: translateX(-50%);display:flex;justify-content: center;align-items: center;}
 
-.header_mobile_row{display:flex;align-items: center;justify-content: space-between;height: 54px;
+.header_mobile_row{display:flex;align-items: center;justify-content: space-between;height: 60px;
     .pos_left.mobile_util_menu{position:absolute;top:17px;left:14px;}
     .pos_left.mobile_util_menu:after{display:block;content:'';opacity: .4;position:absolute;top:50%;left:50%;width:54px;height:54px;transform: translate(-50%,-50%);}
     .pos_right.mobile_util_menu{position:absolute;top:0;right:0;width:54px;height:54px;}

@@ -584,8 +584,8 @@ function detailVisualC() {
           disableOnInteraction: false
         },
         pagination: {
-          clickable: true,
           el: ".detail_grid_visual_wrap .swiper-pagination.d_mv_paging",
+          type: "fraction",
         },
         navigation: {
           nextEl: '.detail_grid_visual_wrap .btn_d_mv_control.next',
