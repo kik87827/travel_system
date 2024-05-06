@@ -456,8 +456,8 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 
 .toplogo_link {
   display: inline-block;
-  width: 211px;
-  height: 83px;
+  width: 162px;
+  height: 40px;
   background: url("../images/toplogo.png") no-repeat 0 0/100% auto;
 }
 
@@ -1131,7 +1131,7 @@ input.search_field_input::input-placeholder {
 }
 
 .mobile_toplogo_link img {
-  height: 33px;
+  height: 30px;
 }
 
 .mobile_topelse_wrap {
@@ -5443,33 +5443,46 @@ button.swiper-pagination-bullet {
   .detail_product_caption_row .pro_number_list {
     display: none;
   }
+  .detail_product_highlight_row {
+    margin-top: 20px;
+  }
+  .detail_product_highlight_row .arrange_item_list {
+    flex: 0;
+    white-space: nowrap;
+  }
+  .detail_product_highlight_row .price_item_wrap {
+    flex: 1;
+  }
+  .price_sub_list {
+    margin-bottom: 5px;
+  }
   .detail_product_caption_row {
     margin-bottom: 7px;
   }
   .detail_product_primary {
-    font-size: 19px;
+    font-size: 22px;
   }
   .detail_product_subcopy {
-    font-size: 10px;
+    font-size: 13px;
   }
   .arrange_text {
-    font-size: 12px;
+    font-size: 13px;
   }
   .arrange_item_list {
     gap: 10px;
   }
   .before_price,
 .price_key {
-    font-size: 10px;
-  }
-  .price_value_main {
-    font-size: 20px;
-  }
-  .price_value_unit {
     font-size: 13px;
   }
+  .price_value_main {
+    font-size: 24px;
+  }
+  .price_value_unit {
+    font-size: 14px;
+  }
   .price_subcopy {
-    font-size: 10px;
+    font-size: 13px;
   }
   .arrange_item {
     padding-right: 10px;
@@ -5977,7 +5990,7 @@ button.swiper-pagination-bullet {
   }
   .card_obj_fixed_cols {
     flex: 0 0 60px;
-    padding: 0 20px;
+    padding: 0 10px;
     box-sizing: border-box;
     gap: 5px;
   }

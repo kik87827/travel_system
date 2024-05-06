@@ -19,7 +19,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .hgroup_main_row{padding:18px 0;position:relative;}
 .hgroup_main_row .hgroup_inner{justify-content: space-between;align-items: center;}
 .hgroup_toplogo{line-height:0;}
-.toplogo_link{display:inline-block;width:211px;height:83px;background:url("../images/toplogo.png") no-repeat 0 0/100% auto;}
+.toplogo_link{display:inline-block;width:162px;height:40px;background:url("../images/toplogo.png") no-repeat 0 0/100% auto;}
 .hgroup_search_cols{flex:1;display:flex;justify-content: flex-end;align-items: center;font-size:0;line-height:0;}
 .hgroup_search_field{width:100%;max-width:400px;background:#f6f6f6;border-radius:100px;position:relative;overflow:hidden;display:flex;height:50px;}
 .search_field_long_cols{flex:1;min-width:0;}
@@ -192,7 +192,7 @@ input.search_field_input::input-placeholder{color:#999999;font-family: 'Noto San
 
 .mobile_toplogo{display:flex;align-items: center;justify-content: flex-start;height:100%;position:absolute;top:0;left:50%;transform: translateX(-50%);}
 .mobile_toplogo_link{display:inline-block;line-height:0;}
-.mobile_toplogo_link img{height:33px;}
+.mobile_toplogo_link img{height:30px;}
 .mobile_topelse_wrap{line-height:0;padding-right:15px;}
 .mobile_topelse_wrap.pos_right{position:absolute;top:0;right:0;height:100%;display:flex;align-items: center;}
 .mobile_util_list{display:flex;align-items: center;gap:10px;font-size:0;line-height:0;}
