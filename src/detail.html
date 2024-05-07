@@ -613,7 +613,20 @@
 															<ul class="pro_keyword_list">
 																<li><a href="#" class="pro_keyword">최저가</a></li>
 															</ul>
-															<p class="card_obj_main">슈퍼패스트트랙포함! 세부 오슬롭투어+풀캐녀닝 [단독투어] 오슬롭</p>
+															<div class="card_obj_temp">
+																<div class="card_obj_temp_liquid">
+																	<p class="card_obj_main">슈퍼패스트트랙포함! 세부 오슬롭투어+풀캐녀닝 [단독투어] 오슬롭</p>
+																	<div class="price_mb_wrap">
+																		<div class="price_obj">
+																			<div class="price_main">130,000</div>
+																			<div class="price_unit">원~</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="card_obj_temp_fixed">
+																	<a href="#" class="btn_action_box">선택</a>
+																</div>
+															</div>
 															<div class="card_obj_summary">
 																<p class="summary_copy">10명~20명에서 함께하는 투어입니다</p>
 																<a href="#" class="btn_ico_link">상세보기</a>
@@ -634,7 +647,20 @@
 															<ul class="pro_keyword_list">
 																<li><a href="#" class="pro_keyword">최저가</a></li>
 															</ul>
-															<p class="card_obj_main">슈퍼패스트트랙포함! 세부 오슬롭투어+풀캐녀닝 [단독투어] 오슬롭</p>
+															<div class="card_obj_temp">
+																<div class="card_obj_temp_liquid">
+																	<p class="card_obj_main">슈퍼패스트트랙포함! 세부 오슬롭투어+풀캐녀닝 [단독투어] 오슬롭</p>
+																	<div class="price_mb_wrap">
+																		<div class="price_obj">
+																			<div class="price_main">130,000</div>
+																			<div class="price_unit">원~</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="card_obj_temp_fixed">
+																	<a href="#" class="btn_action_box">선택</a>
+																</div>
+															</div>
 															<div class="card_obj_summary">
 																<p class="summary_copy">10명~20명에서 함께하는 투어입니다</p>
 																<a href="#" class="btn_ico_link">상세보기</a>
@@ -674,8 +700,11 @@
                                 <div class="tabc_item">
 									<div class="tab_cont_title_row">
 										<h3 class="tab_cont_title">이용정보</h3>
+										<div class="tab_cont_else">
+											<a href="#" class="btn_textonly" data-text="열어보기" data-target="#tabcont_target">접어보기</a>
+										</div>
 									</div>
-									<div class="tab_cont_content_row">
+									<div class="tab_cont_content_row" id="tabcont_target">
 										<ul class="detail_toggle_list">
 											<li>
 												<div class="detail_toggle_item active">
@@ -742,11 +771,11 @@
 									<div class="tab_cont_title_row">
 										<h3 class="tab_cont_title">취소 및 환불규정</h3>
 									</div>
-									<div class="tab_cont_content_row">
+									<div class="tab_cont_content_row mtype2">
 										<div class="brick_list_wrap">
 											<ul class="brick_list">
 												<li>
-													<div class="brick_contents">
+													<div class="brick_contents skin2">
 														<ul class="bullet_list dot">
 															<li>체크인 48일 이전 예약시 룸 요금 10% 할인 적용</li>
 															<li>체크인 93일 이전 예약시 룸 요금 15% 할인 적용.</li>
@@ -1323,6 +1352,9 @@
 					prevEl: ".other_control_wrap.prev .btn_other_control",
 				},
 			});
+
+			// toggle
+			toggleTarget();
 
 
             // 퍼블확인용

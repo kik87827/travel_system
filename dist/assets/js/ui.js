@@ -964,3 +964,26 @@ function mobileBottomLayer() {
     }
   }
 }
+
+function toggleTarget() {
+  var targetDom = $("[data-target]");
+  targetDom.each(function() {
+    $(this).attr("data-origin", $(this).text());
+  });
+  targetDom.on("click", function(e) {
+    var $this = $(this);
+    var $thisText = $this.attr("data-text");
+    var $thisTarget = $($this.attr("data-target"));
+
+    e.preventDefault();
+
+    if ($thisTarget.length) {
+      $thisTarget.toggleClass("hidden");
+      if ($thisTarget.hasClass("hidden")) {
+        $this.text($thisText);
+      } else {
+        $this.text($this.attr("data-origin"));
+      }
+    }
+  });
+}
