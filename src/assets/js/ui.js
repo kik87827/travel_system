@@ -945,16 +945,25 @@ function toggleTarget(){
 		var $this = $(this);
 		var $thisText = $this.attr("data-text");
 		var $thisTarget = $($this.attr("data-target"));
+		var $thisTargetEach = $thisTarget.find(".detail_toggle_item");
 
 		e.preventDefault();
 
 		if($thisTarget.length){
-			$thisTarget.toggleClass("hidden");
-			if($thisTarget.hasClass("hidden")){
-				$this.text($thisText);
-			}else{
+			
+			$thisTargetEach.removeClass("active");
+			/* if($thisTargetEach.filter(".active").length===0){
 				$this.text($this.attr("data-origin"));
-			}
+				$thisTargetEach.addClass("active");
+			}else{
+				$thisTargetEach.removeClass("active");
+				$this.text($thisText);
+			} */
+			/* if($thisTargetEach.hasClass("active")){
+				$this.text($this.attr("data-origin"));
+			}else{
+				$this.text($thisText);
+			} */
 		}
 	});
 }

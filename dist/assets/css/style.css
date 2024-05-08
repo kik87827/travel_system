@@ -4793,28 +4793,22 @@ input.props_form[type=checkbox]:checked {
   position: relative;
   overflow: hidden;
 }
-.sticky_tabs_container_zone .tab_contents.has_line {
-  border-top: 1px solid #e7e7e7;
+
+.tab_contents {
+  border-bottom: 7px solid #fafafa;
+  /*  &.has_line{
+       .tabc_item{border-bottom:7px solid #fafafa;
+           &:last-of-type{border-bottom:0;}
+       }
+   } */
 }
-.sticky_tabs_container_zone .tab_contents.has_line .tabc_item {
-  border-bottom: 1px solid #e7e7e7;
-}
-.sticky_tabs_container_zone .tab_contents.has_line .tabc_item:last-of-type {
+.tab_contents:last-of-type {
   border-bottom: 0;
 }
 
-.tab_contents.has_line {
-  border-top: 1px solid #e7e7e7;
-}
-
-.tab_contents.has_line .tabc_item {
-  border-bottom: 1px solid #e7e7e7;
-}
-
-.tab_contents.has_line .tabc_item:last-of-type {
-  border-bottom: 0;
-}
-
+/* .tab_contents.has_line{border-top:1px solid #e7e7e7;}
+.tab_contents.has_line .tabc_item{border-bottom:1px solid #e7e7e7;}
+.tab_contents.has_line .tabc_item:last-of-type{border-bottom:0;} */
 .sticky_tabs_inner_wrap .sticky_tabs_inner {
   padding: 15px 0 0 0;
 }
@@ -4934,7 +4928,7 @@ input.props_form[type=checkbox]:checked {
 
 .tabc_item {
   padding: 40px 0;
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 7px solid #fafafa;
   position: relative;
 }
 .tabc_item:last-of-type {
@@ -4956,9 +4950,7 @@ input.props_form[type=checkbox]:checked {
 
 .tab_cont_content_row {
   padding: 30px 0 0 0;
-}
-.tab_cont_content_row.mtype2 {
-  padding-top: 15px;
+  /* &.mtype2{padding-top:15px;} */
 }
 
 .btn_textonly {
@@ -4995,6 +4987,10 @@ input.props_form[type=checkbox]:checked {
   }
 }
 @media (max-width: 1023px) {
+  .sticky_tabs_container_zone {
+    min-height: 0px !important;
+    height: 30px !important;
+  }
   .detail_calculation_zone {
     display: none;
   }
@@ -5739,8 +5735,15 @@ input.props_form[type=checkbox]:checked {
   .detail_anchor_gate_wrap {
     margin-bottom: 0;
   }
+  .tab_contents_wrap {
+    padding-top: 30px;
+    border-top: 7px solid #fafafa;
+  }
   .tab_contents:first-of-type .tabc_item {
     padding-top: 0;
+  }
+  .tabc_item {
+    padding: 30px 0;
   }
   .btn_action_box {
     font-size: 13px;
@@ -6687,8 +6690,7 @@ input.props_form[type=checkbox]:checked {
 /* // contents */
 @media (max-width: 1023px) {
   .section_brick {
-    padding: 20px 0;
-    border-bottom-width: 3px;
+    padding: 30px 0;
   }
   .section_cont {
     margin: 0 0;
