@@ -156,14 +156,14 @@ $(function() {
         this.domHtml.classList.add("touchDis");
       }
       this.selector.classList.add("active");
-      if(!!this.selector_contents_inner && !!this.selector_contents){
-        if(this.selector_contents.getBoundingClientRect().height < this.selector_contents_inner.getBoundingClientRect().height){
-          this.selector_contents.classList.add("scroll_mode");
-        }else{
-          this.selector_contents.classList.remove("scroll_mode");
-        }
-      }
       setTimeout(() => {
+		  if(!!this.selector_contents_inner && !!this.selector_contents){
+			if(this.selector_contents.getBoundingClientRect().height < this.selector_contents_inner.getBoundingClientRect().height){
+			  this.selector_contents.classList.add("scroll_mode");
+			}else{
+			  this.selector_contents.classList.remove("scroll_mode");
+			}
+		  }
         this.selector.classList.add("motion_end");
       }, 30);
       if ("beforeCallback" in this.option) {

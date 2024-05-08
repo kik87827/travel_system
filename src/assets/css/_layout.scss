@@ -305,7 +305,11 @@ input.search_field_input::input-placeholder{color:#999999;font-family: 'Noto San
     flex:1;width:100%; box-sizing: border-box;
     &.detail_wrap{max-width:1260px;margin:0 auto;padding:60px 30px 120px;}
 }
-
+.middle_inner{max-width:890px;margin:0 auto; padding: 60px 0 120px;}
+.middle_top_row{border-bottom:1px solid #313131;padding-bottom:20px;display:flex;gap:10px;}
+.btn_history_back{display:block;width:27px;height:21px;background:url("../images/ico_history_back.png") no-repeat 50% 50%/100% auto; flex:0 0 27px;position:relative;top:6px;}
+.middle_top_title{font-size:24px; font-weight:500; line-height:1.4;}
+.middle_contents{padding-top:25px;}
 
 /* footer */
 
@@ -398,7 +402,18 @@ input.search_field_input::input-placeholder{color:#999999;font-family: 'Noto San
 
     .dimbg.active{display:block !important;}
 
-    .middle_wrap.detail_wrap{padding:55px 0 60px;}
+    .middle_wrap{
+        padding:61px 0 60px;
+        &.detail_wrap{
+            padding:61px 0 60px;
+        }
+    }
+    .middle_inner{padding: 20px 20px 0;}
+
+    .middle_top_row{padding-bottom:10px;}
+    .btn_history_back{width:19px;height:15px; flex:0 0 19px;top:5px;}
+    .middle_top_title{font-size:18px;}
+    .middle_contents{padding-top:25px;}
 
 
     .footer_else_low{}
