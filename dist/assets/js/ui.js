@@ -980,14 +980,14 @@ function toggleTarget() {
 
     if ($thisTarget.length) {
 
-      $thisTargetEach.removeClass("active");
-      /* if($thisTargetEach.filter(".active").length===0){
-      	$this.text($this.attr("data-origin"));
-      	$thisTargetEach.addClass("active");
-      }else{
-      	$thisTargetEach.removeClass("active");
-      	$this.text($thisText);
-      } */
+      // $thisTargetEach.removeClass("active");
+      if ($thisTargetEach.filter(".active").length === 0) {
+        $this.text($this.attr("data-origin"));
+        $thisTargetEach.addClass("active");
+      } else {
+        $thisTargetEach.removeClass("active");
+        $this.text($thisText);
+      }
       /* if($thisTargetEach.hasClass("active")){
       	$this.text($this.attr("data-origin"));
       }else{

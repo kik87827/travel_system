@@ -4001,7 +4001,7 @@ button.swiper-pagination-bullet {
 .popup_item {
   box-sizing: border-box;
   z-index: 20;
-  max-width: 762px;
+  max-width: 742px;
   margin: 30px auto;
   max-height: calc(100% - 60px);
   background: #fff;
@@ -4219,7 +4219,7 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1023px) {
   .popup_item {
-    margin: 0 20px;
+    width: calc(100% - 40px);
   }
   .popup_title_row {
     padding: 20px 50px 20px 20px;
@@ -4775,6 +4775,10 @@ input.props_form[type=checkbox]:checked {
   }
   .visual_text {
     font-size: 14px;
+  }
+  .gallery_main_swiper_wrap {
+    margin: 20px -10px -10px;
+    padding: 0 25px;
   }
 }
 /* detail- content */
