@@ -595,8 +595,8 @@
 }
 .card_obj_main{font-size:19px; color:#000000; font-weight:500; @include clamp(2);}
 .card_obj_summary{
-    margin-top:10px; background:#f9f9f9; border-radius:8px; display:flex; justify-content: space-between; padding:17px 20px;
-    .summary_copy{font-size:13px; color:#6d6c6c;}
+    margin-top:10px; background:#f9f9f9; border-radius:8px; display:flex; justify-content: space-between; padding:17px 20px; align-items: center; gap:10px;
+    .summary_copy{font-size:13px; color:#6d6c6c; @include clamp(2);}
 }
 .btn_summary_link{}
 .card_obj_fixed_cols{

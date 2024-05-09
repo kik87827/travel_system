@@ -6118,10 +6118,17 @@ input.props_form[type=checkbox]:checked {
   display: flex;
   justify-content: space-between;
   padding: 17px 20px;
+  align-items: center;
+  gap: 10px;
 }
 .card_obj_summary .summary_copy {
   font-size: 13px;
   color: #6d6c6c;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 
 .card_obj_fixed_cols {
