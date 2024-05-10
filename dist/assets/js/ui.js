@@ -1056,3 +1056,25 @@ function fieldList() {
     }
   }
 }
+
+
+
+
+function datePicker() {
+  var $datepicker = $(".field_input.calendar");
+  if ($datepicker.length) {
+    $datepicker.each(function() {
+      var $dateThis = $(this);
+      $dateThis.datepicker({
+        monthNames: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+        monthNamesShort: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+        showOtherMonths: true,
+        selectOtherMonths: true,
+        changeMonth: true,
+        changeYear: true,
+        dateFormat: 'yy-mm-dd'
+      });
+    });
+  }
+}

@@ -178,8 +178,7 @@
                                                             <div class="field_indd">
                                                                 <div class="field_calendar_group">
                                                                     <div class="field_input_wrap">
-                                                                        <input type="text" class="field_input" placeholder="0000-00-00">
-                                                                        <button class="btn_field_ico calendar"><span class="hdtext">달력 열기</span></button>
+                                                                        <input type="text" class="field_input calendar" placeholder="0000-00-00">
                                                                     </div>
                                                                     <div class="field_calendar_each_rendar"></div>
                                                                 </div>
@@ -245,8 +244,7 @@
                                                             <div class="field_indd">
                                                                 <div class="field_calendar_group">
                                                                     <div class="field_input_wrap">
-                                                                        <input type="text" class="field_input" placeholder="0000-00-00">
-                                                                        <button class="btn_field_ico calendar"><span class="hdtext">달력 열기</span></button>
+                                                                        <input type="text" class="field_input calendar" placeholder="0000-00-00">
                                                                     </div>
                                                                     <div class="field_calendar_each_rendar"></div>
                                                                 </div>
@@ -1154,6 +1152,9 @@
                     terms_view_popup_03.popupShow();
                 });
 
+                // 전체 동의
+                termsAgree();
+
                 // 팝업 메소드
                 reserve_popup.popupShow();
                 // reserve_popup.popupHide();
@@ -1162,7 +1163,39 @@
                 photoReserveFunc();
             });
 
-            
+
+            /* datepicker */
+            $(function(){
+                datePopupPicker();
+            });
+            function datePopupPicker(){
+                var $datepicker = $(".popup_contents_row .field_input.calendar");
+                if($datepicker.length){
+                    $datepicker.each(function(){
+                        var $dateThis = $(this);
+                        $dateThis.datepicker({
+                            monthNames: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+                            monthNamesShort: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"],
+                            dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+                            showOtherMonths: true,
+                            selectOtherMonths: true,
+                            changeMonth: true,
+                            changeYear: true, 
+                            dateFormat: 'yy-mm-dd',
+                            beforeShow: function(input, inst) {
+                                var datePickerPopup = inst.dpDiv;
+                                $(input).closest(".popup_contents_inner").append(datePickerPopup);
+                                setTimeout(()=>{
+                                    datePickerPopup.css({
+                                     top : $(input).position().top + $(input).closest(".popup_contents_row").scrollTop() + $(input).outerHeight(),
+                                     left : $(input).offset().left - $(input).closest(".popup_contents_row").offset().left 
+                                   });
+                                },30);
+                            }
+                        });
+                    });
+                }
+            }
 
             // 상세 비쥬얼 슬라이더 선언
 			let photo_reserve_obj = null;
@@ -1189,6 +1222,21 @@
 				});
 			}
 
+            // 전체 동의 선언
+            function termsAgree(){
+                const terms_props_ui_wrap = document.querySelectorAll(".terms_props_ui_wrap");
+                if(!!terms_props_ui_wrap){
+                    terms_props_ui_wrap.forEach((item)=>{
+                        let order_form_total = item.querySelector("#order_form_total");
+                        let props_form = item.querySelectorAll(".terms_props_list_wrap .props_form")
+                        order_form_total.addEventListener("click",()=>{
+                            props_form.forEach((item)=>{
+                                item.checked = order_form_total.checked;
+                            });
+                        });
+                    });
+                }
+            }
         </script>
     </div>
 </body>

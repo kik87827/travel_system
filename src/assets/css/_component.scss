@@ -41,6 +41,7 @@
     .field_list_tr{gap:15px 20px;margin-right:-20px;
         > li{flex-basis: calc(50% - 20px);}
     }
+    .ui-widget-content{position:absolute !important;}
 }
 .popup_contents_inner{
     &.ptype2{padding-top:30px;}

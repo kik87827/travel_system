@@ -1012,10 +1012,14 @@
 }
 .field_indd{}
 .field_input_wrap{border:1px solid #cccccc; border-radius:5px; overflow:hidden;display:flex; align-items: center;}
-input.field_input{border:0; outline:0; width:100%; height:48px; line-height:1; padding:0 15px; font-size:16px; color:#333333; appearance: none;}
+input.field_input{border:0; outline:0; width:100%; height:48px; line-height:1; padding:0 15px; font-size:16px; color:#333333; appearance: none;
+    &.calendar{
+        background:url("../images/ico_calendar.png") no-repeat calc(100% - 10px) 50%/26px auto; padding-right:48px;
+    }
+}
 .field_each_para{font-size:13px;color:#b5b5b5; margin-top:5px;}
 .field_calendar_group{
-
+    /* position:relative; */
 }
 .btn_field_ico{
     width:48px;height:48px;flex:0 0 48px; background-repeat:no-repeat; background-position:50% 50%;
@@ -1051,10 +1055,20 @@ input.field_input{border:0; outline:0; width:100%; height:48px; line-height:1; p
     > li{
        position:relative; flex:1;
         &.color_01{
-            .props_box_label{background:#e6f7ff}
+           
+            input.props_box_form{
+                &:checked{
+                    & +  .props_box_label{background:#e6f7ff}
+                    /* & + .props_box_label{color:#fff; background-color:#2b8bf2; border-color:#2b8bf2;} */
+                }
+            }
         }
         &.color_02{
-            .props_box_label{background:#fff6f6}
+            input.props_box_form{
+                &:checked{
+                    & +  .props_box_label{background:#fff6f6}
+                }
+            }
         }
     }
 }
@@ -1062,7 +1076,7 @@ input.props_box_form{
     position:absolute;top:0;left:0;width:100%;height:100%;appearance:none;border:0;  cursor: pointer;
     &:checked{
         
-        & + .props_box_label{color:#fff; background-color:#2b8bf2; border-color:#2b8bf2;}
+        /* & + .props_box_label{color:#fff; background-color:#2b8bf2; border-color:#2b8bf2;} */
     }
 }
 .props_box_label{font-size:16px;color:#333333; border:1px solid #cccccc; border-radius:5px; height:48px; display:flex; align-items: center; justify-content: center; cursor: pointer;}

@@ -136,8 +136,7 @@
                                                         <div class="field_indd">
                                                             <div class="field_calendar_group">
                                                                 <div class="field_input_wrap">
-                                                                    <input type="text" class="field_input" placeholder="0000-00-00">
-                                                                    <button class="btn_field_ico calendar"><span class="hdtext">달력 열기</span></button>
+                                                                    <input type="text" class="field_input calendar" placeholder="0000-00-00">
                                                                 </div>
                                                                 <div class="field_calendar_each_rendar"></div>
                                                             </div>
@@ -203,8 +202,7 @@
                                                         <div class="field_indd">
                                                             <div class="field_calendar_group">
                                                                 <div class="field_input_wrap">
-                                                                    <input type="text" class="field_input" placeholder="0000-00-00">
-                                                                    <button class="btn_field_ico calendar"><span class="hdtext">달력 열기</span></button>
+                                                                    <input type="text" class="field_input calendar" placeholder="0000-00-00">
                                                                 </div>
                                                                 <div class="field_calendar_each_rendar"></div>
                                                             </div>
@@ -1119,6 +1117,11 @@
                         });
                     }
                 }
+            });
+
+             /* datepicker */
+             $(function(){
+                datePicker();
             });
 
             window.addEventListener("load",()=>{
