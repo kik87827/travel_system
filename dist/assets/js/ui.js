@@ -173,13 +173,13 @@ class DesignPopup {
     if ("callback" in this.option) {
       this.option.callback();
     }
-    if (!!this.design_popup_wrap_active) {
+    /* if (!!this.design_popup_wrap_active) {
       this.design_popup_wrap_active.forEach((element, index) => {
         if (this.design_popup_wrap_active !== this.selector) {
           element.classList.remove("active");
         }
       });
-    }
+    } */
     this.layer_wrap_parent.append(this.selector);
     this.dimCheck();
   }
@@ -200,6 +200,7 @@ class DesignPopup {
       if ("closeCallback" in this.option) {
         this.option.closeCallback();
       }
+      console.log(this.design_popup_wrap_active.length);
       if (this.design_popup_wrap_active.length == 1) {
         this.domHtml.classList.remove("touchDis");
       }
@@ -995,4 +996,63 @@ function toggleTarget() {
       } */
     }
   });
+}
+
+
+function fieldList() {
+  const field_col_list_tr = document.querySelectorAll(".field_list_tr");
+
+  col2Action();
+  window.addEventListener("resize", () => {
+    col2Action();
+  });
+
+  function col2Action() {
+    if (!!field_col_list_tr) {
+
+      field_col_list_tr.forEach((thistr) => {
+        const this_tr_item = thistr;
+        const field_indt_key = this_tr_item.querySelectorAll(".field_indt_key");
+
+        let indt_odd = null;
+        let indt_even = null;
+
+        if (!!field_indt_key) {
+          field_indt_key.forEach((thisKey, index) => {
+            if (index % 2 === 0) {
+              thisKey.classList.add("odd");
+            } else {
+              thisKey.classList.add("even");
+            }
+          })
+        }
+
+        indt_odd = this_tr_item.querySelectorAll(".field_indt_key.odd");
+        indt_even = this_tr_item.querySelectorAll(".field_indt_key.even");
+
+        let odd_array = [];
+        let even_array = [];
+
+        if (!!indt_odd) {
+          indt_odd.forEach((item) => {
+            odd_array.push(item.getBoundingClientRect().width);
+          });
+          indt_odd.forEach((item) => {
+            item.style.removeProperty("width");
+            item.style.width = Math.max.apply(null, odd_array) + "px";
+          });
+        }
+
+        if (!!indt_even) {
+          indt_even.forEach((item) => {
+            even_array.push(item.getBoundingClientRect().width);
+          });
+          indt_even.forEach((item) => {
+            item.style.removeProperty("width");
+            item.style.width = Math.max.apply(null, even_array) + "px";
+          });
+        }
+      });
+    }
+  }
 }
