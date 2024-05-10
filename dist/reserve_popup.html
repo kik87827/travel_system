@@ -2060,11 +2060,14 @@
 							dateFormat: 'yy-mm-dd',
 							beforeShow: function(input, inst) {
 								var datePickerPopup = inst.dpDiv;
-								$(input).closest(".popup_contents_inner").append(datePickerPopup);
+								var thisInput = $(input);
+								var parentContentsInner = thisInput.closest(".popup_contents_inner");
+								var parentContents = thisInput.closest(".popup_contents_row");
+								parentContentsInner.append(datePickerPopup);
 								setTimeout(() => {
 									datePickerPopup.css({
-										top: $(input).position().top + $(input).closest(".popup_contents_row").scrollTop() + $(input).outerHeight(),
-										left: $(input).offset().left - $(input).closest(".popup_contents_row").offset().left
+										top: thisInput.position().top + parentContents.scrollTop() + thisInput.outerHeight(),
+										left: thisInput.offset().left - parentContents.offset().left
 									});
 								}, 30);
 							}
