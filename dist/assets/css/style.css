@@ -3159,7 +3159,7 @@ span.ui-datepicker-month {
 .ui-widget-content .ui-state-highlight,
 .ui-widget-header .ui-state-highlight {
   background: #13479b;
-  color: #fff;
+  color: #fff !important;
   border-radius: 100%;
   min-width: 8px;
   text-align: center;
@@ -4360,6 +4360,9 @@ span.ui-datepicker-month {
   .popup_contents_row.scroll_mode {
     padding-right: 10px;
   }
+  .popup_contents_row .section_brick_group {
+    padding-top: 20px;
+  }
   .touchmode .popup_contents_row.scroll_mode {
     padding-right: 20px;
   }
@@ -4531,6 +4534,13 @@ select.form_select:disabled {
     font-size: 14px;
     position: relative;
     top: -1px;
+  }
+  .props_item {
+    gap: 7px;
+  }
+  select.form_select {
+    height: 40px;
+    font-size: 14px;
   }
 }
 /* contents */
@@ -6774,6 +6784,10 @@ select.form_select:disabled {
   }
 }
 /* contents */
+.section_brick_group + .card_container_box {
+  margin-top: 50px;
+}
+
 .section_brick {
   padding: 35px 0;
   border-bottom: 7px solid #fafafa;
@@ -6783,6 +6797,7 @@ select.form_select:disabled {
 }
 .section_brick:last-of-type {
   border-bottom: 0;
+  padding-bottom: 0;
 }
 .section_brick.intro .section_cont {
   margin: 0;
@@ -6897,6 +6912,7 @@ select.form_select:disabled {
 .card_top_title {
   display: inline-flex;
   gap: 10px;
+  align-items: center;
 }
 .card_top_title:before {
   display: block;
@@ -7471,6 +7487,9 @@ input.props_box_form:checked {
   display: flex;
   justify-content: space-between;
 }
+.obj_spec_dl.type2 {
+  align-items: center;
+}
 .obj_spec_key {
   font-size: 16px;
   color: #2b2b2b;
@@ -7529,7 +7548,7 @@ input.props_box_form:checked {
 .terms_props_list > li {
   margin-bottom: 15px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
 }
 .terms_props_list > li:last-of-type {
@@ -7542,6 +7561,7 @@ input.props_box_form:checked {
   border-bottom: 1px solid #e7e7e7;
   line-height: 1;
   padding-bottom: 3px;
+  white-space: nowrap;
 }
 
 .swiper_visual_container_zone {
@@ -7729,11 +7749,21 @@ input.props_box_form:checked {
 }
 /* // contents */
 @media (max-width: 1023px) {
+  .section_brick_group + .card_container_box {
+    margin-top: 30px;
+  }
   .section_brick {
     padding: 30px 0;
   }
   .section_cont {
-    margin: 0 0;
+    margin: 0 0 0 10px;
+  }
+  .section_cont.type2 {
+    margin-left: 10px;
+  }
+  .section_cont .section_field {
+    margin-left: -10px;
+    padding-left: 10px;
   }
   .section_title_row {
     margin: 0 0 20px;
@@ -7755,6 +7785,291 @@ input.props_box_form:checked {
   }
   .btn_bottom_box_inner {
     font-size: 16px;
+  }
+  .product_summary_item {
+    gap: 10px;
+  }
+  .product_summary_img {
+    width: 100px;
+    height: 70px;
+    flex-basis: 100px;
+  }
+  .product_summary_spec {
+    padding: 10px 15px;
+    border-radius: 8px;
+  }
+  .product_summary_main {
+    font-size: 17px;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .product_summary_sub {
+    font-size: 14px;
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .product_summary_caption_wrap {
+    margin-top: 10px;
+  }
+  .ps_caption dt, .ps_caption dd {
+    font-size: 14px;
+  }
+  .ps_caption dd {
+    word-break: break-all;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+  }
+  .psguide_thtext {
+    font-size: 14px;
+  }
+  .product_summary_guide_tb th {
+    padding-right: 10px;
+  }
+  .psguide_td_text,
+.psguide_td_maintext {
+    font-size: 14px;
+  }
+  .psguide_td_text.type2 {
+    font-size: 14px;
+  }
+  .field_list_tr {
+    gap: 10px 15px;
+    margin-right: -15px;
+  }
+  .field_list_tr > li {
+    flex-basis: calc(50% - 15px);
+  }
+  .field_indt {
+    padding-top: 11px;
+  }
+  input.field_input {
+    height: 40px;
+    font-size: 14px;
+  }
+  input.field_input.calendar {
+    background-size: 20px auto;
+  }
+  .field_indt_key {
+    font-size: 14px;
+  }
+  .field_indt_key.import:after {
+    top: 9px;
+    margin-left: 3px;
+  }
+  .report_form_flex {
+    gap: 10px;
+  }
+  .report_form_keyitem {
+    width: 65px;
+    height: 65px;
+  }
+  .keyitem_text {
+    font-size: 14px;
+  }
+  .report_form_key {
+    flex-basis: 67px;
+  }
+  .props_box_label {
+    height: 40px;
+    font-size: 14px;
+  }
+  .props_form_tb {
+    margin: 0;
+  }
+  .props_form_tr {
+    gap: 10px;
+    margin-right: -10px;
+  }
+  .props_form_tr > li {
+    flex-basis: calc(33.333333% - 10px);
+  }
+  .form_guide_para_list_wrap {
+    margin-top: 20px;
+    padding: 15px;
+  }
+  .user_form_tb {
+    margin: 0 0 0 -10px;
+  }
+  .user_form_tb .user_form_key {
+    padding-left: 10px;
+  }
+  .user_form_keylabel {
+    font-size: 14px;
+  }
+  .count_fraction {
+    font-size: 16px;
+  }
+  .price_number_wrap {
+    gap: 3px;
+  }
+  .price_number_main {
+    font-size: 17px;
+  }
+  .price_number_unit {
+    font-size: 14px;
+  }
+  .price_number_wrap.emp .price_number_main {
+    font-size: 20px;
+  }
+  .obj_spec_key {
+    font-size: 14px;
+  }
+  .emp_valuetext {
+    font-size: 14px;
+  }
+  .form_props_obj_list {
+    margin: 0 -20px 0 0;
+  }
+  .form_props_obj_list > li {
+    flex-basis: calc(33.333333% - 20px);
+  }
+  /* .section_field_title{margin-left:10px;}
+  .obj_spec_list{margin-left:10px;}
+  .field_list_wrap{margin-left:10px;} */
+  .obj_spec_list {
+    margin-left: 0;
+  }
+  .card_container_box .section_field_title_row {
+    margin-bottom: 10px;
+  }
+  .card_container_box .section_field_contents {
+    margin-left: 10px;
+  }
+  .card_top_row {
+    padding: 12px 15px;
+    border-radius: 10px 10px 0 0;
+  }
+  .card_contents_row {
+    border-radius: 0 0 10px 10px;
+  }
+  .card_top_title:before {
+    width: 23.1px;
+    height: 17.5px;
+    flex-basis: 23.1px;
+  }
+  .card_top_title_text {
+    font-size: 16px;
+  }
+  .card_contents_row {
+    padding: 15px;
+  }
+  .popup_contents_row .section_cont {
+    margin: 0;
+  }
+  .swiper_visual_nav_layer .btn_swiper_vnav {
+    width: 20px;
+    height: 20px;
+  }
+  .swiper_visual_nav_layer .btn_swiper_vnav:after {
+    width: 6px;
+    height: 6px;
+    top: 7px;
+    left: 5px;
+  }
+  .swiper_visual_nav_layer.prev .btn_swiper_vnav:after {
+    left: 8px;
+  }
+  .swiper-container.swiper_visual_container {
+    border-radius: 10px;
+  }
+  .swiper_img_caption {
+    font-size: 12px;
+  }
+  .swiper_paging_layer .swiper-pagination {
+    font-size: 12px;
+  }
+  .swiper_paging_layer .swiper-pagination .swiper-pagination-total, .swiper_paging_layer .swiper-pagination .swiper-pagination-current {
+    font-size: 12px;
+  }
+  .ico_des {
+    width: 45px;
+    height: 45px;
+    flex-basis: 45px;
+  }
+  .product_primary_title_row {
+    margin: 20px 0 15px;
+  }
+  .product_primary_title {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+  .product_primary_sub {
+    font-size: 13px;
+  }
+  .brick_contents.skin2 {
+    border-radius: 10px;
+  }
+  .emp_spec_cell,
+.emp_spec_tr,
+.emp_spec_tb {
+    display: block;
+  }
+  .emp_spec_cell {
+    border-bottom: 0;
+    padding: 0;
+  }
+  .emp_spec_cell.define_th {
+    padding: 0 0 20px 0 !important;
+    width: auto;
+  }
+  .emp_spec_tr {
+    border-bottom: 7px solid #fafafa;
+    padding: 35px 0;
+  }
+  .emp_spec_tr:first-of-type {
+    padding-top: 0;
+  }
+  .emp_spec_tr:last-of-type {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  .emp_spec_cell.define_td {
+    margin: 0 0 0 10px;
+  }
+  .des_keyword_text {
+    font-size: 16px;
+  }
+  .popup_contents_row .section_field,
+.popup_contents_row .field_list_wrap {
+    margin-left: 10px;
+  }
+  .popup_contents_row .section_field {
+    padding-left: 0;
+  }
+  .popup_contents_row .section_field .field_list_wrap {
+    margin-left: 0;
+  }
+  .popup_contents_row .card_container_box .section_field,
+.popup_contents_row .card_container_box .field_list_wrap {
+    margin-left: 0;
+  }
+  .popup_contents_row .user_form_tb {
+    margin-left: 0;
+  }
+  .popup_contents_row .props_form_tb {
+    margin: 0 0 0 10px;
+  }
+}
+@media (max-width: 768px) {
+  .field_list_tr {
+    margin-right: 0 !important;
+  }
+  .field_list_tr > li {
+    flex: 0 0 100% !important;
+  }
+  .field_indt {
+    padding-right: 10px;
+  }
+  .terms_props_ui_wrap {
+    margin: 0;
   }
 }
 .guide_contents_item {

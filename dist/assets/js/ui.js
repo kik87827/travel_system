@@ -1017,41 +1017,55 @@ function fieldList() {
         let indt_odd = null;
         let indt_even = null;
 
-        if (!!field_indt_key) {
-          field_indt_key.forEach((thisKey, index) => {
-            if (index % 2 === 0) {
-              thisKey.classList.add("odd");
-            } else {
-              thisKey.classList.add("even");
-            }
-          })
+        if (window.innerWidth >= 768) {
+          if (!!field_indt_key) {
+            field_indt_key.forEach((thisKey, index) => {
+              if (index % 2 === 0) {
+                thisKey.classList.add("odd");
+              } else {
+                thisKey.classList.add("even");
+              }
+            })
+          }
+
+          indt_odd = this_tr_item.querySelectorAll(".field_indt_key.odd");
+          indt_even = this_tr_item.querySelectorAll(".field_indt_key.even");
+
+          let odd_array = [];
+          let even_array = [];
+
+          if (!!indt_odd) {
+            indt_odd.forEach((item) => {
+              odd_array.push(item.getBoundingClientRect().width);
+            });
+            indt_odd.forEach((item) => {
+              item.style.removeProperty("width");
+              item.style.width = Math.max.apply(null, odd_array) + "px";
+            });
+          }
+
+          if (!!indt_even) {
+            indt_even.forEach((item) => {
+              even_array.push(item.getBoundingClientRect().width);
+            });
+            indt_even.forEach((item) => {
+              item.style.removeProperty("width");
+              item.style.width = Math.max.apply(null, even_array) + "px";
+            });
+          }
+        } else {
+          let single_array = [];
+          if (!!field_indt_key) {
+            field_indt_key.forEach((item) => {
+              single_array.push(item.getBoundingClientRect().width);
+            });
+            field_indt_key.forEach((item) => {
+              item.style.removeProperty("width");
+              item.style.width = Math.max.apply(null, single_array) + "px";
+            });
+          }
         }
 
-        indt_odd = this_tr_item.querySelectorAll(".field_indt_key.odd");
-        indt_even = this_tr_item.querySelectorAll(".field_indt_key.even");
-
-        let odd_array = [];
-        let even_array = [];
-
-        if (!!indt_odd) {
-          indt_odd.forEach((item) => {
-            odd_array.push(item.getBoundingClientRect().width);
-          });
-          indt_odd.forEach((item) => {
-            item.style.removeProperty("width");
-            item.style.width = Math.max.apply(null, odd_array) + "px";
-          });
-        }
-
-        if (!!indt_even) {
-          indt_even.forEach((item) => {
-            even_array.push(item.getBoundingClientRect().width);
-          });
-          indt_even.forEach((item) => {
-            item.style.removeProperty("width");
-            item.style.width = Math.max.apply(null, even_array) + "px";
-          });
-        }
       });
     }
   }

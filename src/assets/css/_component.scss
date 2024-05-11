@@ -117,6 +117,7 @@
     .popup_title_copy{font-size:13px;}
     .popup_contents_row{font-size:14px;padding:20px 20px 35px;
         &.scroll_mode {padding-right:10px;}
+        .section_brick_group{padding-top:20px;}
     }
     .touchmode {
         .popup_contents_row{
@@ -219,4 +220,7 @@ select.form_select{
         }
     }
     .props_label{font-size:14px;position:relative;top:-1px;}
+    .props_item{gap:7px;}
+    
+    select.form_select{height:40px;font-size:14px;}
 }
