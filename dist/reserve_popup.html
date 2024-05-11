@@ -2065,14 +2065,35 @@
 								var parentContents = thisInput.closest(".popup_contents_row");
 								parentContentsInner.append(datePickerPopup);
 								setTimeout(() => {
+									posAction();
+								}, 30);
+								$(window).on("resize", function() {
+									posAction();
+								});
+
+								function posAction() {
 									datePickerPopup.css({
 										top: thisInput.position().top + parentContents.scrollTop() + thisInput.outerHeight(),
 										left: thisInput.offset().left - parentContents.offset().left
 									});
-								}, 30);
+								}
+							},
+							onShow(inst) {
+								var datePickerPopup = inst;
+								console.log(inst);
+								/* var parentContentsInner = thisInput.closest(".popup_contents_inner");
+								var parentContents = thisInput.closest(".popup_contents_row");
+								$(window).on("resize",function(){
+								    console.log('resize test');
+								    datePickerPopup.css({
+								     top : thisInput.position().top + parentContents.scrollTop() + thisInput.outerHeight(),
+								     left : thisInput.offset().left - parentContents.offset().left 
+								   });
+								}); */
 							}
 						});
 					});
+
 				}
 			}
 

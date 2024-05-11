@@ -721,4 +721,18 @@ span.ui-datepicker-month{font-size:16px; font-weight:600;color:$primary; @includ
 @media (max-width:1023px){
 	.ui-widget-content{transform: translateX(0);left:20px !important;}
 	.ui-datepicker{width:calc(100% - 40px) !important;box-sizing: border-box;left:20px !important;}
+
+	.popup_contents_row{
+		&.scroll_mode{
+			.ui-datepicker{width:calc(100% - 30px) !important;}
+		}
+	}
+
+	.touchmode{
+		.popup_contents_row{
+			&.scroll_mode{
+				.ui-datepicker{width:calc(100% - 40px) !important;}
+			}
+		}
+	}
 }

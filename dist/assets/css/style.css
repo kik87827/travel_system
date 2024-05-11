@@ -4055,6 +4055,12 @@ span.ui-datepicker-month {
     box-sizing: border-box;
     left: 20px !important;
   }
+  .popup_contents_row.scroll_mode .ui-datepicker {
+    width: calc(100% - 30px) !important;
+  }
+  .touchmode .popup_contents_row.scroll_mode .ui-datepicker {
+    width: calc(100% - 40px) !important;
+  }
 }
 /* popup */
 .btn_guide_box {
