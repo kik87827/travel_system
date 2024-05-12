@@ -6387,15 +6387,14 @@ select.form_select:disabled {
   flex: 0 0 12px;
 }
 
-/* .field_list_wrap{
-    &.col_2{
-        .field_list_tr{
-            > li{
-                flex:0 0 calc(50% - 50px);
-            }
-        }
-    }
-} */
+.field_list_wrap.col_3 .field_list_tr {
+  gap: 20px 50px;
+  margin-right: -50px;
+}
+.field_list_wrap.col_3 .field_list_tr > li {
+  flex: 0 0 calc(33.33333% - 50px);
+}
+
 .field_list_tr {
   display: flex;
   flex-wrap: wrap;
@@ -6536,14 +6535,24 @@ input.field_input.calendar {
   position: relative;
   flex: 1;
 }
-.props_box_list > li.color_01 input.props_box_form:checked {
-  /* & + .props_box_label{color:#fff; background-color:#2b8bf2; border-color:#2b8bf2;} */
-}
-.props_box_list > li.color_01 input.props_box_form:checked + .props_box_label {
+.props_box_list > li.color_01 {
   background: #e6f7ff;
 }
-.props_box_list > li.color_02 input.props_box_form:checked + .props_box_label {
+.props_box_list > li.color_01 input.props_box_form:checked {
+  /* & +  .props_box_label{background:#e6f7ff} */
+}
+.props_box_list > li.color_01 input.props_box_form:checked + .props_box_label {
+  color: #fff;
+  background-color: #2b8bf2;
+  border-color: #2b8bf2;
+}
+.props_box_list > li.color_02 {
   background: #fff6f6;
+}
+.props_box_list > li.color_02 input.props_box_form:checked + .props_box_label {
+  color: #fff;
+  background-color: #2b8bf2;
+  border-color: #2b8bf2;
 }
 
 input.props_box_form {
@@ -7327,6 +7336,7 @@ input.props_box_form:checked {
 @media (max-width: 768px) {
   .field_list_tr {
     margin-right: 0 !important;
+    gap: 10px 0 !important;
   }
   .field_list_tr > li {
     flex: 0 0 100% !important;

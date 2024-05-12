@@ -1000,72 +1000,159 @@ function toggleTarget() {
 
 
 function fieldList() {
+  const field_list_wrap_col2 = document.querySelectorAll(".field_list_wrap.col_2");
+  const field_list_wrap_col3 = document.querySelectorAll(".field_list_wrap.col_3");
   const field_col_list_tr = document.querySelectorAll(".field_list_tr");
 
   col2Action();
+  col3Action();
   window.addEventListener("resize", () => {
     col2Action();
+    col3Action();
   });
 
   function col2Action() {
-    if (!!field_col_list_tr) {
+    if (!!field_list_wrap_col2) {
+      field_list_wrap_col2.forEach((thisTb) => {
+        let thisTr = thisTb.querySelectorAll(".field_list_tr");
+        if (!!thisTr) {
+          thisTr.forEach((thistr) => {
+            const this_tr_item = thistr;
+            const field_indt_key = this_tr_item.querySelectorAll(".field_indt_key");
 
-      field_col_list_tr.forEach((thistr) => {
-        const this_tr_item = thistr;
-        const field_indt_key = this_tr_item.querySelectorAll(".field_indt_key");
+            let indt_odd = null;
+            let indt_even = null;
 
-        let indt_odd = null;
-        let indt_even = null;
-
-        if (window.innerWidth >= 768) {
-          if (!!field_indt_key) {
-            field_indt_key.forEach((thisKey, index) => {
-              if (index % 2 === 0) {
-                thisKey.classList.add("odd");
-              } else {
-                thisKey.classList.add("even");
+            if (window.innerWidth >= 768) {
+              if (!!field_indt_key) {
+                field_indt_key.forEach((thisKey, index) => {
+                  if (index % 2 === 0) {
+                    thisKey.classList.add("odd");
+                  } else {
+                    thisKey.classList.add("even");
+                  }
+                })
               }
-            })
-          }
 
-          indt_odd = this_tr_item.querySelectorAll(".field_indt_key.odd");
-          indt_even = this_tr_item.querySelectorAll(".field_indt_key.even");
+              indt_odd = this_tr_item.querySelectorAll(".field_indt_key.odd");
+              indt_even = this_tr_item.querySelectorAll(".field_indt_key.even");
 
-          let odd_array = [];
-          let even_array = [];
+              let odd_array = [];
+              let even_array = [];
 
-          if (!!indt_odd) {
-            indt_odd.forEach((item) => {
-              odd_array.push(item.getBoundingClientRect().width);
-            });
-            indt_odd.forEach((item) => {
-              item.style.removeProperty("width");
-              item.style.width = Math.max.apply(null, odd_array) + "px";
-            });
-          }
+              if (!!indt_odd) {
+                indt_odd.forEach((item) => {
+                  odd_array.push(item.getBoundingClientRect().width);
+                });
+                indt_odd.forEach((item) => {
+                  item.style.removeProperty("width");
+                  item.style.width = Math.max.apply(null, odd_array) + "px";
+                });
+              }
 
-          if (!!indt_even) {
-            indt_even.forEach((item) => {
-              even_array.push(item.getBoundingClientRect().width);
-            });
-            indt_even.forEach((item) => {
-              item.style.removeProperty("width");
-              item.style.width = Math.max.apply(null, even_array) + "px";
-            });
-          }
-        } else {
-          let single_array = [];
-          if (!!field_indt_key) {
-            field_indt_key.forEach((item) => {
-              single_array.push(item.getBoundingClientRect().width);
-            });
-            field_indt_key.forEach((item) => {
-              item.style.removeProperty("width");
-              item.style.width = Math.max.apply(null, single_array) + "px";
-            });
-          }
+              if (!!indt_even) {
+                indt_even.forEach((item) => {
+                  even_array.push(item.getBoundingClientRect().width);
+                });
+                indt_even.forEach((item) => {
+                  item.style.removeProperty("width");
+                  item.style.width = Math.max.apply(null, even_array) + "px";
+                });
+              }
+            } else {
+              let single_array = [];
+              if (!!field_indt_key) {
+                field_indt_key.forEach((item) => {
+                  single_array.push(item.getBoundingClientRect().width);
+                });
+                field_indt_key.forEach((item) => {
+                  item.style.removeProperty("width");
+                  item.style.width = Math.max.apply(null, single_array) + "px";
+                });
+              }
+            }
+
+          });
         }
+      });
+    }
+  }
 
+  function col3Action() {
+    if (!!field_list_wrap_col3) {
+      field_list_wrap_col3.forEach((thisTb) => {
+        let thisTr = thisTb.querySelectorAll(".field_list_tr");
+        if (!!thisTr) {
+          field_col_list_tr.forEach((thistr) => {
+            const this_tr_item = thistr;
+            const field_indt_key = this_tr_item.querySelectorAll(".field_indt_key");
+
+            let nth01_dom = null;
+            let nth02_dom = null;
+            let nth03_dom = null;
+
+            if (window.innerWidth >= 768) {
+              if (!!field_indt_key) {
+                field_indt_key.forEach((thisKey, index) => {
+                  if (index % 3 === 0) {
+                    thisKey.classList.add("nth01");
+                  } else if (index % 3 === 1) {
+                    thisKey.classList.add("nth02");
+                  } else {
+                    thisKey.classList.add("nth03");
+                  }
+                })
+              }
+
+              nth01_dom = this_tr_item.querySelectorAll(".field_indt_key.nth01");
+              nth02_dom = this_tr_item.querySelectorAll(".field_indt_key.nth02");
+              nth03_dom = this_tr_item.querySelectorAll(".field_indt_key.nth03");
+
+              let nth01_array = [];
+              let nth02_array = [];
+              let nth03_array = [];
+
+              if (!!nth01_dom) {
+                nth01_dom.forEach((item) => {
+                  nth01_array.push(item.getBoundingClientRect().width);
+                });
+                nth01_dom.forEach((item) => {
+                  item.style.removeProperty("width");
+                  item.style.width = Math.max.apply(null, nth01_array) + "px";
+                });
+              }
+              if (!!nth02_dom) {
+                nth02_dom.forEach((item) => {
+                  nth02_array.push(item.getBoundingClientRect().width);
+                });
+                nth02_dom.forEach((item) => {
+                  item.style.removeProperty("width");
+                  item.style.width = Math.max.apply(null, nth02_array) + "px";
+                });
+              }
+              if (!!nth03_dom) {
+                nth03_dom.forEach((item) => {
+                  nth03_array.push(item.getBoundingClientRect().width);
+                });
+                nth03_dom.forEach((item) => {
+                  item.style.removeProperty("width");
+                  item.style.width = Math.max.apply(null, nth03_array) + "px";
+                });
+              }
+            } else {
+              let single_array = [];
+              if (!!field_indt_key) {
+                field_indt_key.forEach((item) => {
+                  single_array.push(item.getBoundingClientRect().width);
+                });
+                field_indt_key.forEach((item) => {
+                  item.style.removeProperty("width");
+                  item.style.width = Math.max.apply(null, single_array) + "px";
+                });
+              }
+            }
+          });
+        }
       });
     }
   }
