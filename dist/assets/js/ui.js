@@ -1002,7 +1002,6 @@ function toggleTarget() {
 function fieldList() {
   const field_list_wrap_col2 = document.querySelectorAll(".field_list_wrap.col_2");
   const field_list_wrap_col3 = document.querySelectorAll(".field_list_wrap.col_3");
-  const field_col_list_tr = document.querySelectorAll(".field_list_tr");
 
   col2Action();
   col3Action();
@@ -1014,6 +1013,9 @@ function fieldList() {
   function col2Action() {
     if (!!field_list_wrap_col2) {
       field_list_wrap_col2.forEach((thisTb) => {
+        if (thisTb.classList.contains("col_3")) {
+          return;
+        }
         let thisTr = thisTb.querySelectorAll(".field_list_tr");
         if (!!thisTr) {
           thisTr.forEach((thistr) => {
@@ -1042,6 +1044,9 @@ function fieldList() {
 
               if (!!indt_odd) {
                 indt_odd.forEach((item) => {
+                  item.style.removeProperty("width");
+                });
+                indt_odd.forEach((item) => {
                   odd_array.push(item.getBoundingClientRect().width);
                 });
                 indt_odd.forEach((item) => {
@@ -1051,6 +1056,9 @@ function fieldList() {
               }
 
               if (!!indt_even) {
+                indt_even.forEach((item) => {
+                  item.style.removeProperty("width");
+                });
                 indt_even.forEach((item) => {
                   even_array.push(item.getBoundingClientRect().width);
                 });
@@ -1081,9 +1089,12 @@ function fieldList() {
   function col3Action() {
     if (!!field_list_wrap_col3) {
       field_list_wrap_col3.forEach((thisTb) => {
+        if (thisTb.classList.contains("col_2")) {
+          return;
+        }
         let thisTr = thisTb.querySelectorAll(".field_list_tr");
         if (!!thisTr) {
-          field_col_list_tr.forEach((thistr) => {
+          thisTr.forEach((thistr) => {
             const this_tr_item = thistr;
             const field_indt_key = this_tr_item.querySelectorAll(".field_indt_key");
 
@@ -1114,28 +1125,34 @@ function fieldList() {
 
               if (!!nth01_dom) {
                 nth01_dom.forEach((item) => {
+                  item.style.removeProperty("width");
+                });
+                nth01_dom.forEach((item) => {
                   nth01_array.push(item.getBoundingClientRect().width);
                 });
                 nth01_dom.forEach((item) => {
-                  item.style.removeProperty("width");
                   item.style.width = Math.max.apply(null, nth01_array) + "px";
                 });
               }
               if (!!nth02_dom) {
                 nth02_dom.forEach((item) => {
+                  item.style.removeProperty("width");
+                });
+                nth02_dom.forEach((item) => {
                   nth02_array.push(item.getBoundingClientRect().width);
                 });
                 nth02_dom.forEach((item) => {
-                  item.style.removeProperty("width");
                   item.style.width = Math.max.apply(null, nth02_array) + "px";
                 });
               }
               if (!!nth03_dom) {
                 nth03_dom.forEach((item) => {
+                  item.style.removeProperty("width");
+                });
+                nth03_dom.forEach((item) => {
                   nth03_array.push(item.getBoundingClientRect().width);
                 });
                 nth03_dom.forEach((item) => {
-                  item.style.removeProperty("width");
                   item.style.width = Math.max.apply(null, nth03_array) + "px";
                 });
               }
