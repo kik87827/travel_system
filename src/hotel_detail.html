@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html')
+<body class="front_body">
+    <div class="page_wrap">
+        @@include('./include/_header.html')
+        <main class="middle_wrap detail_wrap">
+            <!-- top gallery -->
+            @@include('./include/_grid_visual2.html')
+            <!-- // top gallery -->
+        </main>
+
+        <!-- swiper gallery layer -->
+		@@include('./include/_detail_visual_popup.html')
+		<!-- // swiper gallery layer -->
+
+        <script>
+            window.addEventListener("load", () => {
+				// 상세 비쥬얼
+				detailVisualC();
+            });
+
+
+            // 상세 비쥬얼 팝업 
+           var photo_swiper_popup = new DesignPopup({
+				selector: "#photo_swiper_popup",
+				beforeCallback() {
+					console.log('beforeCallback');
+				},
+				callback() {
+					photoSwiperFunc();
+				}
+			});
+
+			// 상세 비쥬얼 슬라이더
+			let photo_mv_obj = null;
+			function photoSwiperFunc(){
+				const photo_swiper_popup = document.querySelector("#photo_swiper_popup");
+				const gallery_main_swiper_wrap = document.querySelector(".gallery_main_swiper_wrap");
+				const gallery_main_slide = gallery_main_swiper_wrap.querySelectorAll(".swiper-slide");
+				const gfraction_current = photo_swiper_popup.querySelector(".gfraction_current");
+				const gfraction_length = photo_swiper_popup.querySelector(".gfraction_length");
+
+				gfraction_length.textContent = gallery_main_slide.length;
+				photo_mv_obj = new Swiper(".gallery_main_swiper_wrap .swiper-container", {
+					speed : 1000,
+					loop : true,
+					navigation: {
+						nextEl: '.gallery_main_swiper_wrap .btn_gallery_ms_control.next',
+						prevEl: '.gallery_main_swiper_wrap .btn_gallery_ms_control.prev',
+					},
+					autoplay: {
+						delay: 2500,
+						disableOnInteraction: false
+					}
+				});
+
+				slideSetting();
+				photo_mv_obj.on("slideChange",()=>{
+					slideSetting();
+				});
+				
+
+				function slideSetting(){
+					gfraction_current.textContent = photo_mv_obj.realIndex + 1;
+				}
+			}
+
+			// 상세 비쥬얼 버튼 호출
+			const dgrid_thum_item = document.querySelectorAll(".dgrid_thum_item");
+			if(!!dgrid_thum_item){
+				dgrid_thum_item.forEach((item)=>{
+					item.addEventListener("click",()=>{
+						photo_swiper_popup.popupShow();
+					});
+				});
+			}
+        </script>
+        @@include('./include/_footer.html')
+    </div>
+</body>
+</html>

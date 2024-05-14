@@ -566,15 +566,32 @@ function detailVisualC() {
     }
 
     function pcFunc() {
-      detail_mv_obj = new Swiper(".detail_grid_main_swiper", {
-        speed: 1000,
-        loop: true,
-        effect: "fade",
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false
-        }
-      });
+      if ($(".detail_grid_main_swiper").hasClass("type2")) {
+        detail_mv_obj = new Swiper(".detail_grid_main_swiper", {
+          speed: 1000,
+          loop: true,
+          effect: "fade",
+          pagination: {
+            el: ".detail_grid_visual_wrap .swiper-pagination.d_mv_paging",
+            type: "fraction",
+          },
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          }
+        });
+      } else {
+        detail_mv_obj = new Swiper(".detail_grid_main_swiper", {
+          speed: 1000,
+          loop: true,
+          effect: "fade",
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false
+          }
+        });
+      }
+
     }
 
     function mbFunc() {
@@ -584,6 +601,7 @@ function detailVisualC() {
           delay: 2500,
           disableOnInteraction: false
         },
+        loop: true,
         pagination: {
           el: ".detail_grid_visual_wrap .swiper-pagination.d_mv_paging",
           type: "fraction",
