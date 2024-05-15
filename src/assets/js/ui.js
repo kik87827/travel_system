@@ -745,6 +745,7 @@ function stickyTab() {
 	
 	function triggerActiveScroll(){
 		const stickyTabActive = document.querySelector(".sticky_tab.active");
+		if(!stickyTabActive){return;}
 		// Create the event
 		let event = new MouseEvent('click', {
 			bubbles: true,

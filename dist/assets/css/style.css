@@ -4311,6 +4311,33 @@ select.form_select:disabled {
 /* .tab_contents.has_line{border-top:1px solid #e7e7e7;}
 .tab_contents.has_line .tabc_item{border-bottom:1px solid #e7e7e7;}
 .tab_contents.has_line .tabc_item:last-of-type{border-bottom:0;} */
+.detail_hasmore_box {
+  background: #f9f9f9;
+  border-radius: 18px;
+  padding: 20px 36px;
+}
+.detail_hasmore_box.active .detail_hasmore_contents {
+  height: auto;
+}
+
+.detail_hasmore_contents {
+  font-size: 14px;
+  color: #5f5f5f;
+  height: 62px;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.detail_hasmore_btn_row {
+  margin-top: 10px;
+}
+
+.btn_hasmore_text {
+  display: inline-block;
+  font-size: 15px;
+  color: #000000;
+}
+
 .sticky_tabs_inner_wrap .sticky_tabs_inner {
   padding: 15px 0 0 0;
 }
@@ -4528,10 +4555,20 @@ select.form_select:disabled {
     padding: 0 50px;
     box-sizing: border-box;
   }
+  .detail_hasmore_box {
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .btn_hasmore_text {
+    font-size: 14px;
+  }
 }
 /* detail gate */
 .detail_anchor_gate_wrap {
   margin-bottom: 60px;
+}
+.detail_anchor_gate_wrap.gap2 {
+  margin-bottom: 40px;
 }
 
 .detail_product_caption_row {
@@ -4641,6 +4678,12 @@ select.form_select:disabled {
   transform: rotate(-45deg) translateY(-50%);
   margin-top: -2px;
 }
+.arrange_item.type2 {
+  padding-right: 0;
+}
+.arrange_item.type2:after {
+  display: none;
+}
 
 .arrange_text {
   display: inline-block;
@@ -4668,6 +4711,10 @@ select.form_select:disabled {
   left: 0;
   transform: translateY(-50%);
 }
+.eval_text.type2 {
+  font-size: 15px;
+  color: #6d6c6c;
+}
 
 .price_item_wrap {
   text-align: right;
@@ -4677,6 +4724,9 @@ select.form_select:disabled {
   display: flex;
   gap: 5px;
   justify-content: flex-end;
+}
+.price_sub_list.type2 {
+  display: block;
 }
 .price_key,
 .before_price {
@@ -5240,6 +5290,9 @@ select.form_select:disabled {
   }
   .detail_anchor_gate_wrap {
     margin-bottom: 0;
+  }
+  .detail_anchor_gate_wrap.gap2 {
+    margin-bottom: 25px;
   }
   .tab_contents_wrap {
     padding-top: 30px;
@@ -5891,6 +5944,16 @@ select.form_select:disabled {
   gap: 5px;
   flex-direction: column;
 }
+.arrange_item_list.type2 {
+  display: block;
+}
+.arrange_item_list.type2 > li {
+  margin-bottom: 3px;
+}
+.arrange_item_list.type2 > li:last-of-type {
+  margin-bottom: 0;
+}
+
 /* 기타 상세 */
 .detail_img_render_wrap {
   text-align: center;

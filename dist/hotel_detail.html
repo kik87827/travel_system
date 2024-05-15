@@ -904,6 +904,112 @@
 
 
 			<!-- // top gallery -->
+
+			<div class="detail_contents_global_zone">
+				<!-- detail_contents_zone -->
+				<div class="detail_contents_zone">
+					<div class="detail_anchor_contents_wrap">
+						<!-- detail_anchor_gate_wrap -->
+						<div class="detail_anchor_gate_wrap gap2">
+							<div class="detail_product_caption_row">
+								<ul class="pro_keyword_list">
+									<li><a href="#" class="pro_keyword">베트남 나트랑</a></li>
+								</ul>
+							</div>
+							<div class="detail_product_primary_row">
+								<h2 class="detail_product_primary">하얏트 리젠시 와이키키 비치 리조트 & 스파</h2>
+								<p class="detail_product_subcopy">HYATT REGENCY WAIKIKI BEACH RESORT AND SPA</p>
+							</div>
+							<div class="detail_product_highlight_row">
+								<ul class="arrange_item_list type2">
+									<li class="type2">
+										<a href="#" class="arrange_item">
+											<span class="eval_text type2">5등급·리조트</span>
+										</a>
+									</li>
+									<li>
+										<span class="arrange_item type2">
+											<i class="ico ico_marker"></i>
+											<span class="arrange_text">막탄 시내 위치</span>
+										</span>
+									</li>
+								</ul>
+								<div class="price_item_wrap">
+									<dl class="price_sub_list type2">
+										<dt><span class="price_key">최저가 객실</span></dt>
+										<dd><span class="before_price">정상가 380,000원</span></dd>
+									</dl>
+									<ul class="price_main_list">
+										<li><span class="price_key">18%</span></li>
+										<li>
+											<div class="price_value_group">
+												<span class="price_value_main">725,000</span>
+												<span class="price_value_unit">원</span>
+											</div>
+										</li>
+									</ul>
+									<p class="price_subcopy">총1박 342,000원 (세금포함)</p>
+								</div>
+							</div>
+						</div>
+						<!-- // detail_anchor_gate_wrap -->
+						<div class="detail_hasmore_box">
+							<div class="detail_hasmore_contents">
+								세부 제일의 호텔 입니다.<br>
+								호텔 내 수영장에서 스노쿨링이 가능합니다.<br>
+								지금 프로모션 요금으로 특별한 혜택을 챙겨보세요.<br>
+								테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트<br>
+								테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트<br>
+								테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트<br>
+								테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트<br>
+								테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트테스트
+							</div>
+							<div class="detail_hasmore_btn_row">
+								<a href="javascript:void(0);" class="btn_hasmore_text">더보기</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // detail_contents_zone -->
+				<!-- detail_calculation_wrap -->
+				<div class="detail_calculation_zone">
+					<div class="detail_calculation_wrap">
+						<div class="detail_calculation_inner_wrap">
+							<div class="detail_calculation_inner_group">
+								<div class="dc_inner_get_container">
+									<div class="dcalcul_other_group">
+										<p class="dcalcul_other_label">문의 1500-1578</p>
+										<div class="dcc_other_fxbox">
+											<div class="dcc_other_fxcols dcc_long"><a href="#" class="btn_dcc_obox"><span class="dcc_obox_text">1:1문의</span></a></div>
+											<div class="dcc_other_fxcols"><a href="#" class="btn_dcc_ico ico_like"><span class="hdtext">좋아요</span></a></div>
+											<div class="dcc_other_fxcols"><a href="#" class="btn_dcc_ico ico_share"><span class="hdtext">공유하기</span></a></div>
+										</div>
+									</div>
+									<div class="dcalcul_banner_group">
+										<div class="dbanner_key_row">
+											<p class="dbanner_key">최대 7% 할인</p>
+											<div class="dbanner_key_else">
+												<a href="#" class="btn_behavior"><span class="btn_behavior_text">쿠폰받기</span><i class="ico down"></i></a>
+											</div>
+										</div>
+										<div class="dbanner_value_row swiper-small-card-wrap">
+											<div class="swiper-container swiper-small-card">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide"><a href="#" class="btn_small_card"><img src="./assets/images/img_card_01.jpg" alt=""></a></div>
+													<div class="swiper-slide"><a href="#" class="btn_small_card"><img src="./assets/images/img_card_02.jpg" alt=""></a></div>
+													<div class="swiper-slide"><a href="#" class="btn_small_card"><img src="./assets/images/img_card_03.jpg" alt=""></a></div>
+												</div>
+											</div>
+											<div class="swiper-pagination dot-skin2"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- // detail_calculation_wrap -->
+			</div>
 		</main>
 
 		<!-- swiper gallery layer -->
@@ -942,6 +1048,9 @@
 			window.addEventListener("load", () => {
 				// 상세 비쥬얼
 				detailVisualC();
+
+				stickyTab();
+				stickyPanel();
 			});
 
 
@@ -1000,6 +1109,37 @@
 					});
 				});
 			}
+
+			// 우측 배너 스와이프
+			let smallCardObj = new Swiper(".swiper-small-card-wrap .swiper-small-card", {
+				speed: 1000,
+				loop: true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false
+				},
+				pagination: {
+					el: ".swiper-small-card-wrap .swiper-pagination",
+					clickable: true,
+				},
+			});
+
+			// 더보기
+			$(function() {
+				$(".btn_hasmore_text").on("click", function(e) {
+					e.preventDefault();
+					$(this).closest(".detail_hasmore_box").toggleClass("active");
+				});
+			});
+
+			// 좋아요
+			const likeBtn = document.querySelectorAll(".ico_like");
+			likeBtn.forEach((item) => {
+				item.addEventListener("click", (e) => {
+					e.preventDefault();
+					e.currentTarget.classList.toggle("active");
+				});
+			});
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_else_low">
