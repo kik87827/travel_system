@@ -1723,8 +1723,20 @@ input.props_box_form{
     &:after{display:block;content:'';width:7px;height:7px; border-right:1px solid #a1a1a1; border-bottom:1px solid #a1a1a1;position:absolute;top:4px;right:2px; transform: rotate(-45deg);}
 }
 .allow_link_text{display:inline-block;font-size:14px; color:#2b2b2b;line-height:1;}
-/* // contents */
 
+.btn_moreitem_row{text-align: center; margin-top:16px;}
+.btn_moreitem{
+    display:inline-block; 
+}
+.moreitem_text{display:inline-block;font-size:15px; color:#2b2b2b; position:relative; padding-right:19px;
+    &:after{display:block;content:'';width:8px;height:8px;border-right:1px solid #5f5f5f; border-bottom:1px solid #5f5f5f; position:absolute;top:0;right:0;transform: rotate(45deg); position:absolute;top:4px;right:1px;}
+}
+
+
+/* // contents */
+@media (max-width:1280px){
+    .fiqure_item{width:151.2px;height:166.6px;}
+}
 @media (max-width:1023px){
     .section_brick_group{
         & + .card_container_box{
@@ -1944,6 +1956,46 @@ input.props_box_form{
             .btn_textonly_item{top:1px;}
         }   
     }
+
+    .data_spec_primary_wrap{display:block;}
+
+    .data_spec_pro_name{font-size:17px;}
+    .data_spec_pro_sub{font-size:13px;}
+
+    .price_p_number{font-size:18px;}
+    .price_p_unit{font-size:14px;}
+
+    .data_spec_pro_else{font-size:14px;}
+
+    
+    .fiqure_item{width:80px;height:85px;}
+    .fiqure_thum_text{font-size:11px;padding:3px;word-break: keep-all;}
+
+    .data_grid_wrap{gap:10px;}
+
+    .dd_indent_main_text{font-size:14px;padding-top:1px;}
+
+    .dd_indent_item{gap:4px;}
+    
+    .data_detail_box{display:block;padding:12px;}
+    .dd_summary_item_list{margin-top:10px;}
+    .dd_fixed{white-space: normal;margin-top:20px;}
+    .dd_caption_para{margin-top:7px;font-size:14px;}
+    .dd_indent_text_g{
+        &.type2{
+            gap:5px;
+            .btn_allow_link{margin-top:2px;}
+        }
+    }
+    .emp_data_container{padding:15px; border-radius:5px;}
+
+    .btn_cardsm{padding:6px 10px;}
+
+        
+    .btn_moreitem_row{margin-top:10px;}
+    .moreitem_text{font-size:14px;padding-right:18px;
+        &:after{top:3px;}
+    }
 }
 
 @media (max-width:768px){
@@ -1957,4 +2009,5 @@ input.props_box_form{
         
     }
     .terms_props_ui_wrap{margin: 0;}
+
 }

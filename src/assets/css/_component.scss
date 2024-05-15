@@ -245,4 +245,18 @@ select.form_word_select{
     .props_item{gap:7px;}
     
     select.form_select{height:40px;font-size:14px;}
+    select.form_word_select{font-size:14px;}
+
+    .form_word_combo{
+        padding: 3px 25px 3px 0;box-sizing:border-box;font-family: 'Noto Sans KR';cursor: pointer;display:inline-flex; align-items: center; gap:5px;
+         background: url("../images/ico_single_select.png") no-repeat 100% 50%/17px auto;line-height: 1;
+         .ico{
+             flex:0 0 20px; width:20px; height:20px; @include bgicon;margin-right:3px;
+             &.filter{
+                 background-image:url("../images/ico_filter.png");
+             }
+         }
+         .word_key{ font-size:14px;}
+         .word_count{font-size:16px;top:0;}
+     }
 }
