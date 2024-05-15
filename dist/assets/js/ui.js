@@ -928,7 +928,8 @@ function stickyPanel() {
 
 
     if (!!detailCalculationWrap) {
-      if (detailCalculationWrapHeight >= detailContentsZoneHeight) {
+      console.log(detailCalculationWrapHeight, detailContentsZoneHeight);
+      if (detailCalculationWrapHeight + 30 >= detailContentsZoneHeight) {
         return;
       }
       if (detailCalculationZonePos < window.scrollY) {
