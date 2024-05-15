@@ -207,9 +207,19 @@ select.form_select{
     &.placeholder{color:#b5b5b5;}
     &:disabled{background-color:#f7f7f7;color:#b5b5b5;opacity:1;}
 }
+select.form_word_select{
 
+}
 
+.form_word_combo{
+    .ico{
+        &.filter{
 
+        }
+    }
+    .word_key{}
+    .word_count{}
+}
 
 @media (max-width:1023px){
     input.props_form{

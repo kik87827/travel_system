@@ -4322,6 +4322,9 @@ select.form_select:disabled {
   border-bottom: 0;
   display: none;
 }
+.tab_contents_wrap.normal_type .tab_contents .tabc_item:first-of-type {
+  padding-top: 0;
+}
 .tab_contents_wrap.normal_type .tab_contents.active {
   display: block;
 }
@@ -4484,6 +4487,9 @@ select.form_select:disabled {
   align-items: flex-end;
   justify-content: space-between;
 }
+.tab_cont_title_row.type2 {
+  align-items: center;
+}
 
 .tab_cont_title {
   font-size: 20px;
@@ -4495,6 +4501,12 @@ select.form_select:disabled {
 .tab_cont_content_row {
   padding: 30px 0 0 0;
   /* &.mtype2{padding-top:15px;} */
+}
+
+.tab_cont_else_group {
+  display: flex;
+  align-items: center;
+  gap: 25px;
 }
 
 .btn_textonly {
