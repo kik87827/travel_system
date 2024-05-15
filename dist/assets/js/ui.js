@@ -750,18 +750,38 @@ function stickyTab() {
         thisScrollGo = thisScrollMbPos;
       }
 
-      if (!!thisScrollPos) {
+      if (!!thisScrollPos && !detail_anctab_swiper.classList.contains("normal_ui_tab")) {
         window.scrollTo({
           top: thisScrollGo,
           left: 0,
           behavior: "smooth",
         });
+      } else {
+        let thisTargetAtt = thisTarget.getAttribute("href");
+        let thisTargetDom = document.querySelector(thisTargetAtt);
+        let thisTagetDomNo = siblings(thisTargetDom);
+
+        if (!!thisTargetDom) {
+          if (!!thisTagetDomNo) {
+            thisTagetDomNo.forEach((item) => {
+              item.classList.remove("active");
+            });
+          }
+          thisTargetDom.classList.add("active");
+          triggerScrollEvent();
+        }
       }
       btnClickIs = true;
       activeTab(thisTarget);
     });
   });
 
+
+  // 스크롤 이벤트를 강제로 트리거
+  function triggerScrollEvent() {
+    const scrollEvent = new Event('scroll');
+    window.dispatchEvent(scrollEvent);
+  }
 
   function triggerActiveScroll() {
     const stickyTabActive = document.querySelector(".sticky_tab.active");
@@ -779,8 +799,6 @@ function stickyTab() {
     setTimeout(() => {
       stickyTabActive.dispatchEvent(event);
     }, 100);
-
-
   }
 
   function getLayerPos() {
@@ -829,6 +847,9 @@ function stickyTab() {
   }
 
   function updateActiveMenu() {
+    if (!!detail_anctab_swiper.classList.contains("normal_ui_tab")) {
+      return;
+    }
     stickyTab.forEach((item, index) => {
       if (getPosArrayValue[index] <= window.scrollY) {
         activeTab(item);
@@ -847,6 +868,9 @@ function stickyTab() {
   }
 
   function updateOnlyActiveMenu() {
+    if (!!detail_anctab_swiper.classList.contains("normal_ui_tab")) {
+      return;
+    }
     if (!btnClickIs) {
       stickyTab.forEach((item, index) => {
         if (getPosArrayValue[index] <= window.scrollY) {
@@ -928,10 +952,7 @@ function stickyPanel() {
 
 
     if (!!detailCalculationWrap) {
-      console.log(detailCalculationWrapHeight, detailContentsZoneHeight);
-      if (detailCalculationWrapHeight + 30 >= detailContentsZoneHeight) {
-        return;
-      }
+      //if(detailCalculationWrapHeight+30 >=detailContentsZoneHeight){return;}
       if (detailCalculationZonePos < window.scrollY) {
         detailCalculationWrap.classList.add("fixed");
         if (detailContentsGlobalZonePos - dcInnerGetContainerHeight < window.scrollY) {
