@@ -4325,6 +4325,9 @@ select.form_select:disabled {
 .tab_contents_wrap.normal_type .tab_contents .tabc_item:first-of-type {
   padding-top: 0;
 }
+.tab_contents_wrap.normal_type .tab_contents .tabc_item:last-of-type {
+  padding-bottom: 0;
+}
 .tab_contents_wrap.normal_type .tab_contents.active {
   display: block;
 }
