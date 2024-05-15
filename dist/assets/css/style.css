@@ -5394,6 +5394,9 @@ select.form_select:disabled {
   flex: 1;
   min-height: 0;
 }
+.mb_bottom_content_wrap .btn_dprops_row {
+  padding: 0 20px 20px;
+}
 
 .btn_mbb_toggle_row {
   height: 0;
@@ -5521,6 +5524,52 @@ select.form_select:disabled {
 .btn_mbquad_box.primary .btn_mbquad_box_text {
   font-weight: 700;
   color: #fff;
+}
+
+.mbquid_full_cols {
+  flex: 1;
+  display: flex;
+  background: #eaeaea;
+  border-radius: 8px;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.mbquid_full_liquid {
+  flex: 1;
+  min-width: 0;
+}
+
+.mbquid_full_fixed {
+  flex: 0;
+  white-space: nowrap;
+  padding: 0 8px 0 18px;
+  border-left: 1px solid #bfbfbf;
+}
+
+.mbquid_data {
+  display: inline-flex;
+  gap: 8px;
+}
+.mbquid_data .ico {
+  flex: 0 0 25px;
+  width: 25px;
+  height: 25px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: 100% auto;
+}
+.mbquid_data .ico.ico_build {
+  background-image: url("../images/ico_mb_hotel.png");
+}
+
+.mbquid_text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+  display: inline-block;
+  flex: 1;
 }
 
 @media (max-width: 1023px) {

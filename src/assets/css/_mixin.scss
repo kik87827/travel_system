@@ -63,3 +63,7 @@ $warn : #e84854;
 @mixin clamp ($count) {
     word-break:break-all;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:$count;overflow: hidden;
 }
+
+@mixin bgicon {
+    background-repeat: no-repeat; background-position:0 0; background-size:100% auto;
+}

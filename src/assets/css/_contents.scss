@@ -596,7 +596,10 @@
 /* 모바일 하단 */
 .mb_bottom_layer{position:fixed;bottom:0;left:0;width:100%;z-index:50;display:none;}
 .mb_bottom_bone_wrap{}
-.mb_bottom_content_wrap{flex:1;min-height:0;}
+.mb_bottom_content_wrap{flex:1;min-height:0;
+
+    .btn_dprops_row{padding:0 20px 20px;}
+}
 .btn_mbb_toggle_row{height:0;text-align: center;position:relative;z-index:2;border-bottom:1px solid #cacaca;}
 .btn_mbb_toggle{position:relative;top:1px;height:20px;transform:translateY(-100%);display:inline-block;width:80px;background:#fff;border-radius:8px 8px 0 0;border:1px solid #cacaca;border-bottom:0;
     box-shadow: 6px 7px 12px -5px rgba(0,0,0,0.5);
@@ -625,6 +628,20 @@
 .btn_mbquad_box_text{font-size:15px;color:#2b2b2b;}
 .btn_mbquad_box.primary{flex:1;background-color:#176bdd;border-color:#176bdd;}
 .btn_mbquad_box.primary .btn_mbquad_box_text{font-weight:700;color:#fff;}
+
+.mbquid_full_cols{flex:1; display:flex; background:#eaeaea; border-radius:8px; align-items: center; text-align: center; padding:10px;}
+.mbquid_full_liquid{flex:1;min-width:0;}
+.mbquid_full_fixed{flex:0;white-space: nowrap; padding:0 8px 0 18px;
+    border-left:1px solid #bfbfbf;
+}
+.mbquid_data{
+    display:inline-flex; gap:8px;
+    .ico{
+        flex:0 0 25px; width:25px;height:25px; @include bgicon;
+        &.ico_build{background-image:url("../images/ico_mb_hotel.png")}
+    }
+}
+.mbquid_text{font-size:16px; font-weight:700;color:#333333; display:inline-block; flex:1;}
 @media (max-width:1023px){
     .mb_bottom_layer{display:block;}
     
