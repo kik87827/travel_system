@@ -7885,6 +7885,33 @@ input.props_box_form:checked {
   right: 1px;
 }
 
+.tabc_item_block_wrap {
+  margin-top: 45px;
+}
+
+.tabc_item_title {
+  font-size: 19px;
+  color: #2b2b2b;
+  font-weight: 500;
+}
+
+.tblock_list > li {
+  padding: 40px 20px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.tblock_title {
+  font-size: 19px;
+  font-weight: 500;
+  color: #2b2b2b;
+  margin-bottom: 18px;
+}
+
+.tblock_content {
+  font-size: 14px;
+  color: #5f5f5f;
+}
+
 /* // contents */
 @media (max-width: 1280px) {
   .fiqure_item {
@@ -8284,6 +8311,22 @@ input.props_box_form:checked {
   }
   .moreitem_text:after {
     top: 3px;
+  }
+  .tabc_item_block_wrap {
+    margin-top: 25px;
+  }
+  .tabc_item_title {
+    font-size: 16px;
+  }
+  .tblock_list > li {
+    padding: 30px 10px;
+  }
+  .tblock_title {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .tblock_content {
+    font-size: 14px;
   }
 }
 @media (max-width: 768px) {
