@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html')
+<body class="front_body">
+    <div class="page_wrap">
+        @@include('./include/_header.html')
+        <main class="middle_wrap has_svtype">
+            <div class="sub_visual_field_wrap">
+                <div class="bg" style="background-image:url('./assets/images/bg_sv_search.jpg')"></div>
+                <div class="sv_field_copy_wrap">
+                    <p class="sv_field_copy">
+                        국내에서 해외까지 <br>끝없이 펼쳐질 매력있는 여행
+                    </p>
+                </div>
+                <div class="sv_field_form_wrap">
+                    <div class="sv_field_form_box">
+                        <div class="sv_field_tab_wrap">
+                            <ul class="sv_field_tab_list">
+                                <li><a href="#" class="sv_field_tab active"><span class="sv_field_tab_text">패키지</span></a></li>
+                                <li><a href="#" class="sv_field_tab"><span class="sv_field_tab_text">투어티켓</span></a></li>
+                                <li><a href="#" class="sv_field_tab"><span class="sv_field_tab_text">호텔</span></a></li>
+                                <li><a href="#" class="sv_field_tab"><span class="sv_field_tab_text">항공</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="sv_field_form_container">
+                            <div class="search_field_wrap">
+                                <div class="search_field_cols_wrap">
+                                    <div class="search_field_cols">
+                                        <a href="javascript:;" class="search_field_target define_search" data-poslayer="#layer_box_search">
+                                            <i class="ico"></i>
+                                            <div class="search_form_text_g">
+                                                <div class="search_form_text_place">검색어를 입력해주세요</div>
+                                                <div class="search_form_text_result_row">
+                                                    <div class="search_form_text_result"></div>
+                                                    <button type="button" class="btn_search_result_reset"><span class="hdtext">리셋</span></button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="search_field_cols">
+                                        <a href="javascript:;" class="search_field_target define_calendar" id="layer_box_date">
+                                            <i class="ico"></i>
+                                            <div class="search_form_text_g">
+                                                <div class="search_form_text_place">날짜를 입력하세요</div>
+                                                <div class="search_form_text_result_row">
+                                                    <div class="search_form_text_result"></div>
+                                                    <button type="button" class="btn_search_result_reset"><span class="hdtext">리셋</span></button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="search_field_cols">
+                                        <a href="javascript:;" class="search_field_target define_marker" data-poslayer="#layer_box_local">
+                                            <i class="ico"></i>
+                                            <div class="search_form_text_g">
+                                                <div class="search_form_text_place">지역을 선택해주세요</div>
+                                                <div class="search_form_text_result_row">
+                                                    <div class="search_form_text_result"></div>
+                                                    <button type="button" class="btn_search_result_reset"><span class="hdtext">리셋</span></button>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="search_field_cols define_btn">
+                                    <a href="#" class="btn_search_form"><span class="btn_search_form_text">검색</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sub_contents_wrap">
+                <div class="list_board_sort_wrap">
+                    <div class="list_board_sort_cols">
+                        <ul class="list_board_sort_list">
+                            <li>
+                                <div class="list_board_fraction"><strong class="list_board_current">10</strong><span class="list_board_else">개 상품</span></div>
+                            </li>
+                            <li>
+                                <a href="#" class="form_word_combo type2">
+                                    <i class="ico filter"></i>
+                                    <span class="word_key">필터</span>
+                                    <span class="word_count">4</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+                    <div class="list_board_sort_cols">
+                        <ul class="list_board_sort_list">
+                            <li>
+                                <select class="form_word_select">
+                                    <option>추천순</option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="list_board_render">
+                    내용이 들어갑니다.
+                    <!-- paging -->
+                    <div class="paging_wrap">
+                        <a href="#" class="btn_paging_control prev_first"><span class="hdtext">처음</span></a>
+                        <a href="#" class="btn_paging_control prev_go"><span class="hdtext">이전</span></a>
+                        <ul class="paging_num_list">
+                            <li><a href="#" class="paging_num active">1</a></li>
+                            <li><a href="#" class="paging_num">2</a></li>
+                            <li><a href="#" class="paging_num">3</a></li>
+                            <li><a href="#" class="paging_num">4</a></li>
+                            <li><a href="#" class="paging_num">5</a></li>
+                        </ul>
+                        <a href="#" class="btn_paging_control next_go"><span class="hdtext">다음</span></a>
+                        <a href="#" class="btn_paging_control next_last"><span class="hdtext">끝</span></a>
+                    </div>
+                    <!-- // paging -->
+                </div>
+            </div>
+        </main>
+        @@include('./include/_footer.html')
+
+        <!-- layer -->
+        <div class="poslayer_z has_leftpos" id="layer_box_search" data-topmargin="20" data-topMobileMargin="0">
+			<div class="poslayer_titlow">
+				<p class="poslayer_tit">검색어입력</p>
+			</div>
+			<div class="poslayer_contlow">
+				<div class="pcont_w">
+					<div class="pclayer_scr_w">
+						<div class="search_field_box">
+							<input type="text" class="input_search_field" placeholder="검색어를 입력하세요">
+							<!-- <a href="#" class="btn_input_submit"><span class="hdtext">검색</span></a> -->
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn_psubmit_w">
+				<a href="#" class="btn_psubmit">적용</a>
+			</div>
+			<button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+		</div>
+       <!--  <div class="poslayer_z has_leftpos" id="layer_box_date" data-topmargin="20" data-topMobileMargin="0">
+			<div class="poslayer_titlow">
+				<p class="poslayer_tit">날짜 입력</p>
+			</div>
+			<div class="poslayer_contlow">
+				<div class="pcont_w">
+					<input type="text" class="formtarget_input daterange_inline_call" id="goback_inlinecall">
+					<div class="daterange_inline_wrap" id="datarange_wrap"></div>
+				</div>
+				<div class="btn_psubmit_w">
+					<a href="#" class="btn_psubmit">적용</a>
+				</div>
+			</div>
+			<button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+		</div> -->
+        <div class="poslayer_z" id="layer_box_local" data-topmargin="20" data-topMobileMargin="0">
+			<div class="poslayer_titlow">
+				<p class="poslayer_tit">지역선택</p>
+			</div>
+			<div class="poslayer_contlow type4">
+				<div class="pcont_w">
+					<div class="product_tabmenu_list_wrap">
+						<ul class="product_tabmenu_list">
+							<li><a href="#product_tabcont_01" class="product_tabmenu active">해외투어</a></li>
+							<li><a href="#product_tabcont_02" class="product_tabmenu">국내여행</a></li>
+							<li><a href="#product_tabcont_03" class="product_tabmenu">골프여행</a></li>
+							<li><a href="#product_tabcont_04" class="product_tabmenu">테마여행</a></li>
+						</ul>
+					</div>
+					<div class="product_tabcont_group">
+						<div class="product_tabcont active" id="product_tabcont_01">
+							<div class="product_choice_item_wrap">
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">태국</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">방콕</a></li>
+											<li><a href="#" class="product_choice_depth">치앙마이</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">베트남</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">하노이</a></li>
+											<li><a href="#" class="product_choice_depth">다낭</a></li>
+											<li><a href="#" class="product_choice_depth">나트랑</a></li>
+											<li><a href="#" class="product_choice_depth">깜라인</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">남태평양</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">방콕</a></li>
+											<li><a href="#" class="product_choice_depth">치앙마이</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">말레이시아</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">방콕</a></li>
+											<li><a href="#" class="product_choice_depth">치앙마이</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">남태평양</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">방콕</a></li>
+											<li><a href="#" class="product_choice_depth">치앙마이</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">일본</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">방콕</a></li>
+											<li><a href="#" class="product_choice_depth">치앙마이</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">필리핀</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">방콕</a></li>
+											<li><a href="#" class="product_choice_depth">치앙마이</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product_tabcont" id="product_tabcont_02">
+							<div class="product_choice_item_wrap">
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">국내여행</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">국내여행 서브메뉴 01</a></li>
+											<li><a href="#" class="product_choice_depth">국내여행 서브메뉴 02</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">국내여행 2</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">국내여행 2 서브메뉴 01</a></li>
+											<li><a href="#" class="product_choice_depth">국내여행 2 서브메뉴 02</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">국내여행 3</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">국내여행 3 서브메뉴 01</a></li>
+											<li><a href="#" class="product_choice_depth">국내여행 3 서브메뉴 02</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product_tabcont" id="product_tabcont_03">
+							<div class="product_choice_item_wrap">
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">골프여행</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">골프여행 서브메뉴 01</a></li>
+											<li><a href="#" class="product_choice_depth">골프여행 서브메뉴 02</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">골프여행 2</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">골프여행 2 서브메뉴 01</a></li>
+											<li><a href="#" class="product_choice_depth">골프여행 2 서브메뉴 02</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">골프여행 3</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">골프여행 3 서브메뉴 01</a></li>
+											<li><a href="#" class="product_choice_depth">골프여행 3 서브메뉴 02</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product_tabcont" id="product_tabcont_04">
+							<div class="product_choice_item_wrap">
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">테마여행</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">테마여행 서브메뉴 01</a></li>
+											<li><a href="#" class="product_choice_depth">테마여행 서브메뉴 02</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">테마여행 2</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">테마여행 2 서브메뉴 01</a></li>
+											<li><a href="#" class="product_choice_depth">테마여행 2 서브메뉴 02</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="product_choice_item">
+									<a href="#" class="product_choice_one"><span class="product_choice_one_text">테마여행 3</span></a>
+									<div class="product_choice_depth_wrap">
+										<ul class="product_choice_depth_list">
+											<li><a href="#" class="product_choice_depth">테마여행 3 서브메뉴 01</a></li>
+											<li><a href="#" class="product_choice_depth">테마여행 3 서브메뉴 02</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn_psubmit_w">
+					<a href="#" class="btn_psubmit">적용</a>
+				</div>
+			</div>
+			<button type="button" class="layerclose"><span class="hdtext">닫기</span></button>
+		</div>
+		<script>
+			productTabCont()
+			$(function() {
+				$("#layer_box_date").daterangepicker({
+					singleDatePicker: true,
+					autoUpdateInput: false,
+					elseMent: "날짜 선택",
+					locale: {
+						format: 'YYYY-MM-DD',
+						"daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"],
+						"monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+						applyLabel: "적용"
+					}
+				});
+				$("#layer_box_date").on('apply.daterangepicker', function(ev, picker) {
+					$(this).val(picker.startDate.format('YYYY-MM-DD'));
+					$(".search_field_target.define_calendar").addClass("result_mode");
+					$(".search_field_target.define_calendar .search_form_text_result").text(picker.startDate.format('YYYY-MM-DD'))
+				});
+			});
+		</script>
+		
+        <!-- // layer -->
+    </div>
+</body>
+</html>
