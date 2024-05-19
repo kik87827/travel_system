@@ -8,6 +8,7 @@ window.addEventListener("load", () => {
 });
 
 $(function() {
+	toggleItem();
 })
   
   /**
@@ -1480,5 +1481,11 @@ function productTabCont(){
 
 			product_tabActive = thisTarget;
 		})
+	});
+}
+
+function toggleItem(){
+	$(document).on("click",".btn_like",function(){
+		$(this).toggleClass("active");
 	});
 }

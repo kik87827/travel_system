@@ -7,7 +7,9 @@ window.addEventListener("load", () => {
   posLayerEvent();
 });
 
-$(function() {})
+$(function() {
+  toggleItem();
+})
 
 /**
  * device check
@@ -1525,5 +1527,11 @@ function productTabCont() {
 
       product_tabActive = thisTarget;
     })
+  });
+}
+
+function toggleItem() {
+  $(document).on("click", ".btn_like", function() {
+    $(this).toggleClass("active");
   });
 }
