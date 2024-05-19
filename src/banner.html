@@ -9,7 +9,7 @@
                 <div class="middle_guide_vitem_wrap">
                     <div class="middle_guide_vitem">
                         <!-- banner -->
-                        <div class="card_banner_container">
+                        <div class="card_banner_global_container">
                             <div class="card_banner_title_row">
                                 <div class="card_banner_title_copy_wrap">
                                     <p class="card_banner_title_maincopy">품격있는 최고의 골프여행</p>
@@ -96,6 +96,20 @@
                                 </div>
                             </div>
                         </div>
+                        <script>
+                            $(function(){
+                                let mainProductObj = new Swiper(".card_banner_container", {
+                                    slidesPerView: 'auto',
+                                    slidesPerGroupAuto : true,
+                                    freeMode: true,
+                                    spaceBetween : 15,
+                                    pagination: {
+                                        el: ".card_banner_global_container .swiper-pagination",
+                                        clickable: true,
+                                    },
+                                });
+                            });
+                        </script>
                         <!-- banner -->
                     </div>
                 </div>

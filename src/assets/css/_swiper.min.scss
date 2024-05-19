@@ -662,3 +662,9 @@ button.swiper-pagination-bullet {
 .swiper-container-coverflow .swiper-wrapper {
     -ms-perspective: 1200px
 }
+
+
+.swiper-pagination.default_skin{position:static;font-size:0;line-height:0;
+   .swiper-pagination-bullet{margin:40px 2px 0;width:10px;height:10px;background:#ababab;opacity:1;}
+   .swiper-pagination-bullet.swiper-pagination-bullet-active{background:#535353;width:30px;border-radius:100px;}
+}
