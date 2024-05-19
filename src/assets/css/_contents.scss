@@ -2403,6 +2403,123 @@ input.props_box_form{
     .price_item_wrap{}
 }
 
+.pc_block{}
+.mb_block{}
+.grid_wbox_wrap{}
+.grid_wbox_list{
+    > li{
+
+    }
+}
+.grid_wbox{}
+.grid_wbox_key{}
+.list_gridlogo{
+    img{}
+}
+.air_road_wrap{}
+.air_road_flex{}
+.air_road_text{}
+.air_road_maintext{}
+.air_road_subtext{}
+.air_road_icon{}
+.air_else_wrap{}
+.air_else_box{}
+.air_price_wrap{
+    .price_item_wrap{}
+}
+.price_mesbox_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.price_mesbox{
+    &.type2{
+
+    }
+}
+.btn_grid_box_wrap{}
+.btn_grid_submitbox{}
+.grid_wbox_liquid{}
+.grid_boxcard{}
+.grid_boxcard_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.air_data_box{}
+.air_data_cols{
+    &:last-of-type{}
+}
+.air_data_primary_wrap{}
+.air_data_primary{}
+.air_data_secondary{}
+.air_data_detail_wrap{}
+.air_data_detail_text{}
+.air_part_cols{}
+.air_part_keyword_wrap{}
+.air_part_keyword{}
+.air_part_company_wrap{}
+.company_obj{
+    .ico{
+        img{}
+    }
+}
+.company_spec{}
+.air_part_map_wrap{}
+.air_part_map_code{}
+.air_part_map_line{
+    &:before,
+    &:after{}
+    &:before{}
+    &:after{}
+}
+.air_part_map_sub{}
+
+.grid_mb_wbox_wrap{}
+.grid_mb_wbox_list{
+    > li{}
+}
+.grid_mb_wbox{
+    .list_gridlogo{
+        img{}
+    }
+}
+.air_mb_road_flex{}
+.air_mb_road_cols{}
+.air_mb_road_primary{}
+.air_mb_road_sub{}
+.air_mb_road_part{
+    .part_row{}
+    .part_row{}
+}
+.air_mb_road_line{
+    &:before,&:after{}
+    &:before{}
+    &:after{}
+}
+.air_mb_road_primary{}
+.air_mb_road_sub{}
+.air_mb_btn_row{}
+.btn_mb_box{
+    .ico{
+        &.ico_air{}
+        &.ico_warn{}
+    }
+}
+.mb_box_text{}
+.air_mb_price_wrap{
+    .price_item_wrap{}
+}
+.air_mb_btn_cols{}
+.btn_grid_submitbox{}
+.grid_mb_wbox_wrap{}
+.air_mb_more_wrap{
+    .text_cols{}
+    .btn_cols{}
+}
+.air_mb_more_text{}
+.btn_grid_textonly{}
+
 @media (max-width:1023px){
     .card_banner_container{padding:0 20px;}
     .card_banner_title_row{margin-bottom:30px;gap:10px;}
@@ -2419,6 +2536,8 @@ input.props_box_form{
     }
     .text_onlytab_inner{font-size:14px; }
 
+    .pc_block{}
+    .mb_block{}
 }
 @media (max-width:767px){
     .card_banner_title_row{ display:block;}
