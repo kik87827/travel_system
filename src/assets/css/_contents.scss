@@ -2347,6 +2347,62 @@ input.props_box_form{
     .price_unit_text{}
 }
 
+.thumnail_multibox_wrap{}
+.thumnail_multibox_list{
+    > li{}
+}
+.thumnail_multibox{
+    .thum_row{
+
+    }
+    .thum_big{
+        img{}
+    }
+}
+.thum_sm_list_wrap{}
+.thum_sm_list{
+    > li{}
+}
+.thum_sm{
+    img{}
+}
+.spec_cols_wrap{}
+.spec_summary_cols{}
+.spec_price_cols{}
+.spec_main_summary{
+    .keyword_item_wrap{}
+}
+.box_prodcut_copy_wrap{}
+.box_product_main_copy{}
+.box_product_sub_copy{}
+.arrange_item_wrap{
+    .arrange_item_list{}
+}
+.spec_sub_summary{
+
+}
+.spec_message_box{
+
+}
+.spec_message_key_cols{
+
+}
+.spec_message_key{
+    .ico{}
+}
+.spec_mesasge_text{}
+.spec_message_value_cols{
+
+}
+.bullet_option_list{
+    > li{
+        &:before{}
+    }
+}
+.spec_price_cols{
+    .price_item_wrap{}
+}
+
 @media (max-width:1023px){
     .card_banner_container{padding:0 20px;}
     .card_banner_title_row{margin-bottom:30px;gap:10px;}
