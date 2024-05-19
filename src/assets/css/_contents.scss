@@ -2177,7 +2177,7 @@ input.props_box_form{
 
 /* paging */
 
-.paging_wrap{margin-top:60px;display:flex;align-items: center;justify-content: center;}
+.paging_wrap{margin-top:40px;display:flex;align-items: center;justify-content: center;}
 .btn_paging_control{display:inline-block;flex:0 0 30px;width:30px;height:30px;background-position:50% 50%;background-repeat:no-repeat;background-size:24px auto;margin:0 5px;
     border:1px solid #b1b1b1; border-radius:100%;
     &.prev_first{background-image:url("../images/ico_paging_first.png");}
@@ -2270,7 +2270,7 @@ input.props_box_form{
     .price_obj{}
 }
 
-.thumnail_gallery_wrap{position:relative;}
+.thumnail_gallery_wrap{position:relative;border-bottom:1px solid #e7e7e7;padding-bottom:50px;}
 .thumnail_gallery_list{
     display:flex; flex-wrap:wrap; gap:40px 24px; margin-right:-24px;
     > li{
@@ -2332,37 +2332,45 @@ input.props_box_form{
     &.active{background-position:0 100%;}
 }
 
-.thumnail_box_wrap{}
+.thumnail_box_wrap{position:relative;overflow:hidden;border-bottom:1px solid #e7e7e7;padding-bottom:50px;}
 .thumnail_box_list{
-    > li{}
+    display:flex; flex-wrap:wrap; margin-right:-20px; gap:50px 20px;
+    > li{
+        flex : 0 0 calc(20% - 20px);
+    }
 }
 .thumnail_box_item{
     .thum_rows{
-        img{}
+        position:relative; height:0; padding-bottom:100%; border-radius:18px;border:1px solid #dadada; overflow:hidden; display:block; margin-bottom:12px; 
+        > img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit: cover;object-position: 50% 50%; transition:.4s; transform: scale(1.0);}
+        &:hover{
+            > img{transform: scale(1.2);}
+        }
     }
     .spec_rows{}
 }
 .thumnail_box_item{
+    
     .keyword_item_wrap{
-
+        
     }
-    .keyword_item{}
+    .keyword_item{color:#2b8bf2;border-color:#eff5fc;background:#eff5fc; border-radius:5px;}
     .btn_like{}
 }
-.spec_row01_wrap{}
+.spec_row01_wrap{display:flex; justify-content: space-between;gap:5px; align-items: center;margin-bottom:5px;}
 .spec_row02_wrap{}
-.spec_row03_wrap{}
-.spec_row04_wrap{}
-.spec_row_main{}
+.spec_row03_wrap{margin-top:10px;}
+.spec_row04_wrap{margin-top:15px;}
+.spec_row_main{font-size:16px;font-weight:500;color:#2b2b2b;@include clamp(2);}
 .thumnail_box_item{
     .arrange_item_list{
         > li{}
     }
 }
-.spec_row04_wrap{
+.thumnail_box_item{
     .price_item_group{}
-    .price_main_text{}
-    .price_unit_text{}
+    .price_main_text{font-weight:500; font-size:18px;}
+    .price_unit_text{ font-size:15px;}
 }
 
 .thumnail_multibox_wrap{}

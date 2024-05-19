@@ -9357,7 +9357,7 @@ input.props_box_form:checked {
 }
 /* paging */
 .paging_wrap {
-  margin-top: 60px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9540,6 +9540,8 @@ input.props_box_form:checked {
 
 .thumnail_gallery_wrap {
   position: relative;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 50px;
 }
 
 .thumnail_gallery_list {
@@ -9736,6 +9738,90 @@ input.props_box_form:checked {
 }
 .btn_like.active {
   background-position: 0 100%;
+}
+
+.thumnail_box_wrap {
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 50px;
+}
+
+.thumnail_box_list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -20px;
+  gap: 50px 20px;
+}
+.thumnail_box_list > li {
+  flex: 0 0 calc(20% - 20px);
+}
+
+.thumnail_box_item .thum_rows {
+  position: relative;
+  height: 0;
+  padding-bottom: 100%;
+  border-radius: 18px;
+  border: 1px solid #dadada;
+  overflow: hidden;
+  display: block;
+  margin-bottom: 12px;
+}
+.thumnail_box_item .thum_rows > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  transition: 0.4s;
+  transform: scale(1);
+}
+.thumnail_box_item .thum_rows:hover > img {
+  transform: scale(1.2);
+}
+.thumnail_box_item .keyword_item {
+  color: #2b8bf2;
+  border-color: #eff5fc;
+  background: #eff5fc;
+  border-radius: 5px;
+}
+.spec_row01_wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.spec_row03_wrap {
+  margin-top: 10px;
+}
+
+.spec_row04_wrap {
+  margin-top: 15px;
+}
+
+.spec_row_main {
+  font-size: 16px;
+  font-weight: 500;
+  color: #2b2b2b;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.thumnail_box_item .price_main_text {
+  font-weight: 500;
+  font-size: 18px;
+}
+.thumnail_box_item .price_unit_text {
+  font-size: 15px;
 }
 
 @media (max-width: 1023px) {
