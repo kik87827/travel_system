@@ -2289,7 +2289,7 @@ input.props_box_form{
     .price_unit{font-size:18px;}
 }
 
-.thumnail_gallery_wrap{position:relative;border-bottom:1px solid #e7e7e7;padding-bottom:50px;}
+.thumnail_gallery_wrap{position:relative;border-bottom:1px solid #e7e7e7;padding-bottom:50px; overflow:hidden;}
 .thumnail_gallery_list{
     display:flex; flex-wrap:wrap; gap:40px 24px; margin-right:-24px;
     > li{
@@ -2646,6 +2646,72 @@ input.props_box_form{
 
     .pc_block{display:none;}
     .mb_block{display:block;}
+
+    .thumnail_gallery_list{
+        margin-right:0; display:block;
+        > li{
+            flex:0 0 100%; margin-bottom:30px;
+            &:last-of-type{margin-bottom:0;}
+        }
+    }
+    .thumnail_card_item{
+        .thum_rows{
+            border-radius:10px 10px 0 0;
+            flex-basis: 120px; height:120px;
+        }
+        .spec_rows{
+            border-radius:0 0 10px 10px; padding-bottom:15px;
+        }
+    }
+    .keyword_item{font-size:12px;}
+    .title_main_item{font-size:16px;}
+    .title_sub_item{font-size:13px;}
+    .price_horspec_row{margin-top:15px;display:block; }
+    .price_horspec_cols{
+        text-align: left;
+        &:last-of-type{text-align: right;}
+        margin-bottom:5px;
+        &:last-of-type{margin-bottom:5px;}
+    }
+
+    .thumnail_box_wrap{
+        padding-bottom:30px;
+    }
+    .thumnail_box_list{
+        display:block; margin:0;
+        > li{
+            margin-bottom:30px;
+            &:last-of-type{margin-bottom:0;}
+        }
+    }
+    .thumnail_box_item{
+        display:flex; align-items: flex-start; gap:15px; flex-direction: row; justify-content: flex-start; height:auto; position:relative;
+        .thum_rows{flex:0 0 100px;width:100px;height:100px;border-radius: 10px; display:block; margin-bottom:0; padding-bottom:0;
+            
+        }
+        .spec_rows{flex:1;
+            .btn_like{position:absolute;top:6px;left:calc(100px - 18px);background-image:url("../images/ico_like_16_m.png");}
+        }
+    }
+
+    .nodata_para{padding:100px 0; font-size:14px;}
+
+    .arrange_item_list{
+        .arrange_item{
+            .ico{
+                &.ico_marker{
+                    margin-left:-2px;
+                }
+            }
+        }
+    }
+    .spec_row01_wrap{display:block;}
+    .thumnail_box_item {
+        .price_main_text{font-size:16px;}
+        .price_unit_text{font-size:14px;}
+    }
+
+    .spec_row04_wrap{margin-top:5px;}
 }
 @media (max-width:767px){
     .card_banner_title_row{ display:block;}

@@ -9652,6 +9652,7 @@ input.props_box_form:checked {
   position: relative;
   border-bottom: 1px solid #e7e7e7;
   padding-bottom: 50px;
+  overflow: hidden;
 }
 
 .thumnail_gallery_list {
@@ -10541,6 +10542,108 @@ input.props_box_form:checked {
   }
   .mb_block {
     display: block;
+  }
+  .thumnail_gallery_list {
+    margin-right: 0;
+    display: block;
+  }
+  .thumnail_gallery_list > li {
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+  .thumnail_gallery_list > li:last-of-type {
+    margin-bottom: 0;
+  }
+  .thumnail_card_item .thum_rows {
+    border-radius: 10px 10px 0 0;
+    flex-basis: 120px;
+    height: 120px;
+  }
+  .thumnail_card_item .spec_rows {
+    border-radius: 0 0 10px 10px;
+    padding-bottom: 15px;
+  }
+  .keyword_item {
+    font-size: 12px;
+  }
+  .title_main_item {
+    font-size: 16px;
+  }
+  .title_sub_item {
+    font-size: 13px;
+  }
+  .price_horspec_row {
+    margin-top: 15px;
+    display: block;
+  }
+  .price_horspec_cols {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  .price_horspec_cols:last-of-type {
+    text-align: right;
+  }
+  .price_horspec_cols:last-of-type {
+    margin-bottom: 5px;
+  }
+  .thumnail_box_wrap {
+    padding-bottom: 30px;
+  }
+  .thumnail_box_list {
+    display: block;
+    margin: 0;
+  }
+  .thumnail_box_list > li {
+    margin-bottom: 30px;
+  }
+  .thumnail_box_list > li:last-of-type {
+    margin-bottom: 0;
+  }
+  .thumnail_box_item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: auto;
+    position: relative;
+  }
+  .thumnail_box_item .thum_rows {
+    flex: 0 0 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .thumnail_box_item .spec_rows {
+    flex: 1;
+  }
+  .thumnail_box_item .spec_rows .btn_like {
+    position: absolute;
+    top: 6px;
+    left: 82px;
+    background-image: url("../images/ico_like_16_m.png");
+  }
+  .nodata_para {
+    padding: 100px 0;
+    font-size: 14px;
+  }
+  .arrange_item_list .arrange_item .ico.ico_marker {
+    margin-left: -2px;
+  }
+  .spec_row01_wrap {
+    display: block;
+  }
+  .thumnail_box_item .price_main_text {
+    font-size: 16px;
+  }
+  .thumnail_box_item .price_unit_text {
+    font-size: 14px;
+  }
+  .spec_row04_wrap {
+    margin-top: 5px;
   }
 }
 @media (max-width: 767px) {
