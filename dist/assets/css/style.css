@@ -9570,6 +9570,10 @@ input.props_box_form:checked {
   text-align: center;
 }
 
+.card_banner_contents {
+  position: relative;
+}
+
 .card_banner_swiper_wrap {
   margin-right: -10px;
 }
@@ -9603,6 +9607,18 @@ input.props_box_form:checked {
   overflow: hidden;
   border-radius: 18px;
 }
+.card_banner_img_wrap img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .card_banner_spec_wrap {
   position: relative;
   margin-left: 45px;
@@ -10518,6 +10534,162 @@ input.props_box_form:checked {
   left: 0;
 }
 
+.grid_mb_wbox_list > li {
+  margin-bottom: 20px;
+}
+.grid_mb_wbox_list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.grid_mb_wbox {
+  border-radius: 10px;
+  border: 5px solid #f9f9f9;
+  padding: 20px;
+  position: relative;
+}
+.grid_mb_wbox .list_gridlogo {
+  left: -10px;
+  top: -10px;
+  width: 35px;
+  height: 35px;
+}
+.grid_mb_wbox .air_else_box {
+  font-size: 12px;
+}
+
+.air_mb_road_flex {
+  display: flex;
+  text-align: center;
+  margin: 0 -20px;
+}
+
+.air_mb_road_cols {
+  flex: 1;
+  padding: 0 5px;
+}
+
+.air_mb_road_primary {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.air_mb_road_part {
+  flex: 0 0 40%;
+  padding-top: 7px;
+}
+.air_mb_road_part .part_row {
+  font-size: 0;
+  line-height: 0;
+  margin-bottom: 10px;
+}
+.air_mb_road_part .part_row:last-of-type {
+  margin-bottom: 0;
+}
+
+.air_mb_road_line {
+  font-size: 14px;
+  color: #6d6c6c;
+  position: relative;
+  height: 2px;
+  background: #176bdd;
+  margin: 4px 0;
+}
+.air_mb_road_line:before, .air_mb_road_line:after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  background: #fff;
+  border: 2px solid #176bdd;
+  border-radius: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-sizing: border-box;
+}
+.air_mb_road_line:before {
+  left: -5px;
+}
+.air_mb_road_line:after {
+  right: -5px;
+}
+
+.air_mb_btn_row {
+  display: flex;
+  gap: 5px;
+  margin-top: 15px;
+}
+
+.btn_mb_box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #aaaaaa;
+  border-radius: 4px;
+  gap: 2px;
+  padding: 6px;
+}
+.btn_mb_box .ico {
+  flex: 0 0 20px;
+  width: 20px;
+  height: 20px;
+  background: url("../images/ico_search_mb.png") no-repeat 0 0/100% auto;
+}
+.btn_mb_box .ico.ico_warn {
+  background-position: 0 -20px;
+}
+.btn_mb_box .mb_box_text {
+  position: relative;
+  top: -1px;
+}
+
+.mb_box_text {
+  font-size: 14px;
+  display: inline-block;
+  line-height: 1;
+}
+
+.air_mb_price_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  gap: 10px;
+}
+.air_mb_price_wrap .price_value_main {
+  font-size: 20px;
+}
+.air_mb_btn_cols .btn_grid_submitbox {
+  min-width: 80px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.air_mb_more_wrap {
+  display: flex;
+  background: #f9f9f9;
+  border-radius: 5px;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+.air_mb_more_wrap .btn_cols .btn_grid_textonly {
+  font-size: 13px;
+}
+
+.air_mb_more_text {
+  font-size: 13px;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+}
+
 .btn_grid_textonly {
   display: inline-block;
   white-space: nowrap;
@@ -10526,6 +10698,9 @@ input.props_box_form:checked {
 }
 
 @media (max-width: 1023px) {
+  .card_banner_global_container {
+    padding: 0 20px;
+  }
   .card_banner_container {
     padding: 0 20px;
   }
@@ -10784,6 +10959,51 @@ input.props_box_form:checked {
   }
   .spec_mesasge_text {
     font-size: 14px;
+  }
+  .card_banner_swiper_wrap {
+    margin: 0;
+    position: relative;
+    overflow: hidden;
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+  .card_banner_swiper_wrap .card_banner_container.swiper-container {
+    padding: 0 20px;
+  }
+  .card_banner_swiper_wrap .swiper-pagination.default_skin .swiper-pagination-bullet {
+    margin-top: 30px;
+  }
+  .card_banner_object {
+    width: 220px;
+    min-height: 320px;
+  }
+  .card_banner_img_wrap {
+    height: calc(100% - 30px);
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  .card_banner_spec_wrap {
+    margin-left: 25px;
+    border-radius: 10px 0 10px 0;
+    padding: 20px 20px 20px;
+  }
+  .card_banner_main {
+    font-size: 16px;
+  }
+  .card_banner_sub {
+    font-size: 14px;
+  }
+  .card_banner_else {
+    margin-top: 10px;
+  }
+  .card_banner_else .price_main {
+    font-size: 18px;
+  }
+  .card_banner_else .price_unit {
+    font-size: 14px;
+  }
+  .company_spec {
+    font-size: 13px;
   }
 }
 @media (max-width: 767px) {
