@@ -359,7 +359,11 @@
     &.type2{
         font-size:15px; color:#6d6c6c;
     }
+    &.type3{
+        font-size:15px; color:#000;
+    }
 }
+.eval_text_inner{font-size:14px; color:#6d6c6c; display:inline-block; position:relative; top:-1px;}
 .price_item_wrap{text-align: right;}
 .price_sub_list{
     display:flex; gap:5px; justify-content: flex-end;
@@ -2264,6 +2268,83 @@ input.props_box_form{
 .card_banner_sub{}
 .card_banner_else{
     .price_obj{}
+}
+
+.thumnail_gallery_wrap{}
+.thumnail_gallery_list{
+    > li{
+        &.nodata_li{
+            .nodata_para{}
+        }
+    }
+    &.cols_5{
+        > li{
+            &.nodata_li{
+                .nodata_para{}
+            }
+        }
+    }
+}
+.nodata_para{}
+.thumnail_card_item{
+    .thum_rows{
+        img{}
+    }
+    .spec_rows{
+
+    }
+    .btn_like{}
+}
+.box_label_group{}
+.box_label{}
+.keyword_item_wrap{
+
+}
+.keyword_item{}
+.title_item_wrap{}
+.title_main_item{}
+.title_sub_item{}
+.price_horspec_row{}
+.price_horspec_cols{}
+.price_caption_name{}
+.price_item_group{}
+.price_main_text{}
+.price_unit_text{}
+.btn_like{
+    &.active{}
+}
+
+.thumnail_box_wrap{}
+.thumnail_box_list{
+    > li{}
+}
+.thumnail_box_item{
+    .thum_rows{
+        img{}
+    }
+    .spec_rows{}
+}
+.thumnail_box_item{
+    .keyword_item_wrap{
+
+    }
+    .keyword_item{}
+    .btn_like{}
+}
+.spec_row01_wrap{}
+.spec_row02_wrap{}
+.spec_row03_wrap{}
+.spec_row04_wrap{}
+.spec_row_main{}
+.thumnail_box_item{
+    .arrange_item_list{
+        > li{}
+    }
+}
+.spec_row04_wrap{
+    .price_item_group{}
+    .price_main_text{}
+    .price_unit_text{}
 }
 
 @media (max-width:1023px){

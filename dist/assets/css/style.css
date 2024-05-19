@@ -5574,6 +5574,18 @@ select.form_word_select:disabled {
   font-size: 15px;
   color: #6d6c6c;
 }
+.eval_text.type3 {
+  font-size: 15px;
+  color: #000;
+}
+
+.eval_text_inner {
+  font-size: 14px;
+  color: #6d6c6c;
+  display: inline-block;
+  position: relative;
+  top: -1px;
+}
 
 .price_item_wrap {
   text-align: right;
