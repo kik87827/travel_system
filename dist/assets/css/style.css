@@ -10064,6 +10064,152 @@ input.props_box_form:checked {
   left: 0;
 }
 
+.pc_block {
+  display: block;
+}
+
+.mb_block {
+  display: none;
+}
+
+.grid_wbox_wrap {
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 50px;
+}
+
+.grid_wbox_list > li {
+  margin-bottom: 30px;
+}
+.grid_wbox_list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.grid_wbox { /* background:#f9f9f9; */
+  background: #ddd;
+  border-radius: 18px;
+  outline: 1px solid red;
+  padding: 15px;
+  display: flex;
+  gap: 12px;
+  position: relative;
+}
+
+.grid_wbox_key {
+  flex: 0 0 280px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.list_gridlogo {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 1px solid #d6d6d6;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  overflow: hidden;
+}
+.air_road_flex {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.air_road_text {
+  flex: 1;
+  line-height: 1.3;
+}
+
+.air_road_maintext {
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+}
+
+.air_road_subtext {
+  font-size: 15px;
+  color: #6d6c6c;
+  font-weight: 500;
+  margin-top: 3px;
+}
+
+.air_road_icon {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  background: url("../images/ico_air_30.png") no-repeat 0 0/100% auto;
+}
+
+.grid_wbox_liquid {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grid_boxcard {
+  border-radius: 18px;
+  background: #fff;
+  padding: 25px 0;
+}
+.grid_boxcard.type2 {
+  padding: 15px 30px;
+}
+
+.grid_boxcard_list {
+  display: flex;
+}
+.grid_boxcard_list > li {
+  flex: 0 0 50%;
+  box-sizing: border-box;
+  padding: 30px;
+  border-right: 1px solid #e7e7e7;
+}
+.air_data_box {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.air_data_cols {
+  flex: 1;
+}
+.grid_clause_flex_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.clause_opt_list > li {
+  position: relative;
+  padding-left: 7px;
+}
+.clause_opt_list > li:before {
+  display: block;
+  content: "";
+  width: 2px;
+  height: 2px;
+  background: #4e4e4e;
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+
+.btn_grid_textonly {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 14px;
+  color: #4e4e4e;
+}
+
 @media (max-width: 1023px) {
   .card_banner_container {
     padding: 0 20px;
@@ -10086,6 +10232,12 @@ input.props_box_form:checked {
   }
   .text_onlytab_inner {
     font-size: 14px;
+  }
+  .pc_block {
+    display: none;
+  }
+  .mb_block {
+    display: block;
   }
 }
 @media (max-width: 767px) {
