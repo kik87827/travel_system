@@ -24,7 +24,9 @@ $warn : #e84854;
     @return $remValue;
 }
 
-
+@mixin imgThum {
+    width:100%;height:100%;object-fit: cover; object-position: 50% 50%; position:absolute;top:0;left:0;
+}
 
 
 @mixin fontTransform {
