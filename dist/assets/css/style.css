@@ -9004,11 +9004,12 @@ input.props_box_form:checked {
     font-size: 14px;
   }
   .data_spec_pro_else {
-    font-size: 14px;
+    font-size: 13px;
   }
   .fiqure_item {
     width: 80px;
     height: 85px;
+    border-radius: 5px;
   }
   .fiqure_thum_text {
     font-size: 11px;
@@ -9017,17 +9018,55 @@ input.props_box_form:checked {
   }
   .data_grid_wrap {
     gap: 10px;
+    flex-direction: row-reverse;
+  }
+  .dd_indent_item .ico.men {
+    width: 14px;
+    height: 14px;
+    flex-basis: 14px;
+  }
+  .dd_indent_item .ico.pro {
+    width: 16px;
+    height: 16px;
+    flex-basis: 16px;
+  }
+  .btn_allow_link:after {
+    width: 6px;
+    height: 6px;
+    top: 6px;
+  }
+  .allow_link_text {
+    font-size: 12px;
   }
   .dd_indent_main_text {
-    font-size: 14px;
-    padding-top: 1px;
+    font-size: 12px;
+    padding-top: 0;
+  }
+  .emp_highlight_box {
+    font-size: 9px;
+    border-radius: 2px;
+    padding: 3px;
+  }
+  .dd_summary_item .ico {
+    top: 1px;
+    width: 16px;
+    height: 16px;
+    flex-basis: 16px;
+  }
+  .dd_summary_text,
+.dd_indent_sub_text {
+    font-size: 12px;
   }
   .dd_indent_item {
     gap: 4px;
   }
+  .data_spec_list_render {
+    margin-right: -90px;
+  }
   .data_detail_box {
     display: block;
     padding: 12px;
+    border-radius: 5px;
   }
   .dd_summary_item_list {
     margin-top: 10px;
@@ -9038,13 +9077,20 @@ input.props_box_form:checked {
   }
   .dd_caption_para {
     margin-top: 7px;
-    font-size: 14px;
+    font-size: 12px;
   }
   .dd_indent_text_g.type2 {
     gap: 5px;
   }
   .dd_indent_text_g.type2 .btn_allow_link {
-    margin-top: 2px;
+    margin-top: 0px;
+  }
+  .data_bullet_list > li {
+    font-size: 12px;
+    padding-left: 7px;
+  }
+  .data_bullet_list > li:before {
+    top: 8px;
   }
   .keyword_smbox_wrap {
     margin-left: -20px;

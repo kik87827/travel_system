@@ -1990,6 +1990,7 @@ input.props_box_form{
     }
 
     .data_spec_primary_wrap{display:block;}
+    
 
     .data_spec_pro_name{font-size:17px;}
     .data_spec_pro_sub{font-size:13px;}
@@ -1997,28 +1998,59 @@ input.props_box_form{
     .price_p_number{font-size:18px;}
     .price_p_unit{font-size:14px;}
 
-    .data_spec_pro_else{font-size:14px;}
+    .data_spec_pro_else{font-size:13px;}
 
     
-    .fiqure_item{width:80px;height:85px;}
+    .fiqure_item{width:80px;height:85px;border-radius:5px;}
     .fiqure_thum_text{font-size:11px;padding:3px;word-break: keep-all;}
 
-    .data_grid_wrap{gap:10px;}
-
-    .dd_indent_main_text{font-size:14px;padding-top:1px;}
+    .data_grid_wrap{gap:10px;flex-direction: row-reverse;}
+    .dd_indent_item{
+        .ico{
+            &.men{
+                width:14px;height:14px; flex-basis: 14px;
+            }
+            &.pro{
+                width:16px;height:16px; flex-basis: 16px;
+            }
+        }
+    }
+    .btn_allow_link{
+        &:after{width:6px;height:6px;top:6px;}
+    }
+    .allow_link_text{font-size:12px;
+    }
+    .dd_indent_main_text{font-size:12px;padding-top:0;}
+    .emp_highlight_box{font-size:9px;border-radius:2px;padding:3px;}
+    .dd_summary_item{
+        .ico{top:1px;width:16px;height:16px; flex-basis: 16px;}
+    }
+    .dd_summary_text,
+    .dd_indent_sub_text{font-size:12px;}
 
     .dd_indent_item{gap:4px;}
+
+    .data_spec_list_render{margin-right:-90px;}
     
-    .data_detail_box{display:block;padding:12px;}
+    .data_detail_box{display:block;padding:12px;border-radius:5px;}
     .dd_summary_item_list{margin-top:10px;}
     .dd_fixed{white-space: normal;margin-top:20px;}
-    .dd_caption_para{margin-top:7px;font-size:14px;}
+    .dd_caption_para{margin-top:7px;font-size:12px;}
     .dd_indent_text_g{
         &.type2{
             gap:5px;
-            .btn_allow_link{margin-top:2px;}
+            .btn_allow_link{margin-top:0px;}
         }
     }
+
+    .data_bullet_list{
+        > li{font-size:12px;
+            padding-left:7px;
+            &:before{top:8px}
+        }
+    }
+    
+
     .keyword_smbox_wrap{margin-left:-20px;margin-right:-20px; padding:0 20px;
     }
     .keyword_smbox_list{
