@@ -8655,6 +8655,9 @@ input.props_box_form:checked {
   padding: 40px 20px;
   border-bottom: 1px solid #e7e7e7;
 }
+.tblock_list > li:first-of-type {
+  padding-top: 0;
+}
 
 .tblock_title {
   font-size: 19px;
