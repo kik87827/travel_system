@@ -8324,7 +8324,7 @@ input.props_box_form:checked {
 
 .data_spec_pro_else {
   margin-top: 12px;
-  color: #2b2b2b;
+  color: #49627A;
   font-size: 16px;
 }
 
@@ -8989,7 +8989,14 @@ input.props_box_form:checked {
     top: 1px;
   }
   .data_spec_primary_wrap {
-    display: block;
+    flex-direction: column-reverse;
+    gap: 5px;
+  }
+  .data_spec_fixed {
+    padding-top: 0;
+  }
+  .data_flag_text {
+    font-size: 14px;
   }
   .data_spec_pro_name {
     font-size: 17px;
@@ -9064,23 +9071,20 @@ input.props_box_form:checked {
     margin-right: -90px;
   }
   .data_detail_box {
-    display: block;
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
+    gap: 10px;
   }
   .dd_summary_item_list {
     margin-top: 10px;
   }
-  .dd_fixed {
-    white-space: normal;
-    margin-top: 20px;
-  }
+  .dd_fixed { /* white-space: normal;margin-top:20px; */ }
   .dd_caption_para {
     margin-top: 7px;
     font-size: 12px;
   }
   .dd_indent_text_g.type2 {
-    gap: 5px;
+    gap: 2px 5px;
   }
   .dd_indent_text_g.type2 .btn_allow_link {
     margin-top: 0px;
@@ -9117,8 +9121,12 @@ input.props_box_form:checked {
     padding: 15px;
     border-radius: 5px;
   }
+  .price_summary_para {
+    font-size: 10px;
+  }
   .btn_cardsm {
     padding: 6px 10px;
+    font-size: 12px;
   }
   .btn_moreitem_row {
     margin-top: 10px;
