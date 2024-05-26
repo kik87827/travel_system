@@ -2699,6 +2699,46 @@ input.props_box_form{
 .air_mb_more_text{font-size:13px; @include clamp(1);}
 .btn_grid_textonly{display:inline-block; white-space: nowrap; font-size:14px; color:#4e4e4e;}
 
+
+
+.brochure_global_container{}
+.brochure_title_cols{}
+.brochure_title_wrap{}
+.brochure_main_title{}
+.brochure_sub_copy{}
+
+.brochure_tab_wrap{}
+.tab_box_list{
+    > li{
+
+    }
+}
+.tab_box{
+    &.active{}
+}
+.brochure_contents_cols{}
+.data_render_list_wrap{}
+.data_render_list{
+    > li{}
+}
+.data_render_item{}
+.data_render_thums{
+    > img{}
+}
+.data_render_spec{
+
+}
+.dr_spec_row{
+
+}
+.dr_spec_title_wrap{
+
+}
+.dr_spec_main_title{}
+.dr_spec_sub_title{}
+.dr_spec_else_copy{}
+.dr_spec_summary{}
+
 @media (max-width:1023px){
     .card_banner_global_container{padding:0 20px;}
     .card_banner_container{padding:0 20px;}
