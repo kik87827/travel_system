@@ -940,7 +940,9 @@
 					<div class="middle_guide_vitem">
 						<div class="brochure_global_container">
 							<div class="brochure_title_cols">
-								<div class="bg_brochure" style="background-image:url(./assets/images/banner_left_bg.jpg)"></div>
+								<div class="bg_brochure">
+									<img src="./assets/images/banner_left_bg_photo.jpg" alt="">
+								</div>
 								<div class="brochure_title_wrap">
 									<p class="brochure_main_title">스위트 인기 호텔, 리조트</p>
 									<p class="brochure_sub_copy">“Sweet" Popular Hotels, Resorts</p>
@@ -1277,6 +1279,12 @@
 										el: ".emptape_brick_zone .swiper-pagination",
 										clickable: true,
 									},
+									mousewheel: true,
+									breakpoints: {
+										1024: {
+											spaceBetween: 20
+										}
+									}
 								});
 							});
 						</script>
